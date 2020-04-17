@@ -1,0 +1,27 @@
+footer {
+    margin-top: 3rem;
+    padding: 1.2rem 0;
+    border-top: 3px solid rgb(228, 228, 228);
+    color: #555;
+}
+
+footer a {
+    color: rgb(68, 119, 182);
+    text-decoration: none;
+}
+  
+footer a:hover {
+    color: #333;
+}
+
+@media (max-width: 799px) {
+    footer {
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) {
+    footer {
+        clear: both;
+        }    
+}

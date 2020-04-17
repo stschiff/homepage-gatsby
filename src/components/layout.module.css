@@ -1,0 +1,16 @@
+main a {
+    color: rgb(68, 119, 182);
+    text-decoration: none;
+}
+  
+main a:hover {
+    color: #333;
+}
+
+@media (min-width: 800px) {
+    main {
+        margin-right: 2%;
+        width: 63%;
+        float: left;
+    }
+}

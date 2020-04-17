@@ -1,4 +1,4 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default () => <Layout>Hello world!</Layout>
+export default () => <Layout>Resources</Layout>
