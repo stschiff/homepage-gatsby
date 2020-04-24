@@ -1,4 +1,4 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default () => <Layout>Talks</Layout>
+export default () => <Layout pageTitle="Talks">Talks</Layout>
