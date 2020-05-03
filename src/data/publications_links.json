@@ -1,0 +1,22 @@
+[
+     {
+        "citekey" : "flegontov2019-uq",
+        "image" : "./images/TEDx_talk_still.jpg",
+        "url" : "https://www.nature.com/articles/s41586-019-1251-y",
+        "pdf_link" : null,
+        "selected" : true
+    },
+    {
+        "citekey" : "jeong2019-oe",
+        "image" : "./images/TEDx_talk_still.jpg",
+        "url" : "https://www.nature.com/articles/s41559-019-0878-2",
+        "pdf_link" : null,
+        "selected" : false
+    },
+    {
+        "citekey" : "wang2019-uc",
+        "image" : "./images/TEDx_talk_still.jpg",
+        "url" : "https://www.nature.com/articles/s41467-018-08220-8",
+        "pdf_link" : "https://www.nature.com/articles/s41467-018-08220-8.pdf"
+    }
+]

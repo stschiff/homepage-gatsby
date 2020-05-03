@@ -5,9 +5,15 @@ import {graphql} from "gatsby"
 
 export default ({data}) => (
     <Layout pageTitle="Research">
-        <p>
-            I am group leader for population genetics at the Department for Archaeogenetics of the <a href="http://www.shh.mpg.de/en">Max Planck Institute for the Science of Human History in Jena</a>. My <a href="http://stephanschiffels.de/?page_id=8">group</a> at the MPI investigates human history by means of Genetics, and develops computational methods to model and analyse ancient and modern genomic data.
-        </p>
+        <section>
+            <h2 id="erc_microscope">
+                ERC Project MICROSCOPE
+            </h2>
+            <Img alt="" fluid={data.header_img_erc.childImageSharp.fluid} width="100%" />
+            <p>
+                In recent years, archaeogenetic studies have yielded striking insights into European prehistory from ancient DNA. However, these studies focus on times prior and up to the Bronze Age, whereas more recent periods are still poorly covered. A key challenge with studying more recent time periods is the homogenisation of European populations since the late Neolithic, which exposes the limits of many existing analytical methods that try to detect population movements. To overcome these limits, in this proposal I will develop a genetic 'microscope', a new set of fine-scaled analytical methods based on rare genetic variation, which will allow us to analyse ancient genomic data to infer population structure with unprecedented detail. With this new toolbox, I will undertake the largest archaeogenetic investigation of the pre-Roman European Iron Age to date. A specific focus will be the ‘Celtic’ world, encompassing a core region spanning from parts of France into Slovakia, and which reached its maximum extent in the third century BC, spanning from the Iberian Peninsula to Anatolia. I will collaborate with a large number of partners from archaeology and anthropology, as well as genetic laboratories, to sample and analyse 600 skeletal remains from this region and time period. Using the new methods, I aim to investigate i) population structure during the early Iron Age in the 'Celtic' core region of Western and Central Europe; ii) the genetic evidence for the so-called 'Celtic migrations' from the third century BC, specifically by analysing samples from the Iberian Peninsula, Northern Italy, Hungary/Romania and the British isles; iii) how migration and population admixture are reflected at the community- and family level by ‘zooming in’ into selected archaeological sites to reconstruct family pedigrees. With new methodology, new reference data, and hundreds of ancient genomes from the pre-Roman Iron Age, this project will set new standards for archaeogenetic studies in Europe. <i>[Image by Alonso de Mendoza, Wiki Commons]</i>
+            </p>
+        </section>
         <section>
             <h2 id="computational-methods-for-genomic-analyses">
                 Computational Methods for Genomic Analyses
@@ -42,6 +48,13 @@ export default ({data}) => (
 
 export const query = graphql`
 query {
+    header_img_erc: file(relativePath: {eq: "images/ERC_banner_images.jpg"}) {
+        childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+        }      
+    }
     header_img1: file(relativePath: {eq: "images/historical-genetics-images.jpg"}) {
         childImageSharp {
             fluid {
