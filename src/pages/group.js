@@ -4,29 +4,29 @@ import {Row, Col} from "react-bootstrap"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
 import "gatsby-image"
+import {FiExternalLink} from "react-icons/fi"
 
 const Portrait = ({name, image, children, link, role}) => {
-  // console.log(image);
-  let portraitHeader = typeof link !== 'undefined' ? (<h3><a href={link}>{name}</a> ({role})</h3>) : <h3>{name} ({role})</h3>;
+  const link_elem = link ? (<a href={link}><FiExternalLink /></a>) : <span></span>
   return (
-    <Row>
-      <Col md={4}>
+    <Row className="border-top py-3 mx-0">
+      <Col xs={4} className="pl-0">
         <Img fluid={image} alt={"Portrait of " + name} />
       </Col>
-      <Col md={8}>
-        {portraitHeader}
+      <Col xs={8} className="pr-0">
+        <h4>{name} <small>{role}</small>  {link_elem}</h4>
           <ul>
            {children}
           </ul>
       </Col>
     </Row>
-  )
+  );
 }
   
 
 export default ({data}) => {
   return (
-    <Layout pageTitle="Group">
+    <Layout pageTitle="Group" activeNav="/group">
       <Portrait
         name="Stephan Schiffels"
         image={data.imgStephan.childImageSharp.fluid}
@@ -90,8 +90,7 @@ export default ({data}) => {
         image={data.imgLuka.childImageSharp.fluid}
         link="http://www.shh.mpg.de/employees/50502/25522"
         role="PhD Student">
-            <li>since 2016: PhD student at the MPI Jena, co-supervised by
-                <a href="https://www.shh.mpg.de/person/42282/25500">Wolfgang Haak</a></li>
+            <li>since 2016: PhD student at the MPI Jena, co-supervised by <a href="https://www.shh.mpg.de/person/42282/25500">Wolfgang Haak</a></li>
             <li>2014-2016: M.Phil in ancient DNA, University of Melbourne</li>
             <li>2009-2012: BSc(Hons) in Genetics, University of Melbourne</li>
       </Portrait>

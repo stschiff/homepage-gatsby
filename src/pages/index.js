@@ -7,7 +7,7 @@ import "./index.css"
 
 export default ({data}) => {
   return (
-    <Layout>
+    <Layout pageTitle="Home" activeNav="/">
       <Row className="justify-content-md-center">
         <Col md={10}>
       <Carousel controls={false}>
@@ -66,19 +66,19 @@ export const carouselImage = graphql`
 
 export const query = graphql`
 query {
-  imgERC: file(relativePath: {eq: "images/Carousel_ERC.jpg"}) {
+  imgERC: file(relativePath: {eq: "images/carousel/Carousel_ERC.jpg"}) {
     ...carouselImage
   }
-  imgGeneticHistory: file(relativePath: {eq: "images/Carousel_genetic_history.jpg"}) {
+  imgGeneticHistory: file(relativePath: {eq: "images/carousel/Carousel_genetic_history.jpg"}) {
     ...carouselImage
   }
-  imgMethods: file(relativePath: {eq: "images/Carousel_methods.jpg"}) {
+  imgMethods: file(relativePath: {eq: "images/carousel/Carousel_methods.jpg"}) {
     ...carouselImage
   }
-  imgPaleoEskimo: file(relativePath: {eq: "images/Carousel_PaleoEskimo.jpg"}) {
+  imgPaleoEskimo: file(relativePath: {eq: "images/carousel/Carousel_PaleoEskimo.jpg"}) {
     ...carouselImage
   }
-  imgTEDxTalk: file(relativePath: {eq: "images/Carousel_TEDxTalk.jpg"}) {
+  imgTEDxTalk: file(relativePath: {eq: "images/carousel/Carousel_TEDxTalk.jpg"}) {
     ...carouselImage
   }
 }`
