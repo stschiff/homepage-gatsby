@@ -1,5 +1,38 @@
 [
     {
+        "journal": "Science Advances",
+        "authors": [
+            "Ma\u00eft\u00e9 Rivollat",
+            "Choongwon Jeong",
+            "Stephan Schiffels",
+            "\u0130\u015fil K\u00fc\u00e7\u00fckkal\u0131p\u00e7\u0131",
+            "Marie-H\u00e9l\u00e8ne Pemonge",
+            "Adam Benjamin Rohrlach",
+            "Kurt W Alt",
+            "Didier Binder",
+            "Susanne Friederich",
+            "Emmanuel Ghesqui\u00e8re",
+            "Detlef Gronenborn",
+            "Luc Laporte",
+            "Philippe Lefranc",
+            "Harald Meller",
+            "H\u00e9l\u00e8ne R\u00e9veillas",
+            "Eva Rosenstock",
+            "St\u00e9phane Rottier",
+            "Chris Scarre",
+            "Ludovic Soler",
+            "Joachim Wahl",
+            "Johannes Krause",
+            "Marie-France Deguilloux",
+            "Wolfgang Haak"
+        ],
+        "date": "2020-05-01",
+        "title": "Ancient genome-wide DNA from France highlights the complexity\nof interactions between Mesolithic hunter-gatherers and\nNeolithic farmers",
+        "url": "https://advances.sciencemag.org/content/6/22/eaaz5344",
+        "abstract": "Starting from 12,000 years ago in the Middle East, the Neolithic\nlifestyle spread across Europe via separate continental and\nMediterranean routes. Genomes from early European farmers have\nshown a clear Near Eastern/Anatolian genetic affinity with\nlimited contribution from hunter-gatherers. However, no genomic\ndata are available from modern-day France, where both routes\nconverged, as evidenced by a mosaic cultural pattern. Here, we\npresent genome-wide data from 101 individuals from 12 sites\ncovering today's France and Germany from the Mesolithic (N = 3)\nto the Neolithic (N = 98) (7000\u20133000 BCE). Using the genetic\nsubstructure observed in European hunter-gatherers, we\ncharacterize diverse patterns of admixture in different regions,\nconsistent with both routes of expansion. Early western European\nfarmers show a higher proportion of distinctly western\nhunter-gatherer ancestry compared to central/southeastern\nfarmers. Our data highlight the complexity of the biological\ninteractions during the Neolithic expansion by revealing major\nregional variations.",
+        "image": "images/publications/Rivollat2020-jl.jpg"
+    },
+    {
         "journal": "Nature communications",
         "authors": [
             "Anja Furtw\u00e4ngler",
@@ -117,7 +150,9 @@
             "Ken Massy",
             "Corina Knipper",
             "Fabian Wittenborn",
+            "Ronny Friedrich",
             "Saskia Pfrengle",
+            "Marta Burri",
             "Nadine Carlichi-Witjes",
             "Heidi Deeg",
             "Anja Furtw\u00e4ngler",
@@ -136,10 +171,10 @@
             "Philipp W Stockhammer",
             "Johannes Krause"
         ],
-        "date": "2019-10-10",
+        "date": "2019-11-08",
         "title": "Kinship-based social inequality in Bronze Age Europe",
         "url": "http://dx.doi.org/10.1126/science.aax6219",
-        "abstract": null,
+        "abstract": "Revealing and understanding the mechanisms behind social\ninequality in prehistoric societies is a major challenge. By\ncombining genome-wide data, isotopic evidence, and\nanthropological and archaeological data, we have gone beyond the\ndominating supraregional approaches in archaeogenetics to shed\nlight on the complexity of social status, inheritance rules, and\nmobility during the Bronze Age. We applied a deep microregional\napproach and analyzed genome-wide data of 104 human individuals\nderiving from farmstead-related cemeteries from the Late\nNeolithic to the Middle Bronze Age in southern Germany. Our\nresults reveal individual households, lasting several\ngenerations, that consisted of a high-status core family and\nunrelated low-status individuals; a social organization\naccompanied by patrilocality and female exogamy; and the\nstability of this system over 700 years.",
         "image": "images/publications/Mittnik2019-jw.jpg"
     },
     {

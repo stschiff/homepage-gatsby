@@ -69,8 +69,8 @@ export default ({data}) => {
         name="Thiseas Lamnidis"
         image={data.imgThiseas.childImageSharp.fluid}
         link="http://www.shh.mpg.de/person/45025/25522"
-        role="Postdoc">
-            <li>since 2020: Postdoc at the MPI Jena</li>
+        role="Staff Scientist">
+            <li>since 2020: Staff Scientist at the MPI Jena</li>
             <li>since 2015: PhD student at the MPI Jena.</li>
             <li>2013-2014: MSc in Evolutionary Anthropology, University of Durham, UK.</li>
             <li>2010-2013: BSc in Genetics, University of York, UK.</li>

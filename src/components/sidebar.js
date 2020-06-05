@@ -79,7 +79,7 @@ const mergeSidebarObjects = (post_nodes, pub_nodes) => {
       node : pub_node,
     }
   });
-  return post_objects.concat(pub_objects).slice(0, 20);
+  return post_objects.concat(pub_objects);
 }
 
 export default () => {
@@ -127,7 +127,7 @@ export default () => {
   );
   const allSidebarObjects = mergeSidebarObjects(data.posts.nodes, data.pubs.nodes).sort(
     (obj1, obj2) => obj1.date < obj2.date ? -1 : (obj1.date === obj2.date ? 0 : 1)
-  ).reverse();
+  ).reverse().slice(0, 20);
   return (
     <aside style={{fontSize:"90%"}}>
       <h3>Recent News</h3>
