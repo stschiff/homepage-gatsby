@@ -4,6 +4,8 @@ isBlogPost: True
 image: ../images/blog/neutralTheory.jpg
 ---
 
+import Blogfigure from "../../components/blogfigure"
+
 This is a response to a creationist’s [post on Human evolution](https://medium.com/@b1e1nugent/haldane-s-dilemma-shows-impossibility-of-ape-to-human-evolution-93bc7edb4830),
 in which I found so many flaws that I have to at least correct the most obvious
 factual errors for general readers. At the same time, this may serve as a quick
@@ -39,12 +41,12 @@ one of those mutations eventually becomes a substitution, so gets fixed in the
 population? For a neutral mutation, the answer is 1/2N, which can be seen from
 basic coalescence theory:
 
-![](../images/neutralTheory.jpg){ width=60% }
-<figcaption>All 2*N* genes in the present generation (top) are derived from one ancestor who
+<Blogfigure relPath="images/blog/neutralTheory.jpg" width={8}>
+All 2*N* genes in the present generation (top) are derived from one ancestor who
 lived in the past (bottom). Every gene has an equal probability to be the one
 that gets ancestral to all subsequent generations, so the fixation probability
 for a neutral mutation is 1/2N. Figure adopted from Bamshad and Wooding, Nat.
-Rev. Gen. 2003</figcaption>
+Rev. Gen. 2003</Blogfigure>
 
 Every gene in the present generation has an equal chance of eventually becoming
 the sole ancestor for all genes many generations later, so every gene has a

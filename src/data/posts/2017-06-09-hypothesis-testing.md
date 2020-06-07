@@ -1,9 +1,10 @@
 ---
 title: Hypothesis testing without Alternatives
 isBlogPost: True
-needsMathJax: True
 image: ../images/blog/hypTest2.jpg
 ---
+
+import Blogfigure from "../../components/blogfigure"
 
 So, I am reading this book called “Probability Theory; The logic of Science” by
 E.T. Jaynes. It is an excellent read, highly recommended, and quite an
@@ -252,7 +253,7 @@ detail, but simply note that the posterior distribution for a Bernoulli-process
 with two possible outcomes is a Beta distribution. In case of the first
 experiment, here is the result:
 
-![](../images/hypTest2.jpg){ width=75% }
+<Blogfigure relPath="images/blog/hypTest2.jpg" width={8}/>
 
 The 95% highest posterior credible interval is the region shaded in blue, and as
 one can see it comfortably includes the special value of 50%, representing a
@@ -268,7 +269,7 @@ plotted easily. And since the data is symmetric in heads and tails (both with 14
 outcomes in 29 tosses), we simply need to plot two distributions, representing
 heads (and tails), and for the rate of standing on its side:
 
-![](../images/hypTest1.jpg){ width=75% }
+<Blogfigure relPath="images/blog/hypTest1.jpg" width={8}/>
 
 Interestingly, the posterior distribution for the rate of the coin standing on
 its side has its 95% highest credible interval from 0.8% up to 17%, so it

@@ -4,7 +4,9 @@ isBlogPost: True
 image: ../images/blog/clock.jpg
 ---
 
-![](../images/clock_image.jpg)
+import Blogfigure from "../../components/blogfigure"
+
+<Blogfigure relPath="images/blog/clock_image.jpg">Test</Blogfigure>
 
 Working in academia comes with unique freedoms and challenges. I would argue
 that in no other job we have so much freedom to define our own work. At least at
@@ -12,6 +14,7 @@ the Post-doctoral level and beyond, you mostly can choose *what* problems you
 want to work on, *how* to solve them, and in *what pace. *Even as a PhD student,
 in many cases there is a lot of freedom to choose projects and set your own
 goals and deadlines (this may not be the case for everybody, but it was for me).
+
 
 This is both a blessing and curse. While this kind of freedom may seem like
 paradise to people working in shifts or being frustrated by being told by their
