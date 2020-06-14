@@ -1,15 +1,21 @@
+import {ResponsiveEmbed} from "react-bootstrap"
+
 ### Videos
 
 Talk (in german) @TEDxTHBrandenburg, Germany recorded on December 6 2020:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lPTuXosgUik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ResponsiveEmbed aspectRatio="16by9">
+  <iframe src="https://www.youtube.com/embed/lPTuXosgUik" allowfullscreen></iframe>
+</ResponsiveEmbed>
 
 ---
 
 Webinar for the International Society for Computational Biology, Regional Group in
 Turkey, recorded on December 12, 2018:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qGW67OAbXD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ResponsiveEmbed aspectRatio="16by9">
+  <iframe src="https://www.youtube.com/embed/qGW67OAbXD4" allowfullscreen></iframe>
+</ResponsiveEmbed>
 
 ---
 ### All talks
