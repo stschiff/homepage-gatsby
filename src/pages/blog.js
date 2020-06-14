@@ -6,7 +6,7 @@ import { graphql, Link } from 'gatsby'
 import dateFormat from "dateformat"
 
 const BlogEntry = ({frontmatter, excerpt, date, link}) => {
-  const imgComp = frontmatter.image ? <Img fluid={frontmatter.image.childImageSharp.fluid} alt=""/> : <div></div>;
+  const imgComp = frontmatter.image ? <Img fluid={frontmatter.image.childImageSharp.fluid} alt="Highlighted image from the blog post"/> : <div></div>;
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={3} className="pl-0">

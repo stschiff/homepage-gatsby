@@ -3,7 +3,7 @@ import {Figure, Row} from "react-bootstrap"
 import React from "react"
 import Img from "gatsby-image"
 
-export default ({relPath, width=12, children}) => {
+export default ({relPath, width=12, children, altText=""}) => {
   const data = useStaticQuery(
     graphql`
     query {
@@ -21,11 +21,10 @@ export default ({relPath, width=12, children}) => {
   );
   let ret = <i>Image Not Found (path={relPath})</i>;
   const cl = `col-md-${width}`;
-  console.log(cl);
   data.allFile.nodes.forEach(node => {
     if(node.relativePath === relPath)
       ret = <Row className="justify-content-md-center"><Figure className={cl}>
-        <Img fluid={node.childImageSharp.fluid} alt="hello"/>
+        <Img fluid={node.childImageSharp.fluid} alt={altText}/>
         <Figure.Caption>{children}</Figure.Caption>
       </Figure></Row>
   });

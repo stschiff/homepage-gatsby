@@ -6,7 +6,7 @@ image: ../images/blog/loog_et_al.jpg
 
 import Blogfigure from "../../components/blogfigure"
 
-<Blogfigure relPath="images/blog/IMPRS-Jena-Logo3.jpeg" width={8}/>
+<Blogfigure relPath="images/blog/IMPRS-Jena-Logo3.jpeg" width={8} altText="Logo of the International Max Planck Research Schoole for the Science of Human History"/>
 
 We recently advertised [16 new PhD
 positions](https://imprs.shh.mpg.de/index.php/applications/open-positions/)
@@ -55,7 +55,7 @@ they are in space *versus* time is a direct estimator for human mobility.
 Loog and colleagues used this basic idea to develop a statistical method that
 tracks human mobility *through time*. Here is their main figure:
 
-<Blogfigure relPath="images/blog/loog_et_al.jpg" width={9}>
+<Blogfigure relPath="images/blog/loog_et_al.jpg" width={9} altText="Main figure with mobility estimates from Loog et al.">
   from Loog et al. “Estimating mobility using sparse data: Application to human
 genetic variation”, *PNAS*, 2017 (CC BY-NC-ND)</Blogfigure>
 

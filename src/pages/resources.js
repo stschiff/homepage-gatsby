@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default ({data}) => {
-  console.log(data);
   return (
     <Layout pageTitle="Resources" activeNav="/resources">
       <MDXRenderer>{data.file.childMdx.body}</MDXRenderer>

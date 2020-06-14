@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import { Carousel, Row, Col } from "react-bootstrap"
-import { graphql } from 'gatsby'
+import { graphql, Link} from 'gatsby'
 import "./index.css"
 
 export default ({data}) => {
@@ -10,33 +10,43 @@ export default ({data}) => {
     <Layout pageTitle="Home" activeNav="/">
       <Row className="justify-content-md-center">
         <Col md={10}>
-      <Carousel controls={false}>
+      <Carousel controls={false} interval={3000}>
         <Carousel.Item>
-          <Img alt="Research: ERC project MICROSCOPE" fluid={data.imgERC.childImageSharp.fluid} />
-          <Carousel.Caption>
-            <h3>Research: ERC project MICROSCOPE</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <Img alt="Research: Genetic History" fluid={data.imgGeneticHistory.childImageSharp.fluid} />
+          <Link to="/research">
+            <Img alt="A human skeleton at an archaeological site and a schematic of a phylogenetic tree connecting human populations" fluid={data.imgGeneticHistory.childImageSharp.fluid} />
+          </Link>
           <Carousel.Caption>
             <h3>Research: Genetic History</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Img alt="Research: Computational Methods" fluid={data.imgMethods.childImageSharp.fluid} />
+          <Link to="/research">
+            <Img alt="Schematics showing genealogical trees along genome sequences and within a structured population model" fluid={data.imgMethods.childImageSharp.fluid} />
+          </Link>
           <Carousel.Caption>
             <h3>Research: Computational Methods</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Img alt="Blog Posts" fluid={data.imgPaleoEskimo.childImageSharp.fluid} />
+          <Link to="/research">
+            <Img alt="Photograph of the famous statue 'The Dying Gaul' symbolising the ancient Celts as seen by the Romans" fluid={data.imgERC.childImageSharp.fluid} />
+          </Link>
+          <Carousel.Caption>
+            <h3>Research: ERC project MICROSCOPE</h3>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <Link to="/blog">
+            <Img alt="A drawing of a Paleo-Eskimo woman with a baby child on her back as she stands in Northeast-Asia looking towards America" fluid={data.imgPaleoEskimo.childImageSharp.fluid} />
+          </Link>
           <Carousel.Caption>
             <h3>Blog Posts</h3>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Img alt="Talks" fluid={data.imgTEDxTalk.childImageSharp.fluid} />
+          <Link to="/talks">
+            <Img alt="Still image of Stephan Schiffels speaking at the TEDxTHBrandenburg" fluid={data.imgTEDxTalk.childImageSharp.fluid} />
+          </Link>
           <Carousel.Caption>
             <h3>Talks</h3>
           </Carousel.Caption>
@@ -66,7 +76,7 @@ export const carouselImage = graphql`
 
 export const query = graphql`
 query {
-  imgERC: file(relativePath: {eq: "images/carousel/Carousel_ERC.jpg"}) {
+  imgERC: file(relativePath: {eq: "images/carousel/Dying_Gaul_fullres.jpg"}) {
     ...carouselImage
   }
   imgGeneticHistory: file(relativePath: {eq: "images/carousel/Carousel_genetic_history.jpg"}) {

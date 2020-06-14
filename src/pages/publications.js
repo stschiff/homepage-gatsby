@@ -47,7 +47,7 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image}) => {
   authors_annotated.push(<span> and </span>)
   authors_annotated.push(<Author name={authors.slice(-1)[0]} />)
 
-  const imgComp = image ? <Img fluid={image.childImageSharp.fluid} alt=""/> : <div></div>;
+  const imgComp = image ? <Img fluid={image.childImageSharp.fluid} alt="An image from the publication"/> : <div></div>;
   return (
     <div className="border-top py-3 mx-0">
       <Row>
@@ -73,7 +73,6 @@ export default ({data}) => {
   return (
     <Layout pageTitle="Publications" activeNav="/publications">
       {data.allPublicationsJson.nodes.map(node => {
-        console.log(node);
         return (
           <BibTexEntry url={node.url}
                        journal={node.journal}

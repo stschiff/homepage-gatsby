@@ -5,8 +5,8 @@ import Img from "gatsby-image"
 import dateFormat from "dateformat"
 // import styles from "./sidebar.module.css"
 
-const BlogChunk = ({image_fluid, date, title, link}) => {
-  const imgComp = image_fluid ? <Img fluid={image_fluid} alt="" className="border border-dark rounded-lg"/> : <div></div>;
+const BlogChunk = ({image_fluid, date, title}) => {
+  const imgComp = image_fluid ? <Img fluid={image_fluid} alt="Highlighted image from the blog post" className="border border-dark rounded-lg"/> : <div></div>;
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={8} className="pl-0">
@@ -24,13 +24,13 @@ const BlogChunk = ({image_fluid, date, title, link}) => {
 };
 
 const AnnouncementChunk = ({image_fluid, title, date, link}) => {
-  const imgComp = image_fluid ? <Img fluid={image_fluid} alt="" className="border border-dark rounded-lg"/> : <div></div>;
+  const imgComp = image_fluid ? <Img fluid={image_fluid} alt="Highlighted image for that news item" className="border border-dark rounded-lg"/> : <div></div>;
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={8} className="pl-0">
         <p>
-          <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="warning">Announcement</Badge><br />
-          <a href={link}>{title}.</a>
+          <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="warning">News</Badge><br />
+          <Link to={link}>{title}.</Link>
         </p>
       </Col>
       <Col xs={4} className="pr-0">
@@ -43,7 +43,7 @@ const AnnouncementChunk = ({image_fluid, title, date, link}) => {
 const PubChunk = ({image_fluid, title, journal, authors, date}) => {
   let authors_short = authors.length > 2 ? authors[0] + " et al." : (authors.length === 2 ? authors.join(" and ") : authors[0]);
 
-  const imgComp = image_fluid ? <Img fluid={image_fluid} alt="" className="border border-dark rounded-lg"/> : <div></div>;
+  const imgComp = image_fluid ? <Img fluid={image_fluid} alt="Highlighted image from that publication" className="border border-dark rounded-lg"/> : <div></div>;
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={8} className="pl-0">
@@ -152,7 +152,7 @@ export default () => {
         } else {
           const img = obj.node.childMdx.frontmatter.image ? obj.node.childMdx.frontmatter.image.childImageSharp.fluid : null;
           return (
-            <AnnouncementChunk link={obj.node.childMdx.frontmatter.link}
+            <AnnouncementChunk link={obj.node.childMdx.fields.slug}
                                title={obj.node.childMdx.frontmatter.title}
                                image_fluid={img}
                                date={obj.date} />

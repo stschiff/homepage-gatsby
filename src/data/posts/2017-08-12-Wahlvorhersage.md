@@ -44,7 +44,7 @@ Erwartungswert zu jedem Zeitpunkt angeben. Hier ist der Verlauf dieses
 Erwartungswertes seit der letzten Bundestagswahl für relevante Parteien,
 zusammen mit den Umfrage-Ergebnissen:
 
-<Blogfigure relPath="images/blog/wahlblick_diffusion.jpg">
+<Blogfigure relPath="images/blog/wahlblick_diffusion.jpg" altText="Umfragedaten für fünf Parteien in Deutschland zwischen 2013 und 2017">
   Umfrageergebnisse verschiedener Institute seit der letzten Bundestagswahl, sowie
 der Erwartungswert der Zweitstimmen-Anteile in der Bevölkerung durch unser
 Modell, angezeigt durch Kurven.
@@ -64,7 +64,7 @@ der Aufstieg der AfD während “Flüchtlingskrise” 2015.
 Ein bekannter Effekt ist die systematische Abweichung vom mittleren
 Erwartungswert bestimmter Institute bei bestimmten Parteien:
 
-<Blogfigure relPath="images/blog/wahlblick_biases.jpg">
+<Blogfigure relPath="images/blog/wahlblick_biases.jpg" altText="Systematische Fehler von Umfrage-Ergebnissen bestimmter Umfrage-Institute">
 Systematische Abweichungen zwischen Instituts-Schätzungen von unserer mittleren
 Schätzung in die die Umfragen aller Institute eingehen.
 </Blogfigure>
@@ -88,7 +88,7 @@ Wir legen für die folgende Vorhersage die gesamten Umfragedaten seit der letzte
 Bundestagswahl bis heute (letzte Umfrage am 2.8.2017) zu Grunde. Zum Vergleich
 zeigen wir auch die Vorhersage mit Stand vom Januar 2017:
 
-<Blogfigure relPath="images/blog/wahlblick_vorhersage_parteien.jpg" />
+<Blogfigure relPath="images/blog/wahlblick_vorhersage_parteien.jpg" altText="Tabelle mit Wahrscheinlichkeiten für Zweitstimmenanteile der Parteien bei der Bundestagswahl"/>
 
 Während mit Stand vom Januar 2017 eine Vorhersage zum September noch mit einer
 sehr hohen Unsicherheit verbunden ist, lassen die zusätzlichen Umfragen seit
@@ -101,7 +101,7 @@ Die hier angegebenen Wahrscheinlichkeiten zum Wahltag lassen uns auch andere
 Fragen untersuchen. Zum Beispiel können wir fragen, mit welcher
 Wahrscheinlichkeit eine Partei die Fünfprozenthürde erreicht:
 
-<Blogfigure relPath="images/blog/wahlblick_funfprozenthurde.jpg" />
+<Blogfigure relPath="images/blog/wahlblick_funfprozenthurde.jpg" altText="Wahrscheinlichkeit dass Partien bei der Wahl über die Fünfprozenthürde kommen"/>
 
 Zum heutigen Zeitpunkt scheint es also so gut wie sicher dass alle hier
 untersuchten Parteien die Fünfprozenthürde erreichen werden. Im Januar sah das
@@ -112,7 +112,7 @@ welcher Wahrscheinlichkeit eine bestimmte Koalition nach der Wahl im Bundestag
 die absolute Mehrheit erhält, wieder als Vergleich zwischen dem Stand vom Januar
 2017 und dem Stand heute:
 
-<Blogfigure relPath="images/blog/wahlblick_vorhersage_koalitionen.jpg" />
+<Blogfigure relPath="images/blog/wahlblick_vorhersage_koalitionen.jpg" altText="Wahrscheinlichkeit dass bestimmte Koalitionen über 50% der Sitze im Bundestag kommen"/>
 
 Diese Berechnung der Koalitionsmehrheit bezieht auch explizit die Möglichkeit
 mit ein, dass kleine Parteien unter die Fünfprozenthürde fallen, was zu teils

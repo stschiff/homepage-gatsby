@@ -21,6 +21,8 @@ def curate_entry(entry):
     [d, m] = entry['month'].split('~')
     j = entry['journal'] if 'journal' in entry else f"in {entry['booktitle']}, {entry['publisher']}"
     
+    notes_str = entry['']
+
     ret = {
         'journal' : j,
         'authors' : list(map(
