@@ -9,7 +9,7 @@ export default ({data}) => {
   return (
     <Layout pageTitle="Home" activeNav="/">
       <Row className="justify-content-md-center">
-        <Col md={10}>
+        <Col>
       <Carousel controls={false} interval={3000}>
         <Carousel.Item>
           <Link to="/research">

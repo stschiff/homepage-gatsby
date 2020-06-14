@@ -2,6 +2,91 @@
     {
         "journal": "Science Advances",
         "authors": [
+            "Ke Wang",
+            "Steven Goldstein",
+            "Madeleine Bleasdale",
+            "Bernard Clist",
+            "Koen Bostoen",
+            "Paul Bakwa-Lufu",
+            "Laura T Buck",
+            "Alison Crowther",
+            "Alioune D\u00e8me",
+            "Roderick J McIntosh",
+            "Julio Mercader",
+            "Christine Ogola",
+            "Robert C Power",
+            "Elizabeth Sawchuk",
+            "Peter Robertshaw",
+            "Edwin N Wilmsen",
+            "Michael Petraglia",
+            "Emmanuel Ndiema",
+            "Fredrick K Manthi",
+            "Johannes Krause",
+            "Patrick Roberts",
+            "Nicole Boivin",
+            "Stephan Schiffels"
+        ],
+        "date": "2020-06-01",
+        "title": "Ancient genomes reveal complex patterns of population movement,\ninteraction, and replacement in sub-Saharan Africa",
+        "url": "https://advances.sciencemag.org/content/6/24/eaaz0183",
+        "abstract": "Africa hosts the greatest human genetic diversity globally, but\nlegacies of ancient population interactions and dispersals\nacross the continent remain understudied. Here, we report\ngenome-wide data from 20 ancient sub-Saharan African\nindividuals, including the first reported ancient DNA from the\nDRC, Uganda, and Botswana. These data demonstrate the\ncontraction of diverse, once contiguous hunter-gatherer\npopulations, and suggest the resistance to interaction with\nincoming pastoralists of delayed-return foragers in aquatic\nenvironments. We refine models for the spread of food producers\ninto eastern and southern Africa, demonstrating more complex\ntrajectories of admixture than previously suggested. In\nBotswana, we show that Bantu ancestry post-dates admixture\nbetween pastoralists and foragers, suggesting an earlier spread\nof pastoralism than farming to southern Africa. Our findings\ndemonstrate how processes of migration and admixture have\nmarkedly reshaped the genetic map of sub-Saharan Africa in the\npast few millennia and highlight the utility of combined\narchaeological and archaeogenetic approaches.",
+        "image": "images/publications/Wang2020-ju.jpg",
+        "citekey": "Wang2020-ju"
+    },
+    {
+        "journal": "bioRxiv",
+        "authors": [
+            "Marieke S van de Loosdrecht",
+            "Marcello A Mannino",
+            "Sahra Talamo",
+            "Vanessa Villalba-Mouco",
+            "Cosimo Posth",
+            "Franziska Aron",
+            "Guido Brandt",
+            "Marta Burri",
+            "C\u00e4cilia Freund",
+            "Rita Radzeviciute",
+            "Raphaela Stahl",
+            "Antje Wissgott",
+            "Lysann Klausnitzer",
+            "Sarah Nagel",
+            "Matthias Meyer",
+            "Antonio Tagliacozzo",
+            "Marcello Piperno",
+            "Sebastiano Tusa",
+            "Carmine Collina",
+            "Vittoria Schimmenti",
+            "Rosaria Di Salvo",
+            "Kay Pr\u00fcfer",
+            "Jean-Jacques Hublin",
+            "Stephan Schiffels",
+            "Choongwon Jeong",
+            "Wolfgang Haak",
+            "Johannes Krause"
+        ],
+        "date": "2020-03-12",
+        "title": "Genomic and dietary transitions during the Mesolithic and Early\nNeolithic in Sicily",
+        "url": "https://www.biorxiv.org/content/10.1101/2020.03.11.986158v1",
+        "abstract": "Abstract Southern Italy is a key region for understanding the\nagricultural transition in the Mediterranean due to its central\nposition. We present a genomic transect for 19 prehistoric\nSicilians that covers the Early Mesolithic to Early Neolithic\nperiod. We find that the Early Mesolithic hunter-gatherers (HGs)\nare a highly drifted sister lineage to Early Holocene western\nEuropean HGs, whereas a quarter of the Late Mesolithic HGs\nancestry is related to HGs from eastern Europe and the Near East.\nThis indicates substantial gene flow from (south-)eastern Europe\nbetween the Early and Late Mesolithic. The Early Neolithic\nfarmers are genetically most similar to those from the Balkan and\nGreece, and carry only a maximum of \u223c7\\% ancestry from Sicilian\nMesolithic HGs. Ancestry changes match changes in dietary profile\nand material culture, except for two individuals who may provide\ntentative initial evidence that HGs adopted elements of farming\nin Sicily.One-sentence summary Genome-wide and isotopic data from\nprehistoric Sicilians reveal a pre-farming connection to (south-)\neastern Europe, and tentative initial evidence that\nhunter-gatherers adopted some Neolithic aspects prior to\nnear-total replacement by early farmers.",
+        "image": "images/publications/Van_de_Loosdrecht2020-sn.jpg",
+        "citekey": "Van_de_Loosdrecht2020-sn"
+    },
+    {
+        "journal": "in Statistical Population Genomics, Springer US",
+        "authors": [
+            "Stephan Schiffels",
+            "Ke Wang"
+        ],
+        "date": "2020-01-24",
+        "title": "MSMC and MSMC2: The Multiple Sequentially Markovian\nCoalescent",
+        "url": "http://link.springer.com/10.1007/978-1-0716-0199-0_7",
+        "abstract": "The Multiple Sequentially Markovian Coalescent (MSMC) is a\npopulation genetic method and software for inferring demographic\nhistory and population structure through time from genome\nsequences. Here we describe the main program MSMC and its\nsuccessor MSMC2. We go through all the necessary steps of\nprocessing genomic data from BAM files all the way to generating\nplots of inferred population size and separation histories. Some\nbackground on the methodology itself is provided, as well as\nbash scripts and python source code to run the necessary\nprograms. The reader is also referred to community resources\nsuch as a mailing list and github repositories for further\nadvice.",
+        "image": "images/publications/Schiffels2020-bv.jpg",
+        "citekey": "Schiffels2020-bv"
+    },
+    {
+        "journal": "Science Advances",
+        "authors": [
             "Ma\u00eft\u00e9 Rivollat",
             "Choongwon Jeong",
             "Stephan Schiffels",
@@ -34,20 +119,7 @@
         "citekey": "Rivollat2020-jl"
     },
     {
-        "journal": "in Statistical Population Genomics, Springer US",
-        "authors": [
-            "Stephan Schiffels",
-            "Ke Wang"
-        ],
-        "date": "2020-01-24",
-        "title": "MSMC and MSMC2: The Multiple Sequentially Markovian\nCoalescent",
-        "url": "http://link.springer.com/10.1007/978-1-0716-0199-0_7",
-        "abstract": "The Multiple Sequentially Markovian Coalescent (MSMC) is a\npopulation genetic method and software for inferring demographic\nhistory and population structure through time from genome\nsequences. Here we describe the main program MSMC and its\nsuccessor MSMC2. We go through all the necessary steps of\nprocessing genomic data from BAM files all the way to generating\nplots of inferred population size and separation histories. Some\nbackground on the methodology itself is provided, as well as\nbash scripts and python source code to run the necessary\nprograms. The reader is also referred to community resources\nsuch as a mailing list and github repositories for further\nadvice.",
-        "image": "images/publications/Schiffels2020-bv.jpg",
-        "citekey": "Schiffels2020-bv"
-    },
-    {
-        "journal": "Nature communications",
+        "journal": "Nature Communications",
         "authors": [
             "Anja Furtw\u00e4ngler",
             "A B Rohrlach",
