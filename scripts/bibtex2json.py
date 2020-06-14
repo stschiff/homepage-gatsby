@@ -21,8 +21,6 @@ def curate_entry(entry):
     [d, m] = entry['month'].split('~')
     j = entry['journal'] if 'journal' in entry else f"in {entry['booktitle']}, {entry['publisher']}"
     
-    notes_str = entry['']
-
     ret = {
         'journal' : j,
         'authors' : list(map(
@@ -33,7 +31,8 @@ def curate_entry(entry):
         'title' : entry['title'].replace('{', '').replace('}',''),
         'url' : entry['url'],
         'abstract' : entry['abstract'].replace('{','').replace('}','') if 'abstract' in entry else None,
-        'image' : f"images/publications/{entry['ID']}.jpg"
+        'image' : f"images/publications/{entry['ID']}.jpg",
+        'citekey' : entry['ID']
     }
     return ret
 

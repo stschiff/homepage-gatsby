@@ -37,7 +37,7 @@ const AbstractCollapse = ({abstract}) => {
   }
 }
 
-const BibTexEntry = ({url, date, authors, title, journal, abstract, image}) => {
+const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citekey}) => {
   const dateObj = new Date(date);
   let authors_annotated = []
   authors.slice(0, -1).forEach(function(a) {
@@ -49,7 +49,7 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image}) => {
 
   const imgComp = image ? <Img fluid={image.childImageSharp.fluid} alt="An image from the publication"/> : <div></div>;
   return (
-    <div className="border-top py-3 mx-0">
+    <div className="border-top py-3 mx-0" id={citekey}>
       <Row>
         <Col xs={3} className="pl-0">
           {imgComp}
@@ -80,7 +80,8 @@ export default ({data}) => {
                        title={node.title}
                        date={node.date}
                        abstract={node.abstract}
-                       image={node.image}/>
+                       image={node.image}
+                       citekey={node.citekey}/>
         );
       })}
     </Layout>
@@ -97,6 +98,7 @@ query {
       title
       date
       abstract
+      citekey
       image {
         childImageSharp {
           fluid(maxHeight: 400, maxWidth: 400) {

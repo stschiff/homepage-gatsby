@@ -5,15 +5,14 @@ import Img from "gatsby-image"
 import dateFormat from "dateformat"
 // import styles from "./sidebar.module.css"
 
-const BlogChunk = ({image_fluid, date, title}) => {
+const BlogChunk = ({image_fluid, date, title, link}) => {
   const imgComp = image_fluid ? <Img fluid={image_fluid} alt="Highlighted image from the blog post" className="border border-dark rounded-lg"/> : <div></div>;
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={8} className="pl-0">
         <p>
           <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="primary">Blog</Badge> <br />
-          <b>{title}</b>
-          <p><i>Read more in <Link to="/blog">Blog</Link></i></p>
+          <b><Link to={link}>{title}</Link></b>
         </p>
       </Col>
       <Col xs={4} className="pr-0">
@@ -40,19 +39,21 @@ const AnnouncementChunk = ({image_fluid, title, date, link}) => {
   );
 };
 
-const PubChunk = ({image_fluid, title, journal, authors, date}) => {
+const PubChunk = ({image_fluid, title, journal, authors, date, citekey}) => {
   let authors_short = authors.length > 2 ? authors[0] + " et al." : (authors.length === 2 ? authors.join(" and ") : authors[0]);
 
   const imgComp = image_fluid ? <Img fluid={image_fluid} alt="Highlighted image from that publication" className="border border-dark rounded-lg"/> : <div></div>;
+
+  const pub_link = "/publications#" + citekey;
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={8} className="pl-0">
        <p>
           <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="info">Publication</Badge>
           <p>
-            <b>{title}. </b>
+            <b><Link to={pub_link}>{title}.</Link> </b>
             <i>{journal}. </i>
-            By {authors_short}. <p><i>See <Link to="/publications">Publications</Link></i></p>
+            By {authors_short}.
           </p>
         </p>
       </Col>
@@ -114,6 +115,7 @@ export default () => {
           journal
           date
           authors
+          citekey
           image {
             childImageSharp {
               fluid(maxHeight: 400, maxWidth: 400) {
@@ -147,7 +149,8 @@ export default () => {
                       title={obj.node.title}
                       authors={obj.node.authors}
                       journal={obj.node.journal}
-                      date={obj.date}/>  
+                      date={obj.date}
+                      citekey={obj.node.citekey}/>  
           );
         } else {
           const img = obj.node.childMdx.frontmatter.image ? obj.node.childMdx.frontmatter.image.childImageSharp.fluid : null;
