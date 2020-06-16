@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
-import {Row, Col, Button, Collapse, Badge} from "react-bootstrap"
+import {Row, Col, Button, Collapse, Badge, Form} from "react-bootstrap"
 import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import dateFormat from "dateformat"
@@ -47,7 +47,32 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
   authors_annotated.push(<span> and </span>)
   authors_annotated.push(<Author name={authors.slice(-1)[0]} />)
 
+  let [collapsedState, setAuthorsCollapse] = useState(true);
+
+  console.log(collapsedState);
+
+  let authors_short = []
+  if(authors.length <= 6) {
+    authors_short = authors_annotated;
+  }
+  else {
+    // authors_short = [authors_annotated[0], <span>...<Button variant="secondary" size="sm" onClick={() => setAuthorsCollapse(false)}>Expand</Button>...</span>, authors_annotated[authors_annotated.length - 1]];
+    authors_short = [authors_annotated[0], <span>...<Button className="mx-1" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(false)}>Expand</Button>...</span>, authors_annotated[authors_annotated.length - 1]];
+  }
+  if(authors.length > 6) {
+    authors_annotated.push(<Button className="ml-1" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(true)}>Collapse</Button>);
+  }
+
   const imgComp = image ? <Img fluid={image.childImageSharp.fluid} alt="An image from the publication"/> : <div></div>;
+
+  let badge = <Badge variant="secondary">minor</Badge>;
+  if(role === "major") {
+    badge = <Badge variant="primary">major</Badge>;
+  }
+  if(role === "lead") {
+    badge = <Badge variant="warning">lead</Badge>;
+  }
+
 
   return (
     <div className="border-top py-3 mx-0" id={citekey}>
@@ -56,14 +81,14 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
           {imgComp}
         </Col>
         <Col xs={9} className="pr-0">
-          <Badge variant="primary">{role}</Badge>
+          {badge}
           <p>
             <b>{title}. </b>
             <i>{journal}. </i>
             Published {dateFormat(dateObj, "mmmm dS, yyyy")}
           </p>
-          <p>Authors: {authors_annotated}</p>
-          <p>[<a href={url}>Website</a>] [PDF]</p>
+          <p>Authors: {collapsedState ? authors_short : authors_annotated}</p>
+          <p>[<a href={url}>Website</a>]</p>
           <AbstractCollapse abstract={abstract} />
         </Col>
       </Row>
@@ -74,6 +99,13 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
 export default ({data}) => {
   return (
     <Layout pageTitle="Publications" activeNav="/publications">
+      <p>
+      <u>Legend:</u><br />
+      <Badge variant="warning">lead</Badge>: Publications in which I had a leading role<br />
+      <Badge variant="primary">major</Badge>: Publications to which I made substantial contributions<br />
+      <Badge variant="secondary">minor</Badge>: Publications to which I made a minor contributions<br />
+      </p>
+      <Form.Check inline type="checkbox" />Select only <Badge variant="warning">lead</Badge>
       {data.allPublicationsJson.nodes.map(node => {
         return (
           <BibTexEntry url={node.url}
