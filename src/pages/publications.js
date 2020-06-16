@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
-import {Row, Col, Button, Collapse} from "react-bootstrap"
+import {Row, Col, Button, Collapse, Badge} from "react-bootstrap"
 import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import dateFormat from "dateformat"
@@ -37,7 +37,7 @@ const AbstractCollapse = ({abstract}) => {
   }
 }
 
-const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citekey}) => {
+const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citekey, role}) => {
   const dateObj = new Date(date);
   let authors_annotated = []
   authors.slice(0, -1).forEach(function(a) {
@@ -48,6 +48,7 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
   authors_annotated.push(<Author name={authors.slice(-1)[0]} />)
 
   const imgComp = image ? <Img fluid={image.childImageSharp.fluid} alt="An image from the publication"/> : <div></div>;
+
   return (
     <div className="border-top py-3 mx-0" id={citekey}>
       <Row>
@@ -55,6 +56,7 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
           {imgComp}
         </Col>
         <Col xs={9} className="pr-0">
+          <Badge variant="primary">{role}</Badge>
           <p>
             <b>{title}. </b>
             <i>{journal}. </i>
@@ -81,6 +83,7 @@ export default ({data}) => {
                        date={node.date}
                        abstract={node.abstract}
                        image={node.image}
+                       role={node.role}
                        citekey={node.citekey}/>
         );
       })}
@@ -99,6 +102,7 @@ query {
       date
       abstract
       citekey
+      role
       image {
         childImageSharp {
           fluid(maxHeight: 400, maxWidth: 400) {
