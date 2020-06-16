@@ -5,6 +5,7 @@ menu_Resources: True
 
 ### Data
 
+* [Genotype files](https://edmond.mpdl.mpg.de/imeji/collection/VYYcdabcr2gO5K3x?q=) for the 20 anceint African genomes generated in [Wang et al.](https://advances.sciencemag.org/content/6/24/eaaz0183)
 * [BAM files](https://oc.gnz.mpg.de/owncloud/index.php/s/5TeIuQZpgQnfrM2) of the 10 ancient British genomes generated in [Schiffels et al. 2016](https://www.nature.com/articles/ncomms10408)
 * [BAM files](https://oc.gnz.mpg.de/owncloud/index.php/s/EgVB24wWFZiHQ9u) of the three individuals with genome-wide data analysed in [Schuenemann et al. 2017](https://www.nature.com/articles/ncomms15694)
 * [Genotype data](https://edmond.mpdl.mpg.de/imeji/collection/DZ77Fi_Dqj6TloxA) of the present-day Siberian individuals described in [Flegontov et al. 2019](https://www.nature.com/articles/s41586-019-1251-y)
