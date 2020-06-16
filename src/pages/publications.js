@@ -105,7 +105,6 @@ export default ({data}) => {
       <Badge variant="primary">major</Badge>: Publications to which I made substantial contributions<br />
       <Badge variant="secondary">minor</Badge>: Publications to which I made a minor contributions<br />
       </p>
-      <Form.Check inline type="checkbox" />Select only <Badge variant="warning">lead</Badge>
       {data.allPublicationsJson.nodes.map(node => {
         return (
           <BibTexEntry url={node.url}
