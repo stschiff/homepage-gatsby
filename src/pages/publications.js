@@ -51,7 +51,6 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
 
   let [collapsedState, setAuthorsCollapse] = useState(true);
 
-  console.log(collapsedState);
 
   let authors_short = []
   if(authors.length <= 6) {
