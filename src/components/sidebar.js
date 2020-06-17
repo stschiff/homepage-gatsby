@@ -116,6 +116,7 @@ export default () => {
           date
           authors
           citekey
+          role
           image {
             childImageSharp {
               fluid(maxHeight: 400, maxWidth: 400) {
@@ -127,9 +128,10 @@ export default () => {
       }
     }`
   );
-  const allSidebarObjects = mergeSidebarObjects(data.posts.nodes, data.pubs.nodes).sort(
-    (obj1, obj2) => obj1.date < obj2.date ? -1 : (obj1.date === obj2.date ? 0 : 1)
-  ).reverse().slice(0, 20);
+  const allSidebarObjects = mergeSidebarObjects(
+    data.posts.nodes,
+    data.pubs.nodes.filter(node => node.role !== "minor")
+  ).sort((obj1, obj2) => obj1.date < obj2.date ? -1 : (obj1.date === obj2.date ? 0 : 1)).reverse().slice(0, 20);
   return (
     <aside style={{fontSize:"90%"}}>
       <h3>Recent News</h3>

@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
-import {Row, Col, Button, Collapse, Badge, Form} from "react-bootstrap"
+import {Row, Col, Button, Collapse, Badge} from "react-bootstrap"
 import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import dateFormat from "dateformat"
@@ -19,6 +19,7 @@ const AbstractCollapse = ({abstract}) => {
       // <Row><Col>
       <div>
         <Button onClick={() => setOpen(!open)}
+                variant="secondary"
                 aria-controls="collapse-abstract-text"
                 aria-expanded={open}>
           Show Abstract
@@ -57,10 +58,10 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
   }
   else {
     // authors_short = [authors_annotated[0], <span>...<Button variant="secondary" size="sm" onClick={() => setAuthorsCollapse(false)}>Expand</Button>...</span>, authors_annotated[authors_annotated.length - 1]];
-    authors_short = [authors_annotated[0], <span>...<Button className="mx-1" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(false)}>Expand</Button>...</span>, authors_annotated[authors_annotated.length - 1]];
+    authors_short = [authors_annotated[0], <span>...<Button className="mx-1 p-0" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(false)}>Expand</Button>...</span>, authors_annotated[authors_annotated.length - 1]];
   }
   if(authors.length > 6) {
-    authors_annotated.push(<Button className="ml-1" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(true)}>Collapse</Button>);
+    authors_annotated.push(<Button className="ml-1 p-0" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(true)}>Collapse</Button>);
   }
 
   const imgComp = image ? <Img fluid={image.childImageSharp.fluid} alt="An image from the publication"/> : <div></div>;
@@ -97,6 +98,7 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
 }
 
 export default ({data}) => {
+  const [selection, setSelection] = useState(false);
   return (
     <Layout pageTitle="Publications" activeNav="/publications">
       <p>
@@ -105,7 +107,8 @@ export default ({data}) => {
       <Badge variant="primary">major</Badge>: Publications to which I made substantial contributions<br />
       <Badge variant="secondary">minor</Badge>: Publications to which I made a minor contributions<br />
       </p>
-      {data.allPublicationsJson.nodes.map(node => {
+      <Button variant="warning" className="mb-3" onClick={() => setSelection(!selection)}>{selection ? "Show all" : "Show selected only"}</Button>
+      {data.allPublicationsJson.nodes.filter(node => !selection || node.role === "lead").map(node => {
         return (
           <BibTexEntry url={node.url}
                        journal={node.journal}
