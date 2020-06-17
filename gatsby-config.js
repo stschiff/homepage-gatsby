@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: `Stephan Schiffels`,
+    description: `Professional Website of Stephan Schiffels and the Population Genetics group at the MPI-SHH`,
+    author: `Stephan Schiffels`,
+  },
   plugins: [
     "gatsby-transformer-json",
     "gatsby-transformer-sharp",

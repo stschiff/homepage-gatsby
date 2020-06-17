@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 import {Row, Col} from "react-bootstrap"
 import { graphql, Link } from 'gatsby'
 import dateFormat from "dateformat"
+import SEO from "../components/seo"
 
 const BlogEntry = ({frontmatter, excerpt, date, link}) => {
   const imgComp = frontmatter.image ? <Img fluid={frontmatter.image.childImageSharp.fluid} alt="Highlighted image from the blog post"/> : <div></div>;
@@ -28,6 +29,7 @@ export default ({data}) => {
   all_posts.sort((n1, n2) => extract_date(n1.name) < extract_date(n2.name) ? 1 : -1);
   return (
     <Layout pageTitle="Blog" activeNav="/blog">
+      <SEO title="Stephan Schiffels - Blog Posts" description="All Blog Posts listed chronologically" />
       {all_posts.map(node => {
         return (<BlogEntry link={node.childMdx.fields.slug}
                            frontmatter={node.childMdx.frontmatter}

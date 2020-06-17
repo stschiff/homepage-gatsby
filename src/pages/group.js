@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import "gatsby-image"
 import {FiExternalLink} from "react-icons/fi"
+import SEO from "../components/seo"
 
 const Portrait = ({name, image, children, link, role}) => {
   const link_elem = link ? (<a href={link}><FiExternalLink /></a>) : <span></span>
@@ -27,6 +28,7 @@ const Portrait = ({name, image, children, link, role}) => {
 export default ({data}) => {
   return (
     <Layout pageTitle="Group" activeNav="/group">
+      <SEO title="Stephan Schiffels - Group" description="Research group members at the MPI-SHH" />
       <Portrait
         name="Stephan Schiffels"
         image={data.imgStephan.childImageSharp.fluid}

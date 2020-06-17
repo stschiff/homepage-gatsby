@@ -4,10 +4,12 @@ import Img from "gatsby-image"
 import { Carousel, Row, Col } from "react-bootstrap"
 import { graphql, Link} from 'gatsby'
 import "./index.css"
+import SEO from "../components/seo"
 
 export default ({data}) => {
   return (
     <Layout pageTitle="Home" activeNav="/">
+      <SEO title="Stephan Schiffels - Home" description="Stephan Schiffels is a research group leader at the Max Planck Institute for the Science of Human History (MPI-SHH) in Jena, Germany. " />
       <Row className="justify-content-md-center">
         <Col>
       <Carousel controls={false} interval={3000}>
