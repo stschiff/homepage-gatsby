@@ -29,20 +29,31 @@ def curate_entry(entry):
             role = 'lead'
         elif 'role\_major' in entry['keywords']:
             role = 'major'
+    
+    author_list = list(map(
+        lambda author_string: " ".join(reversed(author_string.split(', '))),
+        entry['author'].replace('\n', ' ').split(' and ')
+    ))
 
+    author_abbrv = entry['author'].split(',')[0] + " et al."
+    if len(author_list) == 2:
+        [a1, a2] = entry['author'].replace('\n', ' ').split(' and ')
+        author_abbrv = a1.split(',')[0] + " and " + a2.split(',')[0]
+    elif len(author_list) == 1:
+        author_abbrv = entry['author'].split(',')[0]
+
+    title = entry['title'].replace('{', '').replace('}','').replace('\n', ' ')
     ret = {
         'journal' : j,
-        'authors' : list(map(
-            lambda author_string: " ".join(reversed(author_string.split(', '))),
-            entry['author'].replace('\n', ' ').split(' and ')
-        )),
+        'authors' : author_list,
         'date' : f"{entry['year']}-{month_to_num(m):02}-{int(d):02}",
-        'title' : entry['title'].replace('{', '').replace('}',''),
+        'title' : title,
         'url' : entry['url'],
-        'abstract' : entry['abstract'].replace('{','').replace('}','') if 'abstract' in entry else None,
+        'abstract' : entry['abstract'].replace('{','').replace('}','').replace('\n', ' ') if 'abstract' in entry else None,
         'image' : f"images/publications/{entry['ID']}.jpg",
         'citekey' : entry['ID'],
-        'role' : role
+        'role' : role,
+        'pdf' : f"pdfs/{author_abbrv} {entry['year']} - {title}.pdf"
     }
     return ret
 

@@ -39,7 +39,7 @@ const AbstractCollapse = ({abstract}) => {
   }
 }
 
-const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citekey, role}) => {
+const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey, role, pdfLink}) => {
   const dateObj = new Date(date);
   let authors_annotated = []
   authors.slice(0, -1).forEach(function(a) {
@@ -74,7 +74,7 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
     badge = <Badge variant="warning">lead</Badge>;
   }
 
-
+  const pdfTag = pdfLink ? <span>[<a href={pdfLink} download>PDF</a>]</span> : null;
   return (
     <div className="border-top py-3 mx-0" id={citekey}>
       <Row>
@@ -89,7 +89,7 @@ const BibTexEntry = ({url, date, authors, title, journal, abstract, image, citek
             Published {dateFormat(dateObj, "mmmm dS, yyyy")}
           </p>
           <p>Authors: {collapsedState ? authors_short : authors_annotated}</p>
-          <p>[<a href={url}>Website</a>]</p>
+          <p>[<a href={url}>Website</a>]{pdfTag}</p>
           <AbstractCollapse abstract={abstract} />
         </Col>
       </Row>
@@ -110,8 +110,9 @@ export default ({data}) => {
       </p>
       <Button variant="warning" className="mb-3" onClick={() => setSelection(!selection)}>{selection ? "Show all" : "Show selected only"}</Button>
       {data.allPublicationsJson.nodes.filter(node => !selection || node.role === "lead").map(node => {
+        const l = node.pdf ? node.pdf.publicURL : null
         return (
-          <BibTexEntry url={node.url}
+          <PubEntry url={node.url}
                        journal={node.journal}
                        authors={node.authors}
                        title={node.title}
@@ -119,7 +120,8 @@ export default ({data}) => {
                        abstract={node.abstract}
                        image={node.image}
                        role={node.role}
-                       citekey={node.citekey}/>
+                       citekey={node.citekey}
+                       pdfLink={l}/>
         );
       })}
     </Layout>
@@ -138,6 +140,9 @@ query {
       abstract
       citekey
       role
+      pdf {
+        publicURL
+      }
       image {
         childImageSharp {
           fluid(maxHeight: 400, maxWidth: 400) {
@@ -145,6 +150,12 @@ query {
           }
         }
       }
+    }
+  }
+  pdfs: allFile(filter: {relativeDirectory: {eq: "pdfs"}}) {
+    nodes {
+      name
+      publicURL
     }
   }
 }`
