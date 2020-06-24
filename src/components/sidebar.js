@@ -29,7 +29,7 @@ const AnnouncementChunk = ({image_fluid, title, date, link}) => {
       <Col xs={8} className="pl-0">
         <p>
           <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="warning">News</Badge><br />
-          <Link to={link}>{title}.</Link>
+          <b><Link to={link}>{title}.</Link></b>
         </p>
       </Col>
       <Col xs={4} className="pr-0">

@@ -106,7 +106,7 @@ export default ({data}) => {
       <u>Legend:</u><br />
       <Badge variant="warning">lead</Badge>: Publications in which I had a leading role<br />
       <Badge variant="primary">major</Badge>: Publications to which I made substantial contributions<br />
-      <Badge variant="secondary">minor</Badge>: Publications to which I made a minor contributions<br />
+      <Badge variant="secondary">minor</Badge>: Publications to which I made minor contributions<br />
       </p>
       <Button variant="warning" className="mb-3" onClick={() => setSelection(!selection)}>{selection ? "Show all" : "Show selected only"}</Button>
       {data.allPublicationsJson.nodes.filter(node => !selection || node.role === "lead").map(node => {
