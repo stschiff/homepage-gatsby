@@ -89,7 +89,7 @@ const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey,
             Published {dateFormat(dateObj, "mmmm dS, yyyy")}
           </p>
           <p>Authors: {collapsedState ? authors_short : authors_annotated}</p>
-          <p>[<a href={url}>Website</a>]{pdfTag}</p>
+          <p>[<a href={url} target="_blank">Website</a>]{pdfTag}</p>
           <AbstractCollapse abstract={abstract} />
         </Col>
       </Row>
