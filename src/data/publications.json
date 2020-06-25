@@ -88,7 +88,7 @@
         "image": "images/publications/Schiffels2020-bv.jpg",
         "citekey": "Schiffels2020-bv",
         "role": "lead",
-        "pdf": "pdfs/Schiffels and Wang 2020 - MSMC and MSMC2: The Multiple Sequentially Markovian Coalescent.pdf"
+        "pdf": "pdfs/Schiffels and Wang 2020 - MSMC and MSMC2 - The Multiple Sequentially Markovian Coalescent.pdf"
     },
     {
         "journal": "Science Advances",
@@ -756,7 +756,7 @@
     {
         "journal": "Nature",
         "authors": [
-            "{UK10K Consortium}",
+            "UK10K Consortium",
             "Klaudia Walter",
             "Josine L Min",
             "Jie Huang",
@@ -793,7 +793,7 @@
         "image": "images/publications/UK10K_Consortium2015-wu.jpg",
         "citekey": "UK10K_Consortium2015-wu",
         "role": "minor",
-        "pdf": "pdfs/{UK10K Consortium} and Walter et al. 2015 - The UK10K project identifies rare variants in health and disease.pdf"
+        "pdf": "pdfs/UK10K Consortium et al. 2015 - The UK10K project identifies rare variants in health and disease.pdf"
     },
     {
         "journal": "Nature Communications",

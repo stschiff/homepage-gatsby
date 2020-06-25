@@ -29,18 +29,20 @@ def curate_entry(entry):
             role = 'lead'
         elif 'role\_major' in entry['keywords']:
             role = 'major'
-    
+
+    cleaned_author_string = entry['author'].replace('\n', ' ').replace('{', '').replace('}', '')
+
     author_list = list(map(
         lambda author_string: " ".join(reversed(author_string.split(', '))),
-        entry['author'].replace('\n', ' ').split(' and ')
+        cleaned_author_string.split(' and ')
     ))
 
-    author_abbrv = entry['author'].split(',')[0] + " et al."
+    author_abbrv = cleaned_author_string.split(' and ')[0].split(',')[0] + " et al."
     if len(author_list) == 2:
-        [a1, a2] = entry['author'].replace('\n', ' ').split(' and ')
+        [a1, a2] = cleaned_author_string.split(' and ')
         author_abbrv = a1.split(',')[0] + " and " + a2.split(',')[0]
     elif len(author_list) == 1:
-        author_abbrv = entry['author'].split(',')[0]
+        author_abbrv = cleaned_author_string.split(',')[0]
 
     title = entry['title'].replace('{', '').replace('}','').replace('\n', ' ')
     ret = {
@@ -53,7 +55,7 @@ def curate_entry(entry):
         'image' : f"images/publications/{entry['ID']}.jpg",
         'citekey' : entry['ID'],
         'role' : role,
-        'pdf' : f"pdfs/{author_abbrv} {entry['year']} - {title}.pdf"
+        'pdf' : f"pdfs/{author_abbrv} {entry['year']} - {title.replace(':', ' -')}.pdf"
     }
     return ret
 
