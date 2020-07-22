@@ -68,10 +68,7 @@ The beauty of composable parsers is that you can create complex parsers for real
 import qualified Options.Applicative as OP
 
 missingnessParser :: OP.Parser Double
-missingnessParser = OP.option OP.auto (OP.long "missingness" <>
-																	     OP.short 'm' <>
-																			 OP.value 0.9 <>
-																			 OP.showDefault)
+missingnessParser = OP.option OP.auto (OP.long "missingness" <> OP.short 'm')
 ```
 
 First, all names starting with `OP.` are from the `optparse-applicative`-library (as defined by the import statement above). The key idea is that we define a value of datatype `OP.Parser <something>`, which represents a single unit that in the end will parse something from the command line into a value of datatype `<something>`, here a `Double`. The exact definitions here aren't that crucial, but because I see you're curious, here we go: `OP.option OP.auto` just declares a command line option with an automatic string-parser, and some definitions for the actual command line option. `OP.long` and `OP.short` define that this option can be called using either `--missingness 0.283` or with the short form `-m 0.45` (numbers made up to illustrate how to pass an actual value for that option). We also define a default value (0.9) and declare that this default value be shown to the user when she lists all available options.
@@ -152,7 +149,7 @@ Here, `FormatParser` is a single parser for the complex datatype `FormatSpec`, w
 
 
 
-
+--- (whiteboard area)
 
 Programming is to a large part about managing complexity. Most programs do complex things, otherwise we wouldn’t need programs for them. How do we typically manage complexity? Well - we divide and conquer. We split the large problem into small parts and then deal with the parts separately. 
 
