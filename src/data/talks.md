@@ -20,7 +20,11 @@ Turkey, recorded on December 12, 2018:
 ---
 ### All talks
 
-(Cancelled) Vortrag "Neue Erkenntnisse aus der Archäogenetik zur Populationsgeschichte Englands und Europas im ersten Millennium AD" auf dem *53. Deutscher Historikertag, Ludwig-Maximilians-Universität München*, **September 8-11, 2020, München, Germany**
+Virtual Seminar at *Stony Brook University*, **September 9, 2020, Stony Brook, NY, USA**
+
+Clemens Schmid will present a talk titled "Spatiotemporal interpolation based on bulk radiocarbon data: Two case studies from archaeology and archaeogenetics" at the [26th EAA Virtual Annual Meeting](https://www.e-a-a.org/EAA2020virtual), **24-30 August 2020**
+
+Joscha Gretzinger will present a talk titled "The Anglo-Saxon migration and formation of the early English gene pool" at the [26th EAA Virtual Annual Meeting](https://www.e-a-a.org/EAA2020virtual), **24-30 August 2020**
 
 Virtual Seminar talk at the *UCL Genetics Institute*, **June 17, 2020, London, UK**
 
