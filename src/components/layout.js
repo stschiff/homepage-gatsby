@@ -69,17 +69,17 @@ const Footer = () => (
 export default ({ activeNav, children, pageTitle }) => (
   <Container>
     <Header activeNav={activeNav}/>
-      <Row className="justify-content-between">
-        <Col lg={7}>
-          <main>
-          <h2>{pageTitle}</h2>
-          {children}
-          </main>
-        </Col>
-        <Col lg={4}>
-          <Sidebar />
-        </Col>
-      </Row>
+    <Row className="justify-content-between">
+      <Col lg={7}>
+        <main>
+        <h2>{pageTitle}</h2>
+        {children}
+        </main>
+      </Col>
+      <Col lg={4}>
+        <Sidebar />
+      </Col>
+    </Row>
     <Footer />
   </Container>
 )
