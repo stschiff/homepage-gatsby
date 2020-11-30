@@ -11,10 +11,10 @@ const BlogEntry = ({frontmatter, excerpt, date, link}) => {
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={3} className="pl-0">
-        {imgComp}
+        <Link to={link}>{imgComp}</Link>
       </Col>
       <Col xs={9} className="pr-0">
-        <h4>{frontmatter.title}</h4>
+        <Link to={link}><h4>{frontmatter.title}</h4></Link>
         <p>{excerpt} <Link to={link}><i>Read more</i></Link></p>
         <i>Published {dateFormat(date, "mmmm dS, yyyy")}</i>
       </Col>

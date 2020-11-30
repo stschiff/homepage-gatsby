@@ -15,18 +15,16 @@ export default function BlogPost({data}) {
         <h2>{post.frontmatter.title}</h2>
         <MDXRenderer>{post.body}</MDXRenderer>
       </div>
-      {post.frontmatter.isBlogPost &&
-        <Disqus
-          config={{
-            /* Replace PAGE_URL with your post's canonical URL variable */
-            url: post.slug,
-            /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
-            identifier: post.id,
-            /* Replace PAGE_TITLE with the title of the page */
-            title: post.frontmatter.title
-          }}
-        />
-      }
+      <Disqus
+        config={{
+          /* Replace PAGE_URL with your post's canonical URL variable */
+          url: post.slug,
+          /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+          identifier: post.id,
+          /* Replace PAGE_TITLE with the title of the page */
+          title: post.frontmatter.title
+        }}
+      />
      </Layout>
   )
 }
