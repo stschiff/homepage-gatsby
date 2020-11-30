@@ -8,7 +8,7 @@ import {FiExternalLink} from "react-icons/fi"
 import SEO from "../components/seo"
 
 const Portrait = ({name, image, children, link, role}) => {
-  const link_elem = link ? (<a href={link}><FiExternalLink /></a>) : <span></span>
+  const link_elem = link ? (<a href={link}><FiExternalLink aria-label="External Link"/></a>) : <span></span>
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={4} className="pl-0">

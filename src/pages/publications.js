@@ -46,7 +46,8 @@ const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey,
     authors_annotated.push(<Author name={a} />);
     authors_annotated.push(<span>, </span>)
   })
-  authors_annotated.push(<span> and </span>)
+  if(authors_annotated.length > 0)
+    authors_annotated.push(<span> and </span>);
   authors_annotated.push(<Author name={authors.slice(-1)[0]} />)
 
   let [collapsedState, setAuthorsCollapse] = useState(true);
@@ -89,7 +90,7 @@ const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey,
             Published {dateFormat(dateObj, "mmmm dS, yyyy")}
           </p>
           <p>Authors: {collapsedState ? authors_short : authors_annotated}</p>
-          <p>[<a href={url} target="_blank">Website</a>]{pdfTag}</p>
+          <p>[<a href={url} target="_blank" rel="noreferrer">Website</a>]{pdfTag}</p>
           <AbstractCollapse abstract={abstract} />
         </Col>
       </Row>

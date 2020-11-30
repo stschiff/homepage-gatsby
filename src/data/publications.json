@@ -36,6 +36,81 @@
         "pdf": "pdfs/Wang et al. 2020 - Ancient genomes reveal complex patterns of population movement, interaction, and replacement in sub-Saharan Africa.pdf"
     },
     {
+        "journal": "in Diversity of Male Identities in early and Middle La T\u00e8ne Period\nCemeteries in Central Europe, Archeologick\u00fd \u00fastav SAv",
+        "authors": [
+            "Joscha Gretzinger",
+            "Stephan Schiffels"
+        ],
+        "date": "2020-11-30",
+        "title": "Report on Genetic Analyses of Iron Age Samples from Slovakia",
+        "url": "http://archeol.sav.sk/index.php/sk/publikacie-2020/",
+        "abstract": null,
+        "image": "images/publications/Gretzinger2020-wq.jpg",
+        "citekey": "Gretzinger2020-wq",
+        "role": "lead",
+        "pdf": "pdfs/Gretzinger and Schiffels 2020 - Report on Genetic Analyses of Iron Age Samples from Slovakia.pdf"
+    },
+    {
+        "journal": "Peer Community in Evolutionary Biology",
+        "authors": [
+            "Stephan Schiffels"
+        ],
+        "date": "2020-11-03",
+        "title": "Review and Assessment of Performance of Genomic Inference Methods based on the Sequentially Markovian Coalescent",
+        "url": "https://evolbiol.peercommunityin.org/public/rec?articleId=251&comments=False&printable=True&reviews=False",
+        "abstract": null,
+        "image": "images/publications/Schiffels2020-ng.jpg",
+        "citekey": "Schiffels2020-ng",
+        "role": "lead",
+        "pdf": "pdfs/Schiffels 2020 - Review and Assessment of Performance of Genomic Inference Methods based on the Sequentially Markovian Coalescent.pdf"
+    },
+    {
+        "journal": "Cell",
+        "authors": [
+            "Choongwon Jeong",
+            "Ke Wang",
+            "Shevan Wilkin",
+            "William Timothy Treal Taylor",
+            "Bryan K Miller",
+            "Jan H Bemmann",
+            "Raphaela Stahl",
+            "Chelsea Chiovelli",
+            "Florian Knolle",
+            "Sodnom Ulziibayar",
+            "Dorjpurev Khatanbaatar",
+            "Diimaajav Erdenebaatar",
+            "Ulambayar Erdenebat",
+            "Ayudai Ochir",
+            "Ganbold Ankhsanaa",
+            "Chuluunkhuu Vanchigdash",
+            "Battuga Ochir",
+            "Chuluunbat Munkhbayar",
+            "Dashzeveg Tumen",
+            "Alexey Kovalev",
+            "Nikolay Kradin",
+            "Bilikto A Bazarov",
+            "Denis A Miyagashev",
+            "Prokopiy B Konovalov",
+            "Elena Zhambaltarova",
+            "Alicia Ventresca Miller",
+            "Wolfgang Haak",
+            "Stephan Schiffels",
+            "Johannes Krause",
+            "Nicole Boivin",
+            "Myagmar Erdene",
+            "Jessica Hendy",
+            "Christina Warinner"
+        ],
+        "date": "2020-11-05",
+        "title": "A Dynamic 6,000-Year Genetic History of Eurasia's Eastern Steppe",
+        "url": "http://www.cell.com/article/S0092867420313210/abstract",
+        "abstract": null,
+        "image": "images/publications/Jeong2020-ic.jpg",
+        "citekey": "Jeong2020-ic",
+        "role": "minor",
+        "pdf": "pdfs/Jeong et al. 2020 - A Dynamic 6,000-Year Genetic History of Eurasia's Eastern Steppe.pdf"
+    },
+    {
         "journal": "bioRxiv",
         "authors": [
             "Marieke S van de Loosdrecht",
