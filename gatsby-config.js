@@ -30,5 +30,11 @@ module.exports = {
         path: "./src/data/",
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `stephans-homepage`
+      }
+    }
   ],
 }
