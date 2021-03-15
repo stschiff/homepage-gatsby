@@ -47,6 +47,13 @@ export default ({data}) => {
             </li>
       </Portrait>
       <Portrait
+        name="Suzanne Freilich"
+        image={data.imgSuzanne.childImageSharp.fluid}
+        role="Visiting PhD student">
+            <li>Since 2019: Visiting student in our group.</li>
+            <li>PhD student at University of Vienna, Austria.</li>
+      </Portrait>
+      <Portrait
         name="Joscha Gretzinger"
         image={data.imgJoscha.childImageSharp.fluid}
         link="http://www.shh.mpg.de/person/91521/25500"
@@ -71,7 +78,7 @@ export default ({data}) => {
         name="Thiseas Lamnidis"
         image={data.imgThiseas.childImageSharp.fluid}
         link="http://www.shh.mpg.de/person/45025/25522"
-        role="Staff Scientist">
+        role="Postdoc">
             <li>since 2020: Staff Scientist at the MPI Jena</li>
             <li>since 2015: PhD student at the MPI Jena.</li>
             <li>2013-2014: MSc in Evolutionary Anthropology, University of Durham, UK.</li>
@@ -118,7 +125,7 @@ export default ({data}) => {
         name="Ke Wang"
         image={data.imgKe.childImageSharp.fluid}
         link="http://www.shh.mpg.de/employees/50975/25522"
-        role="PhD student">
+        role="Postdoc">
           <li>since 2016: PhD student at the MPI Jena</li>
           <li>2015-2016: MSc in Genetics, University College London, UK</li>
           <li>2011-2015: BSc Biotechnology, Shandong University, China</li>
@@ -136,13 +143,6 @@ export default ({data}) => {
       </Portrait>
 
       <h2>Alumni</h2>
-      <Portrait
-        name="Suzanne Freilich"
-        image={data.imgSuzanne.childImageSharp.fluid}
-        role="Erasmus student">
-            <li>March-August 2019: Visiting Erasmus student.</li>
-            <li>PhD student at University of Vienna, Austria.</li>
-      </Portrait>
       <Portrait
         name="Ezgi Altınışık"
         image={data.imgEzgi.childImageSharp.fluid}
