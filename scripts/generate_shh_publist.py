@@ -35,8 +35,8 @@ with open('publications.bib') as bibtex_file:
 
         j = entry['journal'] if 'journal' in entry else f"in {entry['booktitle']}, {entry['publisher']}"
         
-        # if 'keywords' not in entry or 'role\_lead' not in entry['keywords']:
-        #     continue
+        if 'keywords' not in entry or 'role\_lead' not in entry['keywords']:
+            continue
         
         author_list = list(map(
             lambda author_string: " ".join(reversed(author_string.split(', '))),

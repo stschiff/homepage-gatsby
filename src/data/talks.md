@@ -20,6 +20,10 @@ Turkey, recorded on December 12, 2018:
 ---
 ### All talks
 
+Participation in virtual Roundtable Discussion "Genetics, Genealogy, History" at the *University of Münster*, **March 21, 2021, Münster, Germany**
+
+Virtual Seminar "Die frühmittelalterliche Bevölkerungsgeschichte Europas aus Sicht der Paläogenetik." at *State Museum Hannover*, **February 11, 2021, Hannover, Germany**
+
 Virtual Seminar at *Stony Brook University*, **September 9, 2020, Stony Brook, NY, USA**
 
 Clemens Schmid will present a talk titled "Spatiotemporal interpolation based on bulk radiocarbon data: Two case studies from archaeology and archaeogenetics" at the [26th EAA Virtual Annual Meeting](https://www.e-a-a.org/EAA2020virtual), **24-30 August 2020**
