@@ -1,7 +1,14 @@
 ---
 title: Bye bye Wordpress
 isBlogPost: True
+image: ../images/blog/construction.jpg
 ---
+
+import Blogfigure from "../../components/blogfigure"
+
+**Update:** *Since the summer of 2020, my website has undergone a further upgrade to [gatsby](https://www.gatsbyjs.org/), another static site generator that builds more heavily on modern javascript frontent development. I love it, and if you like the snappy-ness of my site, have a look at my github-repository [here](https://github.com/stschiff/homepage-gatsby).*
+
+<Blogfigure relPath="images/blog/construction.jpg" altText="A toy model of a construction site">Image from Pixabay</Blogfigure>
 
 I recently rebuilt my website. I had previously used [Wordpress](https://wordpress.org), and while that was perfect to get started, I soon got annoyed by its relative inflexibility. While Wordpress has a huge community with tons of free templates for nicely designed websites, the templates themselves are often very opinionated in a sense that they encourage certain archetypes, like Blogging sites, or magazine-style sites. Customization is possible, but it comes in the form of plugins (again, thousands are available for free), and the more customization you want, the more plugins you end up using. This at some point makes the whole system a bit bloated, and still not quite right in the end.
 

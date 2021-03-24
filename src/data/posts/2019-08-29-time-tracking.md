@@ -6,7 +6,7 @@ image: ../images/blog/clock.jpg
 
 import Blogfigure from "../../components/blogfigure"
 
-<Blogfigure relPath="images/blog/clock_image.jpg" altText="An oldschool watch lying in sand">Test</Blogfigure>
+<Blogfigure relPath="images/blog/clock_image.jpg" altText="An oldschool watch lying in sand">Image from Pixabay</Blogfigure>
 
 Working in academia comes with unique freedoms and challenges. I would argue
 that in no other job we have so much freedom to define our own work. At least at
