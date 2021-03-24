@@ -30,6 +30,7 @@ export default ({data}) => {
   return (
     <Layout pageTitle="Blog" activeNav="/blog">
       <SEO title="Stephan Schiffels - Blog Posts" description="All Blog Posts listed chronologically" />
+      <p>Note: Many of my blog posts also appear on <a href="https://stschiff.medium.com">Medium</a></p>
       {all_posts.map(node => {
         return (<BlogEntry link={node.childMdx.fields.slug}
                            frontmatter={node.childMdx.frontmatter}
