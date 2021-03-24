@@ -8,9 +8,9 @@ import Blogfigure from "../../components/blogfigure"
 
 <Blogfigure relPath="images/blog/controller.jpg" altText="Audio interface">Image from Pixabay</Blogfigure>
 
-Command line tools are essential in many computational fields of science, not the least because command lines are often the only interface on a high-performance compute cluster or server. What is critical in command-line tools is the interface between the user and the program, the command line interface (CLI). A command line interface is like a contract. The user promises to provide input parameters in the right shape and type, and the tool promises to work with this input the way it is expected to. A breach of contract from the caller may result - at best - in a refusal of the program to run, and at worst in undefined behavior. 
+Command line tools are essential in many computational fields of science, not the least because command lines are often the only interface on a high-performance compute cluster or server. Particularly critical in command-line tools is a well-defined interface between the user and the program, the command line interface (CLI). A command line interface is like a contract. The user promises to provide input parameters in the right shape and type, and the tool promises to work with this input the way it is expected to. A breach of contract from the caller may result - at best - in a refusal of the program to run, and at worst in undefined behavior. 
 
-A well-defined command line interface helps ensuring loyalty to contract for a user. Moreover, a well-defined interface exposes to the user just the right amount of power to control the program. This is more tricky than it sounds: It is not enough to expose dozens of options and flags for the user to set, there also has to be some evaluation logic to ensure the combination of options and flags makes sense! As I hope to be able to convince you in this post, a strict and expressive typing system like in Haskell is a huge help with that.
+A well-defined command line interface helps ensuring loyalty to contract for a user. Moreover, a well-defined interface exposes to the user just the right amount of power to control the program. This is more tricky than it sounds: It is not enough to expose dozens of options and flags for the user to set, there also has to be some evaluation logic to ensure the combination of options and flags makes sense. As I hope to be able to convince you in this post, a strict and expressive typing system like in Haskell is a huge help with that.
 
 There's going to be quite some Haskell code in this post, and I've written it in part to get people interested in the language and the advantages of strong types. If you find this post interesting enough to give Haskell a chance, I recommend the freely available book and tutorial [Learn You a Haskell for Great Good](http://learnyouahaskell.com). The sourcecode described here can also be viewed in full in a [dedicated github-repository](https://github.com/stschiff/haskell-cli-example).
 
@@ -29,15 +29,19 @@ data Options = Options {
 	individuals          :: IndividualsSpec
 }
 
-data SummaryStatSpec = Heterozygosity | SegregatingSites | HardyWeinbergDeviation
+data SummaryStatSpec = Heterozygosity
+					 | SegregatingSites
+					 | HardyWeinbergDeviation
 
-data FormatSpec = PlinkFormat FilePath FilePath FilePath | VCFFormat FilePath
+data FormatSpec = PlinkFormat FilePath FilePath FilePath
+			    | VCFFormat FilePath
 
-data IndividualsSpec = IndividualsByFile FilePath | IndividualsByList [String]
+data IndividualsSpec = IndividualsByFile FilePath
+					 | IndividualsByList [String]
 
 ```
 
-OK, so what's going on here? First, we define a record type called `Options`, which has five fields, called `missingnessThreshold`, `verbose`, and so on. Each record has a type. Some types should sound familiar, such as `Double` (a decimal number) or `Bool` (True or False), which here define a missingness cutoff filter (exclude individuals with too much missing genotypes) and a verbosity flag (if `True`, print out extra log messages).
+OK, so what's going on here? First, we defined a record type called `Options`, which has five fields, called `missingnessThreshold`, `verbose`, and so on. Each record has a type. Some types should sound familiar, such as `Double` (a decimal number) or `Bool` (True or False), which here define a missingness cutoff filter (exclude individuals with too much missing genotypes) and a verbosity flag (if `True`, print out extra log messages).
 
 The two other types are themselves custom types, defined below the record type. `SummaryStatSpec` represents different genome-wide summary statistic types that the user might want to compute for the specified individuals. The type is a simple enumeration of different values(`Heterozygosity`, `SegregatingSites` and `HardyWeinbergDeviation`), separated in Haskell using the pipe (`|`) operator. A value of type `SummaryStatSpec` has to be strictly one of these three choices. Notice how the type itself already guarantees exclusivity: the `summaryStatSpec` field cannot be simultaneously `Heterozyosity` and `SegregatingSites`.
 
@@ -60,7 +64,7 @@ g = VCFFormat("file.vcf")
 
 The final data type in the Options record is `IndividualsSpec`, which again has two alternatives. The first constructor `IndividualsByFile` takes a filename, and specifies that selected individuals should be given in a file (listed, say, with their IDs line by line). The second constructor `IndividualsByList` takes a list of strings, and specifies that individuals are given as a list of strings directly through the command line interface.
 
-OK, let's stop for a second. I hope you can appreciate that this data structure makes it as clear as it can possibly be i) what is needed in terms of program input, and ii) what the options are for various parameters. You will also appreciate that this data structure is already of considerable complexity. It has nested elements, alternatives, custom data types... at the same time I don't think it's unrealistic. I happen to have such interfaces in my programs, and I would argue that many bioinformatics tools have comparably complex interfaces, many even more complex.
+I hope you can appreciate that this data structure makes it as clear as it can possibly be i) what is needed in terms of program input, and ii) what the options are for various parameters. You will also appreciate that this data structure is already of considerable complexity. It has nested elements, alternatives, custom data types... at the same time I don't think it's unrealistic. I happen to have such interfaces in my programs, and I would argue that many bioinformatics tools have comparably complex interfaces, many even more complex.
 
 So before we now dive into how to parse command line options into this structure, keep in mind that the type system is our friend: It will make sure that our parsing code will result in exactly the right shape for this data structure. Whatever our parsing code, the main program routine will simply take a value of type `Options` as input. So we can be fully relaxed when actually coding the main program logic later, because we know that all command-line input is passed - by construction - in the right shape, and our main program routine can simply query the main options value to process the different options.
 
@@ -103,7 +107,7 @@ HWParser = flag' HardyWeinbergDeviation (long "hardyWeinbergDev")
 
 where `flag'` is again a function defined in `Options.Applicative` which declares an option to be a simple flag returning a specific value when set. And here is now where the first composability magic starts: We can now compose these three parsers into one using the so-called applicative interface. Specifically, the operator `<|>` defined as "Alternative", joins multiple parsers into one, trying one after another and yielding an error either if none of the alternatives fits (because the user has mis-spelled an option or forgot them) or if more than one fits (because the user has given multiple options).
 
-``Haskell
+```Haskell
 summaryStatParser :: Parser SummaryStatSpec
 summaryStatParser = HetParser <|> SegSitesParser <|> HWParser
 ```
@@ -114,9 +118,9 @@ This kind of composition of objects to build more complex types of objects from 
 summaryStatParser :: Parser SummaryStatSpec
 summaryStatParser = hetParser <|> segSitesParser <|> hwParser
   where
-	  hetParser      = flag' Heterozygosity (long "heterozygosity")
+	hetParser      = flag' Heterozygosity (long "heterozygosity")
     segSitesParser = flag' SegregatingSites (long "segregatingSites")
-	  hwParser       = flag' HardyWeinbergDeviation (long "hardyWeinbergDev")
+	hwParser       = flag' HardyWeinbergDeviation (long "hardyWeinbergDev")
 ```
 
 and let Haskell infer types of the three sub-parsers automatically, saving us some boilerplate type declarations.
@@ -136,8 +140,8 @@ plinkFormatParser :: Parser FormatSpec
 plinkFormatParser = PlinkFormat <$> genoParser <*> snpParser <*> indParser
   where
     genoParser = strOption (long "genoFile")
-	  snpParser  = strOption (long "snpFile")
-	  indParser  = strOption (long "indFile")
+	snpParser  = strOption (long "snpFile")
+	indParser  = strOption (long "indFile")
 ```
 
 Notice how the resulting type is actually of type `Parser FormatSpec`, which is exactly what we want here. It's a piece of cake to now add a parser of the same type but for the `VCFFormat` constructor:
@@ -169,8 +173,10 @@ So it's a function that takes a Parser for an arbitrary type `a` and turns it in
 individualsParser :: Parser IndividualsSpec
 individualsParser = individualsFileParser <|> individualsListParser
   where
-    individualsFileParser = IndividualsByFile <$> strOption (long "individualsFile")
-	  individualsListParser = IndividualsByList <$> some (strOption (long "ind"))
+    individualsFileParser = IndividualsByFile <$>
+			                strOption (long "individualsFile")
+	individualsListParser = IndividualsByList <$>
+		                    some (strOption (long "ind"))
 ```
 
 ## Putting it all together
@@ -190,21 +196,53 @@ opts = Options {
 which would be clear - if slightly verbose - record construction, we can also write 
 ```
 opts :: Options
-opts = Options 0.9 True Heterozygosity (VCFFormat "input.vcf") (IndividualsByList ["Ind1", "Ind2"])
+opts = Options 0.9 True Heterozygosity (VCFFormat "input.vcf")
+	   (IndividualsByList ["Ind1", "Ind2"])
 ```
 where we simply have listed all the record entries as arguments to the `Options` constructor. This kind of ordered-argument syntax is not always clearer than using explicit record-construction, but here we need it to use Applicative syntax. Watch:
 
 ```
 optionsParser :: Parser Options
-optionsParser = Options <$> missingnessParser <*> verboseParser <*> summaryStatParser <*> formatParser <*> individualsParser
+optionsParser = Options <$> missingnessParser <*> verboseParser <*>
+	 			summaryStatParser <*> formatParser <*> individualsParser
 ```
 
-Notice how this looks structurally almost exactly the same as the code block before. The only difference is that i) the argument types are not `Double`, `Bool`, ... but `Parser Double`, `Parser Bool`, ... ii) the return type isn't `Options` but `Parser Options`, and iii) the constructor and arguments are connected via `<$>` and `<*>`. I cannot stress enough how elegantly this composition is being made possible using very generic type-class interfaces like Applicative, and how automatic this makes all the complex parsing logic. By construction, the overall parser of type `Parser Options` is guaranteed to return a valid `Options` type with all its internal branches parsed and set correctly. And we've built this by composing together simpler to intermediate to the final parser. Lastly, we didn't even have to understand much about the `Parser` datatype, other than that it supports Applicative syntax.
+Notice how this looks structurally almost exactly the same as the code block before. The only difference is that i) the argument types are not `Double`, `Bool`, ... but `Parser Double`, `Parser Bool`, ... ii) the return type isn't `Options` but `Parser Options`, and iii) the constructor and arguments are connected via `<$>` and `<*>`. I cannot stress enough how elegantly this composition is being made possible using very generic type-class interfaces like Applicative (which is delivered through a base library, not through the core language itself), and how automatic this makes all the complex parsing logic. By construction, the overall parser of type `Parser Options` is guaranteed to return a valid `Options` type with all its internal branches parsed and set correctly. And we've built this by composing together simpler to intermediate to the final parser. Lastly, we didn't even have to understand much about the `Parser` datatype, other than that it supports Applicative syntax.
 
-Of course, this parser comes with an integrated help message, and there are tons of extra options to tweak how that looks and how to invoke help, and so on, which I haven't touched here.
+Of course, this parser comes with an integrated help message, and there are tons of extra options to tweak how that looks and how to invoke help, and so on, which I haven't touched here. If you're interested to see this complete example, check out [this github repository](https://github.com/stschiff/haskell-cli-example) which contains the full example. The help output, automatically generated from `optparse-applicative` looks like this:
+
+```
+Usage: haskell-cli-example-exe [-m|--missingness NUMBER] [-v|--verbose] 
+                               (--heterozygosity | --segregatingSites | 
+                                 --hardyWeinbergDev) 
+                               (--genoFile FILE --snpFile FILE --indFile FILE | 
+                                 --vcfFile FILE) 
+                               (--individualsFile FILE | --ind NAME)
+  Hello, this is a toy example for how to design command line interfaces in
+  Haskell
+
+Available options:
+  -m,--missingness NUMBER  A missingness threshold (default: 0.5)
+  -v,--verbose             verbose output
+  --heterozygosity         compute the rate of heterozygosity for each
+                           individual
+  --segregatingSites       compute the rate of segregating sites for each
+                           individual
+  --hardyWeinbergDev       compute the average deviation from Hardy-Weinberg
+                           equilibrium for each individual
+  --genoFile FILE          the input genotype file
+  --snpFile FILE           the input snp file
+  --indFile FILE           the input individual file
+  --vcfFile FILE           the input VCF file
+  --individualsFile FILE   list individuals in the file given
+  --ind NAME               list individuals directly on the command line. Option
+                           can be given multiple times, once for each individual
+  -h,--help                Show this help text
+```
+
+Of course, I've put in more help text into the parsers, but I'd like to emphasize that the layout of the command line usage on top contains all the conditioning that we've designed. For example, the bit `(--genoFile FILE --snpFile FILE --indFile FILE | --vcfFile FILE)` makes it clear to the user that _either_ the first triple of options _or_ the last option `--vcfFile` can be given. Those are strict alternatives, automatically generated by the Compiler, and the parser will fail if the user violates this.
 
 ## Conclusion
 
 I know this was likely a bit more of Haskell than what I promised at the beginning, sorry. But I hope you got a glimpse into its power, expressiveness and composability. This ultimately allows programming by specification, which means that the programmer can focus more on specifying _what_ should happen rather than _how_ it happens. We started out by _specifying_ the interface through a data structure that already contained much of the logic we need for parsing options. This - together with a powerful compiler that guarantees type-correctness throughout -  leaves very little room for bugs and ultimately makes the program safer and its interface clearer.
 
-As written above: The sourcecode described here can also be viewed in full in a [dedicated github-repository](https://github.com/stschiff/haskell-cli-example). If you're new to Haskell and find this post interesting enough to give Haskell a chance, I recommend the freely available book and tutorial [Learn You a Haskell for Great Good](http://learnyouahaskell.com). 
