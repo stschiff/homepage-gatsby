@@ -6,7 +6,7 @@ image: ../images/blog/construction.jpg
 
 import Blogfigure from "../../components/blogfigure"
 
-**Update:** *Since the summer of 2020, my website has undergone a further upgrade to [gatsby](https://www.gatsbyjs.org/), another static site generator that builds more heavily on modern javascript frontent development. I love it, and if you like the snappy-ness of my site, have a look at my github-repository [here](https://github.com/stschiff/homepage-gatsby).*
+**Update:** *Since the summer of 2020, my website has undergone a further upgrade to [gatsby](https://www.gatsbyjs.org/), another static site generator that builds more heavily on modern javascript frontent development. I love it, and describe the new setup in a new blog post and if you like the snappy-ness of my site, have a look at my github-repository [here](https://github.com/stschiff/homepage-gatsby).*
 
 <Blogfigure relPath="images/blog/construction.jpg" altText="A toy model of a construction site">Image from Pixabay</Blogfigure>
 

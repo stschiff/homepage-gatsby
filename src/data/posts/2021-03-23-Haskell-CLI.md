@@ -1,5 +1,5 @@
 ---
-title: Command Line Parsing in Haskell
+title: Designing Command Line Interfaces in Haskell
 isBlogPost: True
 image: ../images/blog/controller.jpg
 ---
