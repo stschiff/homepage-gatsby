@@ -14,9 +14,9 @@ A well-defined command line interface helps ensuring loyalty to contract for a u
 
 There's going to be quite some Haskell code in this post, and I've written it in part to get people interested in the language and the advantages of strong types. If you find this post interesting enough to give Haskell a chance, I recommend the freely available book and tutorial [Learn You a Haskell for Great Good](http://learnyouahaskell.com). The sourcecode described here can also be viewed in full in a [dedicated github-repository](https://github.com/stschiff/haskell-cli-example).
 
-OK, let's dive in. Let's consider a program that reads in a file and computes and outputs summary statistics from that file. Even though we're not coding anything beyond the CLI, consider for the sake of concreteness a bioinformatic program that reads genotypes for a number of individuals and outputs summary statistics for each individual.
-
 ## Specifying the interface through types
+
+OK, let's dive in. Let's consider a program that reads in a file and computes and outputs summary statistics from that file. Even though we're not coding anything beyond the CLI, consider for the sake of concreteness a bioinformatic program that reads genotypes for a number of individuals and outputs summary statistics for each individual.
 
 In Haskell, the first step to designing a CLI is to define a data structure that captures all possible options for our program:
 
@@ -43,7 +43,7 @@ data IndividualsSpec = IndividualsByFile FilePath
 
 OK, so what's going on here? First, we defined a record type called `Options`, which has five fields, called `missingnessThreshold`, `verbose`, and so on. Each record has a type. Some types should sound familiar, such as `Double` (a decimal number) or `Bool` (True or False), which here define a missingness cutoff filter (exclude individuals with too much missing genotypes) and a verbosity flag (if `True`, print out extra log messages).
 
-The two other types are themselves custom types, defined below the record type. `SummaryStatSpec` represents different genome-wide summary statistic types that the user might want to compute for the specified individuals. The type is a simple enumeration of different values(`Heterozygosity`, `SegregatingSites` and `HardyWeinbergDeviation`), separated in Haskell using the pipe (`|`) operator. A value of type `SummaryStatSpec` has to be strictly one of these three choices. Notice how the type itself already guarantees exclusivity: the `summaryStatSpec` field cannot be simultaneously `Heterozyosity` and `SegregatingSites`.
+The three other types are themselves custom types, defined below the record type. `SummaryStatSpec` represents different genome-wide summary statistic types that the user might want to compute for the specified individuals. The type is a simple enumeration of different values(`Heterozygosity`, `SegregatingSites` and `HardyWeinbergDeviation`), separated in Haskell using the pipe (`|`) operator. A value of type `SummaryStatSpec` has to be strictly one of these three choices. Notice how the type itself already guarantees exclusivity: the `summaryStatSpec` field cannot be simultaneously `Heterozyosity` and `SegregatingSites`.
 
 Similarly, `FormatSpec` defines two alternatives `PlinkFormat` and `VCFFormat` (separated as above by the pipe operator `|`). However, now we have some additional values defined here. A `PlinkFormat` value is associated with three filenames of type `FilePath`. The alternative, `VCFFormat`, is associated with one filename. This may become clearer with an example:
 
