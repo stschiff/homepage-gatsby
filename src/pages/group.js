@@ -130,6 +130,15 @@ export default ({data}) => {
           <li>2015-2016: MSc in Genetics, University College London, UK</li>
           <li>2011-2015: BSc Biotechnology, Shandong University, China</li>
       </Portrait>
+      <Portrait
+        name="Margherita Vanni"
+        image={data.imgMarg.childImageSharp.fluid}
+        role="Erasmus Student">
+          <li>since March 2021: Erasmus student at the MPI Jena</li>
+          <li>2018-2020: MSc Anthropological Sciences at University of Florence, Italy</li>
+          <li>2016-2018: BSc Natural Sciences at University of Florence, Italy</li>
+
+      </Portrait>
 
       <h2>Affiliated researchers</h2>
       <Portrait
@@ -182,6 +191,9 @@ query {
     ...squareImage
   }
   imgKe: file(relativePath: {eq: "images/portraits/ke-portrait.jpg"}) {
+    ...squareImage
+  }
+  imgMarg: file(relativePath: {eq: "images/portraits/margherita-portrait.jpg"}) {
     ...squareImage
   }
   imgLuka: file(relativePath: {eq: "images/portraits/luka-portrait.jpg"}) {
