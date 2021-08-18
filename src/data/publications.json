@@ -11,7 +11,7 @@
         "abstract": null,
         "image": "images/publications/Schmid2021-ov.jpg",
         "citekey": "Schmid2021-ov",
-        "role": "minor",
+        "role": "major",
         "pdf": "pdfs/Schmid and Schiffels 2021 - bleiglas - An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation.pdf"
     },
     {
