@@ -130,7 +130,7 @@ export default () => {
   );
   const allSidebarObjects = mergeSidebarObjects(
     data.posts.nodes,
-    data.pubs.nodes.filter(node => node.role !== "minor")
+    data.pubs.nodes //.filter(node => node.role !== "minor")
   ).sort((obj1, obj2) => obj1.date < obj2.date ? -1 : (obj1.date === obj2.date ? 0 : 1)).reverse().slice(0, 20);
   return (
     <aside style={{fontSize:"90%"}}>

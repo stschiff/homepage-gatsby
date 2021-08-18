@@ -1,5 +1,20 @@
 [
     {
+        "journal": "The Journal of Open Source Software",
+        "authors": [
+            "Clemens Schmid",
+            "Stephan Schiffels"
+        ],
+        "date": "2021-04-10",
+        "title": "bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
+        "url": "https://pure.mpg.de/rest/items/item_3315442/component/file_3315443/content",
+        "abstract": null,
+        "image": "images/publications/Schmid2021-ov.jpg",
+        "citekey": "Schmid2021-ov",
+        "role": "minor",
+        "pdf": "pdfs/Schmid and Schiffels 2021 - bleiglas - An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation.pdf"
+    },
+    {
         "journal": "Nature",
         "authors": [
             "Chuan-Chao Wang",
