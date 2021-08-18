@@ -11,7 +11,7 @@ const BlogChunk = ({image_fluid, date, title, link}) => {
     <Row className="border-top py-3 mx-0">
       <Col xs={8} className="pl-0">
         <p>
-          <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="primary">Blog</Badge> <br />
+          <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="primary">New Blogpost</Badge> <br />
           <b><Link to={link}>{title}</Link></b>
         </p>
       </Col>
@@ -49,7 +49,7 @@ const PubChunk = ({image_fluid, title, journal, authors, date, citekey}) => {
     <Row className="border-top py-3 mx-0">
       <Col xs={8} className="pl-0">
        <p>
-          <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="info">Publication</Badge>
+          <u>{dateFormat(date, "mmmm dS, yyyy")}</u> <Badge variant="info">New Publication</Badge>
           <p>
             <b><Link to={pub_link}>{title}.</Link> </b>
             <i>{journal}. </i>

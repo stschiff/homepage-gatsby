@@ -109,7 +109,7 @@ export default ({data}) => {
       <Badge variant="primary">major</Badge>: Publications to which I made substantial contributions<br />
       <Badge variant="secondary">minor</Badge>: Publications to which I made minor contributions<br />
       </p>
-      <Button variant="warning" className="mb-3" onClick={() => setSelection(!selection)}>{selection ? "Show all" : "Show selected only"}</Button>
+      <Button variant="warning" className="mb-3" onClick={() => setSelection(!selection)}>{selection ? "Show all" : "Show lead contributions only"}</Button>
       {data.allPublicationsJson.nodes.filter(node => !selection || node.role === "lead").map(node => {
         const l = node.pdf ? node.pdf.publicURL : null
         return (
