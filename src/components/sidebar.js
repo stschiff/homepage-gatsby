@@ -83,7 +83,7 @@ const mergeSidebarObjects = (post_nodes, pub_nodes) => {
   return post_objects.concat(pub_objects);
 }
 
-export default () => {
+const Sidebar = () => {
   const data = useStaticQuery(
     graphql`
     query {
@@ -163,3 +163,5 @@ export default () => {
     </aside>
   )
 }
+
+export default Sidebar;

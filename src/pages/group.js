@@ -207,11 +207,7 @@ query {
     ...squareImage
   }
   imgLaura: file(relativePath: {eq: "images/portraits/laura_lacher.jpg"}) {
-    childImageSharp {
-      fluid(maxWidth: 400, maxHeight: 400, cropFocus: NORTH) {
-        ...GatsbyImageSharpFluid
-      }
-    }
+      ...squareImage
   }
   imgAngela: file(relativePath: {eq: "images/portraits/angela_motsch.jpg"}) {
     ...squareImage

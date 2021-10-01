@@ -31,7 +31,7 @@ const IndexPage = ({data}) => {
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/research">
-            <GatsbyImage alt="Photograph of the famous statue 'The Dying Gaul' symbolising the ancient Celts as seen by the Romans" fluid={data.imgERC.childImageSharp.gatsbyImageData} />
+            <GatsbyImage alt="Photograph of the famous statue 'The Dying Gaul' symbolising the ancient Celts as seen by the Romans" image={data.imgERC.childImageSharp.gatsbyImageData} />
           </Link>
           <Carousel.Caption>
             <h3>Research: ERC project MICROSCOPE</h3>

@@ -66,7 +66,7 @@ const Footer = () => (
   </footer>
 )
 
-export default ({ activeNav, children, pageTitle }) => (
+const Layout = ({ activeNav, children, pageTitle }) => (
   <Container>
     <Header activeNav={activeNav}/>
     <Row className="justify-content-between">
@@ -84,3 +84,5 @@ export default ({ activeNav, children, pageTitle }) => (
   </Container>
 )
 
+
+export default Layout;
