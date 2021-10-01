@@ -4,7 +4,7 @@ import {Row, Col, Button, Collapse, Badge} from "react-bootstrap"
 import Img from "gatsby-image"
 import { graphql } from 'gatsby'
 import dateFormat from "dateformat"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 const Author = ({name}) => {
   if(name === "Stephan Schiffels")
@@ -102,7 +102,7 @@ export default ({data}) => {
   const [selection, setSelection] = useState(false);
   return (
     <Layout pageTitle="Publications" activeNav="/publications">
-      <SEO title="Stephan Schiffels - Publications" description="All peer-reviewed publications coauthored by Stephan Schiffels" />
+      <Seo title="Stephan Schiffels - Publications" description="All peer-reviewed publications coauthored by Stephan Schiffels" />
       <p>
       <u>Legend:</u><br />
       <Badge variant="warning">lead</Badge>: Publications in which I had a leading role<br />

@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
 import {graphql} from "gatsby"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 export default ({data}) => (
     <Layout pageTitle="Research" activeNav="/research">
-        <SEO title="Stephan Schiffels - Research" description="Research areas from Population Genetics to Human History" />
+        <Seo title="Stephan Schiffels - Research" description="Research areas from Population Genetics to Human History" />
         <section>
             <h3 id="erc_microscope">
                 ERC Project MICROSCOPE

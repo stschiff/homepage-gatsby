@@ -3,7 +3,7 @@ import {Figure, Row} from "react-bootstrap"
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
-export default ({relPath, width=12, children, altText=""}) => {
+const Blogfigure = ({relPath, width=12, children, altText=""}) => {
   const data = useStaticQuery(
     graphql`
     query {
@@ -28,3 +28,5 @@ export default ({relPath, width=12, children, altText=""}) => {
   });
   return ret;
 }
+
+export default Blogfigure;

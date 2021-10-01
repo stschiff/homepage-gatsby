@@ -4,7 +4,7 @@ import {Row, Col} from "react-bootstrap"
 import Layout from "../components/layout"
 import { GatsbyImage } from "gatsby-plugin-image"
 import {FiExternalLink} from "react-icons/fi"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 const Portrait = ({name, image, children, link, role}) => {
   const link_elem = link ? (<a href={link}><FiExternalLink aria-label="External Link"/></a>) : <span></span>
@@ -27,7 +27,7 @@ const Portrait = ({name, image, children, link, role}) => {
 export default ({data}) => {
   return (
     <Layout pageTitle="Group" activeNav="/group">
-      <SEO title="Stephan Schiffels - Group" description="Research group members at the MPI-SHH" />
+      <Seo title="Stephan Schiffels - Group" description="Research group members at the MPI-SHH" />
       <Portrait
         name="Stephan Schiffels"
         image={data.imgStephan.childImageSharp.gatsbyImageData}
