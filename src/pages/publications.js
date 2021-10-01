@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import Layout from "../components/layout"
 import {Row, Col, Button, Collapse, Badge} from "react-bootstrap"
-import Img from "gatsby-image"
+import {GatsbyImage} from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
 import dateFormat from "dateformat"
 import Seo from "../components/Seo"
@@ -65,7 +65,7 @@ const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey,
     authors_annotated.push(<Button className="ml-1 p-0" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(true)}>Collapse</Button>);
   }
 
-  const imgComp = image ? <Img fluid={image.childImageSharp.fluid} alt="An image from the publication"/> : <div></div>;
+  const imgComp = image ? <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="An image from the publication"/> : <div></div>;
 
   let badge = <Badge variant="secondary">minor</Badge>;
   if(role === "major") {
@@ -98,7 +98,7 @@ const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey,
   )
 }
 
-export default ({data}) => {
+const PublicationsPage = ({data}) => {
   const [selection, setSelection] = useState(false);
   return (
     <Layout pageTitle="Publications" activeNav="/publications">
@@ -129,6 +129,8 @@ export default ({data}) => {
   )
 }
 
+export default PublicationsPage;
+
 export const query = graphql`
 query {
   allPublicationsJson(sort: {fields: date, order: DESC}) {
@@ -146,9 +148,7 @@ query {
       }
       image {
         childImageSharp {
-          fluid(maxHeight: 400, maxWidth: 400) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0)
         }
       }
     }

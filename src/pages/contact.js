@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Seo from "../components/Seo"
 
-export default ({data}) => {
+const ContactPage = ({data}) => {
   return (
     <Layout pageTitle="Contact" activeNav="/contact">
       <Seo title="Stephan Schiffels - Contact" description="Contact Details" />
@@ -12,6 +12,8 @@ export default ({data}) => {
     </Layout>
   )
 }
+
+export default ContactPage;
 
 export const query = graphql`
 query {

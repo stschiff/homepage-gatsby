@@ -23,8 +23,7 @@ const Portrait = ({name, image, children, link, role}) => {
   );
 }
   
-
-export default ({data}) => {
+const GroupPage = ({data}) => {
   return (
     <Layout pageTitle="Group" activeNav="/group">
       <Seo title="Stephan Schiffels - Group" description="Research group members at the MPI-SHH" />
@@ -170,6 +169,8 @@ export default ({data}) => {
     </Layout>
   )
 }
+
+export default GroupPage;
 
 export const squareImage = graphql`
   fragment squareImage on File {
