@@ -16,7 +16,7 @@
   "dependencies": {
     "@mdx-js/mdx": "latest",
     "@mdx-js/react": "latest",
-    "bootstrap": "latest",
+    "bootstrap": "4.6",
     "dateformat": "latest",
     "gatsby": "latest",
     "gatsby-image": "latest",
