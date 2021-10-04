@@ -1,5 +1,5 @@
 import React from "react"
-import Sidebar from "./sidebar"
+// import Sidebar from "./sidebar"
 import {Link} from "gatsby"
 import {Nav, Navbar} from "react-bootstrap"
 
@@ -66,7 +66,7 @@ const Footer = () => (
   </footer>
 )
 
-const Layout = ({ activeNav, children, pageTitle }) => (
+const LayoutComponent = ({ activeNav, children, pageTitle }) => (
   <Container>
     <Header activeNav={activeNav}/>
     <Row className="justify-content-between">
@@ -77,12 +77,11 @@ const Layout = ({ activeNav, children, pageTitle }) => (
         </main>
       </Col>
       <Col lg={4}>
-        <Sidebar />
+        {/* <Sidebar /> */}
       </Col>
     </Row>
     <Footer />
   </Container>
 )
 
-
-export default Layout;
+export default LayoutComponent;
