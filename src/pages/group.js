@@ -207,7 +207,9 @@ query {
     ...squareImage
   }
   imgLaura: file(relativePath: {eq: "images/portraits/laura_lacher.jpg"}) {
-      ...squareImage
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0, transformOptions: {cropFocus: NORTH})
+    }
   }
   imgAngela: file(relativePath: {eq: "images/portraits/angela_motsch.jpg"}) {
     ...squareImage
@@ -222,7 +224,8 @@ query {
     ...squareImage
   }
   imgMartina: file(relativePath: {eq: "images/portraits/martina.jpg"}) {
-    ...squareImage
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0, transformOptions: {cropFocus: CENTER})
+    }
   }
-
 }`

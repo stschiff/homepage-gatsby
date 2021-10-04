@@ -71,7 +71,7 @@ export default IndexPage;
 export const carouselImage = graphql`
   fragment carouselImage on File {
     childImageSharp {
-      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 0.5)
+      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 2.0, transformOptions: {cropFocus: NORTH})
     }
   }
 `
