@@ -4,7 +4,7 @@ import {GatsbyImage} from "gatsby-plugin-image"
 import { Carousel, Row, Col } from "react-bootstrap"
 import { graphql, Link} from 'gatsby'
 import "./index.css"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 const IndexPage = ({data}) => {
   return (

@@ -4,7 +4,7 @@ import {Row, Col} from "react-bootstrap"
 import Layout from "../components/layout"
 import { GatsbyImage } from "gatsby-plugin-image"
 import {FiExternalLink} from "react-icons/fi"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 const Portrait = ({name, image, children, link, role}) => {
   const link_elem = link ? (<a href={link}><FiExternalLink aria-label="External Link"/></a>) : <span></span>

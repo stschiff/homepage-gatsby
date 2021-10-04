@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import "katex/dist/katex.min.css"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 import { Disqus } from 'gatsby-plugin-disqus';
 
 export default function BlogPost({data}) {

@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import {Row, Col} from "react-bootstrap"
 import { graphql, Link } from 'gatsby'
 import dateFormat from "dateformat"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 const BlogEntry = ({frontmatter, excerpt, date, link}) => {
   const imgComp = frontmatter.image ? <GatsbyImage image={frontmatter.image.childImageSharp.gatsbyImageData} alt="Highlighted image from the blog post"/> : <div></div>;

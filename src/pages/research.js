@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import {GatsbyImage} from "gatsby-plugin-image"
 import {graphql} from "gatsby"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 const ResearchPage = ({data}) => (
     <Layout pageTitle="Research" activeNav="/research">

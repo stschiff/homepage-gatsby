@@ -4,7 +4,7 @@ import {Row, Col, Button, Collapse, Badge} from "react-bootstrap"
 import {GatsbyImage} from "gatsby-plugin-image"
 import { graphql } from 'gatsby'
 import dateFormat from "dateformat"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 const Author = ({name}) => {
   if(name === "Stephan Schiffels")

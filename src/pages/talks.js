@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from 'gatsby'
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import Seo from "../components/Seo"
+import Seo from "../components/seo"
 
 const TalkPage = ({data}) => {
   return (

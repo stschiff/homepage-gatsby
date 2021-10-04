@@ -1,5 +1,5 @@
 import React from "react"
-// import Sidebar from "./sidebar"
+import Sidebar from "./sidebar"
 import {Link} from "gatsby"
 import {Nav, Navbar} from "react-bootstrap"
 
@@ -77,7 +77,7 @@ const LayoutComponent = ({ activeNav, children, pageTitle }) => (
         </main>
       </Col>
       <Col lg={4}>
-        {/* <Sidebar /> */}
+        <Sidebar />
       </Col>
     </Row>
     <Footer />
