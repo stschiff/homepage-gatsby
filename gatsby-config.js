@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     "gatsby-transformer-json",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     {
       resolve: `gatsby-plugin-mdx`,

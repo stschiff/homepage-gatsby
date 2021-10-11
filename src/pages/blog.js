@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import {Row, Col} from "react-bootstrap"
 import { graphql, Link } from 'gatsby'
 import dateFormat from "dateformat"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const BlogEntry = ({frontmatter, excerpt, date, link}) => {
-  const imgComp = frontmatter.image ? <Img fluid={frontmatter.image.childImageSharp.fluid} alt="Highlighted image from the blog post"/> : <div></div>;
+  const imgComp = frontmatter.image ? <GatsbyImage image={frontmatter.image.childImageSharp.gatsbyImageData} alt="Highlighted image from the blog post"/> : <div></div>;
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={3} className="pl-0">
@@ -24,12 +24,12 @@ const BlogEntry = ({frontmatter, excerpt, date, link}) => {
 
 const extract_date = str => new Date(str.substring(0, 10));
 
-export default ({data}) => {
+const BlogPage = ({data}) => {
   const all_posts = data.allFile.nodes.filter(node => node.childMdx.frontmatter.isBlogPost);
   all_posts.sort((n1, n2) => extract_date(n1.name) < extract_date(n2.name) ? 1 : -1);
   return (
     <Layout pageTitle="Blog" activeNav="/blog">
-      <SEO title="Stephan Schiffels - Blog Posts" description="All Blog Posts listed chronologically" />
+      <Seo title="Stephan Schiffels - Blog Posts" description="All Blog Posts listed chronologically" />
       <p>Note: Many of my blog posts also appear on <a href="https://medium.com/stephan-schiffels">Medium</a></p>
       {all_posts.map(node => {
         return (<BlogEntry link={node.childMdx.fields.slug}
@@ -41,6 +41,7 @@ export default ({data}) => {
   );
 }
 
+export default BlogPage;
 
 export const query = graphql`
 query MyQuery {
@@ -57,9 +58,7 @@ query MyQuery {
           isBlogPost
           image {
             childImageSharp {
-              fluid(maxHeight: 400, maxWidth: 400) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0)
             }
           }
         }

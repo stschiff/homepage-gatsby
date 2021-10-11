@@ -1,9 +1,9 @@
 import { useStaticQuery, graphql } from "gatsby"
 import {Figure, Row} from "react-bootstrap"
 import React from "react"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
-export default ({relPath, width=12, children, altText=""}) => {
+const Blogfigure = ({relPath, width=12, children, altText=""}) => {
   const data = useStaticQuery(
     graphql`
     query {
@@ -11,9 +11,7 @@ export default ({relPath, width=12, children, altText=""}) => {
         nodes {
           relativePath
           childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
       }
@@ -24,9 +22,11 @@ export default ({relPath, width=12, children, altText=""}) => {
   data.allFile.nodes.forEach(node => {
     if(node.relativePath === relPath)
       ret = <Row className="justify-content-md-center"><Figure className={cl}>
-        <Img fluid={node.childImageSharp.fluid} alt={altText}/>
+        <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={altText}/>
         <Figure.Caption>{children}</Figure.Caption>
       </Figure></Row>
   });
   return ret;
 }
+
+export default Blogfigure;

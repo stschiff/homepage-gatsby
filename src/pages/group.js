@@ -1,18 +1,17 @@
 import React from "react"
 import { graphql } from 'gatsby'
 import {Row, Col} from "react-bootstrap"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
-import "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import {FiExternalLink} from "react-icons/fi"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Portrait = ({name, image, children, link, role}) => {
   const link_elem = link ? (<a href={link}><FiExternalLink aria-label="External Link"/></a>) : <span></span>
   return (
     <Row className="border-top py-3 mx-0">
       <Col xs={4} className="pl-0">
-        <Img fluid={image} alt={"Portrait of " + name} />
+        <GatsbyImage image={image} alt={"Portrait of " + name} />
       </Col>
       <Col xs={8} className="pr-0">
         <h4>{name} <small>{role}</small>  {link_elem}</h4>
@@ -24,14 +23,13 @@ const Portrait = ({name, image, children, link, role}) => {
   );
 }
   
-
-export default ({data}) => {
+const GroupPage = ({data}) => {
   return (
     <Layout pageTitle="Group" activeNav="/group">
-      <SEO title="Stephan Schiffels - Group" description="Research group members at the MPI-SHH" />
+      <Seo title="Stephan Schiffels - Group" description="Research group members at the MPI-SHH" />
       <Portrait
         name="Stephan Schiffels"
-        image={data.imgStephan.childImageSharp.fluid}
+        image={data.imgStephan.childImageSharp.gatsbyImageData}
         role="PI">
             <li> since 2015: Group leader at the <a href="http://www.shh.mpg.de">
                 MPI for the Science of Human History</a>, Jena, Germany.
@@ -48,14 +46,14 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Suzanne Freilich"
-        image={data.imgSuzanne.childImageSharp.fluid}
+        image={data.imgSuzanne.childImageSharp.gatsbyImageData}
         role="Visiting PhD student">
             <li>Since 2019: Visiting student in our group.</li>
             <li>PhD student at University of Vienna, Austria.</li>
       </Portrait>
       <Portrait
         name="Joscha Gretzinger"
-        image={data.imgJoscha.childImageSharp.fluid}
+        image={data.imgJoscha.childImageSharp.gatsbyImageData}
         link="http://www.shh.mpg.de/person/91521/25500"
         role="PhD student">
             <li>Since 2018: PhD student at the MPI Jena.</li>
@@ -67,7 +65,7 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Laura Lacher"
-        image={data.imgLaura.childImageSharp.fluid}
+        image={data.imgLaura.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/99004"
         role="PhD student">
             <li>since 2020: PhD student at the MPI Jena</li>
@@ -76,7 +74,7 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Thiseas Lamnidis"
-        image={data.imgThiseas.childImageSharp.fluid}
+        image={data.imgThiseas.childImageSharp.gatsbyImageData}
         link="http://www.shh.mpg.de/person/45025/25522"
         role="Postdoc">
             <li>since 2020: Staff Scientist at the MPI Jena</li>
@@ -86,7 +84,7 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Angela Mötsch"
-        image={data.imgAngela.childImageSharp.fluid}
+        image={data.imgAngela.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/60441/2375"
         role="Postdoc">
             <li>Since 2020: Postdoc (50%) ERC project MICROSCOPE</li>
@@ -96,7 +94,7 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Luka Papac"
-        image={data.imgLuka.childImageSharp.fluid}
+        image={data.imgLuka.childImageSharp.gatsbyImageData}
         link="http://www.shh.mpg.de/employees/50502/25522"
         role="PhD Student">
             <li>since 2016: PhD student at the MPI Jena, co-supervised by <a href="https://www.shh.mpg.de/person/42282/25500">Wolfgang Haak</a></li>
@@ -105,7 +103,7 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Rita Radzeviciute"
-        image={data.imgRita.childImageSharp.fluid}
+        image={data.imgRita.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/59687"
         role="Technical assistant">
             <li>since 2020: Technical Assistant for the ERC project MICROSCOPE</li>
@@ -114,7 +112,7 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Clemens Schmid"
-        image={data.imgClemens.childImageSharp.fluid}
+        image={data.imgClemens.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/103205/25500"
         role="PhD student">
             <li>Since 2019: PhD student at the MPI Jena.</li>
@@ -123,27 +121,18 @@ export default ({data}) => {
       </Portrait>
       <Portrait
         name="Ke Wang"
-        image={data.imgKe.childImageSharp.fluid}
+        image={data.imgKe.childImageSharp.gatsbyImageData}
         link="http://www.shh.mpg.de/employees/50975/25522"
         role="Postdoc">
           <li>since 2016: PhD student at the MPI Jena</li>
           <li>2015-2016: MSc in Genetics, University College London, UK</li>
           <li>2011-2015: BSc Biotechnology, Shandong University, China</li>
       </Portrait>
-      <Portrait
-        name="Margherita Vanni"
-        image={data.imgMarg.childImageSharp.fluid}
-        role="Erasmus Student">
-          <li>since March 2021: Erasmus student at the MPI Jena</li>
-          <li>2018-2020: MSc Anthropological Sciences at University of Florence, Italy</li>
-          <li>2016-2018: BSc Natural Sciences at University of Florence, Italy</li>
-
-      </Portrait>
 
       <h2>Affiliated researchers</h2>
       <Portrait
         name="Elina Salmela"
-        image={data.imgElina.childImageSharp.fluid}
+        image={data.imgElina.childImageSharp.gatsbyImageData}
         link="http://blogs.helsinki.fi/esalmela/"
         role="Postdoc">
             <li>Since 2016: Affiliated Postdoc at the MPI Jena</li>
@@ -154,30 +143,36 @@ export default ({data}) => {
       <h2>Alumni</h2>
       <Portrait
         name="Ezgi Altınışık"
-        image={data.imgEzgi.childImageSharp.fluid}
+        image={data.imgEzgi.childImageSharp.gatsbyImageData}
         role="Erasmus student">
             <li>September 2018 - February 2019: Visiting Erasmus student</li>
             <li>Since 2015: PhD student with Pavel Flegontov from Ostrava University, Czech Republic.</li>
       </Portrait>
       <Portrait
         name="Martina Čížková"
-        image={data.imgMartina.childImageSharp.fluid}
+        image={data.imgMartina.childImageSharp.gatsbyImageData}
         role="Erasmus student">
             <li>January-June 2019: Visiting Erasmus student.</li>
             <li>PhD student at Charles University, Prague, Czech Republic.</li>
       </Portrait>
-
-
+      <Portrait
+        name="Margherita Vanni"
+        image={data.imgMarg.childImageSharp.gatsbyImageData}
+        role="Erasmus Student">
+          <li>March - September 2021: Erasmus student at the MPI Jena</li>
+          <li>2018-2020: MSc Anthropological Sciences at University of Florence, Italy</li>
+          <li>2016-2018: BSc Natural Sciences at University of Florence, Italy</li>
+      </Portrait>
     </Layout>
   )
 }
 
+export default GroupPage;
+
 export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
-      fluid(maxWidth: 400, maxHeight: 400) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0)
     }
   }
 `
@@ -210,9 +205,7 @@ query {
   }
   imgLaura: file(relativePath: {eq: "images/portraits/laura_lacher.jpg"}) {
     childImageSharp {
-      fluid(maxWidth: 400, maxHeight: 400, cropFocus: NORTH) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0, transformOptions: {cropFocus: NORTH})
     }
   }
   imgAngela: file(relativePath: {eq: "images/portraits/angela_motsch.jpg"}) {
@@ -229,10 +222,7 @@ query {
   }
   imgMartina: file(relativePath: {eq: "images/portraits/martina.jpg"}) {
     childImageSharp {
-      fluid(maxWidth: 400, maxHeight: 400, cropFocus: CENTER) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0, transformOptions: {cropFocus: CENTER})
     }
   }
-
 }`

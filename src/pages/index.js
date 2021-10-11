@@ -1,21 +1,21 @@
 import React from "react"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
+import {GatsbyImage} from "gatsby-plugin-image"
 import { Carousel, Row, Col } from "react-bootstrap"
 import { graphql, Link} from 'gatsby'
 import "./index.css"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
-export default ({data}) => {
+const IndexPage = ({data}) => {
   return (
     <Layout pageTitle="Home" activeNav="/">
-      <SEO title="Stephan Schiffels - Home" description="Stephan Schiffels is a research group leader at the Max Planck Institute for the Science of Human History (MPI-SHH) in Jena, Germany. " />
+      <Seo title="Stephan Schiffels - Home" description="Stephan Schiffels is a research group leader at the Max Planck Institute for the Science of Human History (MPI-SHH) in Jena, Germany. " />
       <Row className="justify-content-md-center">
         <Col>
       <Carousel controls={false} interval={3000}>
         <Carousel.Item>
           <Link to="/research">
-            <Img alt="A human skeleton at an archaeological site and a schematic of a phylogenetic tree connecting human populations" fluid={data.imgGeneticHistory.childImageSharp.fluid} />
+            <GatsbyImage alt="A human skeleton at an archaeological site and a schematic of a phylogenetic tree connecting human populations" image={data.imgGeneticHistory.childImageSharp.gatsbyImageData} />
           </Link>
           <Carousel.Caption>
             <h3>Research: Genetic History</h3>
@@ -23,7 +23,7 @@ export default ({data}) => {
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/research">
-            <Img alt="Schematics showing genealogical trees along genome sequences and within a structured population model" fluid={data.imgMethods.childImageSharp.fluid} />
+            <GatsbyImage alt="Schematics showing genealogical trees along genome sequences and within a structured population model" image={data.imgMethods.childImageSharp.gatsbyImageData} />
           </Link>
           <Carousel.Caption>
             <h3>Research: Computational Methods</h3>
@@ -31,7 +31,7 @@ export default ({data}) => {
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/research">
-            <Img alt="Photograph of the famous statue 'The Dying Gaul' symbolising the ancient Celts as seen by the Romans" fluid={data.imgERC.childImageSharp.fluid} />
+            <GatsbyImage alt="Photograph of the famous statue 'The Dying Gaul' symbolising the ancient Celts as seen by the Romans" image={data.imgERC.childImageSharp.gatsbyImageData} />
           </Link>
           <Carousel.Caption>
             <h3>Research: ERC project MICROSCOPE</h3>
@@ -39,7 +39,7 @@ export default ({data}) => {
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/blog">
-            <Img alt="A drawing of a Paleo-Eskimo woman with a baby child on her back as she stands in Northeast-Asia looking towards America" fluid={data.imgPaleoEskimo.childImageSharp.fluid} />
+            <GatsbyImage alt="A drawing of a Paleo-Eskimo woman with a baby child on her back as she stands in Northeast-Asia looking towards America" image={data.imgPaleoEskimo.childImageSharp.gatsbyImageData} />
           </Link>
           <Carousel.Caption>
             <h3>Blog Posts</h3>
@@ -47,7 +47,7 @@ export default ({data}) => {
         </Carousel.Item>
         <Carousel.Item>
           <Link to="/talks">
-            <Img alt="Still image of Stephan Schiffels speaking at the TEDxTHBrandenburg" fluid={data.imgTEDxTalk.childImageSharp.fluid} />
+            <GatsbyImage alt="Still image of Stephan Schiffels speaking at the TEDxTHBrandenburg" image={data.imgTEDxTalk.childImageSharp.gatsbyImageData} />
           </Link>
           <Carousel.Caption>
             <h3>Talks</h3>
@@ -66,12 +66,12 @@ export default ({data}) => {
   )
 }
 
+export default IndexPage;
+
 export const carouselImage = graphql`
   fragment carouselImage on File {
     childImageSharp {
-      fluid(maxWidth: 800, maxHeight:400, cropFocus: NORTH) {
-        ...GatsbyImageSharpFluid
-      }
+      gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 2.0, transformOptions: {cropFocus: NORTH})
     }
   }
 `
