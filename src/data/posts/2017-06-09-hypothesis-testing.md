@@ -6,6 +6,8 @@ image: ../images/blog/hypTest2.jpg
 
 import Blogfigure from "../../components/blogfigure"
 
+_Note: The Equation rendering does not work currently. I'm working on a fix_
+
 So, I am reading this book called “Probability Theory; The logic of Science” by
 E.T. Jaynes. It is an excellent read, highly recommended, and quite an
 eye-opener to me in terms of understanding statistics and data analysis from
