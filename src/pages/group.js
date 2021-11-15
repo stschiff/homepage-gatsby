@@ -102,15 +102,6 @@ const GroupPage = ({data}) => {
             <li>2009-2012: BSc(Hons) in Genetics, University of Melbourne</li>
       </Portrait>
       <Portrait
-        name="Rita Radzeviciute"
-        image={data.imgRita.childImageSharp.gatsbyImageData}
-        link="https://www.shh.mpg.de/person/59687"
-        role="Technical assistant">
-            <li>since 2020: Technical Assistant for the ERC project MICROSCOPE</li>
-            <li>2010-2012: MSc in Zoology, University of Vilnius, Lithuania.</li>
-            <li>2006-2010: BSc in Biologie, University of Vilnius, Lithuania.</li>
-      </Portrait>
-      <Portrait
         name="Clemens Schmid"
         image={data.imgClemens.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/103205/25500"
@@ -118,6 +109,15 @@ const GroupPage = ({data}) => {
             <li>Since 2019: PhD student at the MPI Jena.</li>
             <li>2015-2019: M.A. in Prehistoric and Historic Archaeology, University of Kiel</li>
             <li>2011-2014 B.A. in Prehistory and Medieval Archaeology, University of Tübingen</li>
+      </Portrait>
+      <Portrait
+        name="Sophie Seng"
+        image={data.imgSophie.childImageSharp.gatsbyImageData}
+        role="Technical assistant">
+            <li>Since 2019 technical Assistant at the MPI for the Science of Human History , since 2021 for the ERC project MICROSCOPE</li>
+            <li>2015-2017  Master Student in chemical Biology (FSU Jena)</li>
+            <li>2013-2015  Master Student in Biochemistry (FSU Jena)</li>
+            <li>2010-2013  B.Sc.in Biology/Microbiology (FSU Jena)</li>
       </Portrait>
       <Portrait
         name="Ke Wang"
@@ -156,6 +156,16 @@ const GroupPage = ({data}) => {
             <li>PhD student at Charles University, Prague, Czech Republic.</li>
       </Portrait>
       <Portrait
+        name="Rita Radzeviciute"
+        image={data.imgRita.childImageSharp.gatsbyImageData}
+        link="https://www.shh.mpg.de/person/59687"
+        role="Technical assistant">
+            <li>2021: continuing as lab supervisor at the MPI-EVA</li>
+            <li>2020-2021: Technical Assistant for the ERC project MICROSCOPE</li>
+            <li>2010-2012: MSc in Zoology, University of Vilnius, Lithuania.</li>
+            <li>2006-2010: BSc in Biologie, University of Vilnius, Lithuania.</li>
+      </Portrait>
+      <Portrait
         name="Margherita Vanni"
         image={data.imgMarg.childImageSharp.gatsbyImageData}
         role="Erasmus Student">
@@ -179,6 +189,12 @@ export const squareImage = graphql`
 
 export const query = graphql`
 query {
+  imgDana: file(relativePath: {eq: "images/portraits/Dana_portrait.jpg"}) {
+    ...squareImage
+  }
+  imgSophie: file(relativePath: {eq: "images/portraits/sophie-seng.jpg"}) {
+    ...squareImage
+  }
   imgStephan: file(relativePath: {eq: "images/portraits/Portrait_Website.jpg"}) {
     ...squareImage
   }
