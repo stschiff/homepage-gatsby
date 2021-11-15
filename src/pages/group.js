@@ -45,6 +45,13 @@ const GroupPage = ({data}) => {
             </li>
       </Portrait>
       <Portrait
+        name="Dhananjaya Athanayaka"
+        image={data.imgDana.childImageSharp.gatsbyImageData}
+        role="Student assistant">
+            <li>Since 2021: Student assistant working on data management.</li>
+            <li>Since 2020: Student at Deggendorf Institute of Technology (Healt Informatics)</li>
+      </Portrait>
+      <Portrait
         name="Suzanne Freilich"
         image={data.imgSuzanne.childImageSharp.gatsbyImageData}
         role="Visiting PhD student">
