@@ -9,7 +9,7 @@ import Seo from "../components/seo"
 const IndexPage = ({data}) => {
   return (
     <Layout pageTitle="Home" activeNav="/">
-      <Seo title="Stephan Schiffels - Home" description="Stephan Schiffels is a research group leader at the Max Planck Institute for the Science of Human History (MPI-SHH) in Jena, Germany. " />
+      <Seo title="Stephan Schiffels - Home" description="Stephan Schiffels is a W2 research group leader at the Max Planck Institute for Evolutionary Anthropology (MPI-EVA) in Leipzig, Germany." />
       <Row className="justify-content-md-center">
         <Col>
       <Carousel controls={false} interval={3000}>
@@ -58,7 +58,7 @@ const IndexPage = ({data}) => {
       <Row>
         <Col>
           <p>
-            I am group leader for population genetics at the Department for Archaeogenetics of the <a href="http://www.shh.mpg.de/en">Max Planck Institute for the Science of Human History in Jena</a>. My <a href="http://stephanschiffels.de/?page_id=8">group</a> at the MPI investigates human history by means of Genetics, and develops computational methods to model and analyse ancient and modern genomic data.
+            I am W2 Max Planck Research Group Leader for population genetics at the Department for Archaeogenetics of the <a href="https://www.eva.mpg.de">Max Planck Institute for Evolutionary Anthropology in Leipzig</a>. My <Link to="/group">group</Link> at the MPI investigates human history by means of Genetics, and develops computational methods to model and analyse ancient and modern genomic data.
           </p>
         </Col>
       </Row>

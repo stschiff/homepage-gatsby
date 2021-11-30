@@ -31,8 +31,11 @@ const GroupPage = ({data}) => {
         name="Stephan Schiffels"
         image={data.imgStephan.childImageSharp.gatsbyImageData}
         role="PI">
-            <li> since 2015: Group leader at the <a href="http://www.shh.mpg.de">
-                MPI for the Science of Human History</a>, Jena, Germany.
+            <li> since 2020: W2 Research Group Leader at the 
+              <a href="https://www.eva.mpg.de"> MPI for Evolutionary Anthropology</a>, Leipzig, Germany
+            </li>
+            <li> since 2015: Group leader at the
+              <a href="http://www.shh.mpg.de"> MPI for the Science of Human History</a>, Jena, Germany.
             </li>
             <li>2012-2015: Postdoctoral Fellow in the group of Richard Durbin at the
                 Wellcome Trust Sanger Institute, Hinxton, Cambridge, UK.
