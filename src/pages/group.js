@@ -178,6 +178,7 @@ const GroupPage = ({data}) => {
       </Portrait>
       <Portrait
         name="Tina Saupe"
+        image={data.imgTina.childImageSharp.gatsbyImageData}
         role="Undergraduate student">
           <li>since 2018: PhD student at the Estonian Biocentre, Institute of Genomics, University of Tartu, Estonia</li>
           <li>2016-2018: MSc in Anthropoloy, Johannes Gutenberg University Mainz, Germany</li>
@@ -253,6 +254,9 @@ query {
     ...squareImage
   }
   imgEzgi: file(relativePath: {eq: "images/portraits/ezgi-portrait.jpg"}) {
+    ...squareImage
+  }
+  imgTina: file(relativePath: {eq: "images/portraits/tina_saupe.jpg"}) {
     ...squareImage
   }
   imgMartina: file(relativePath: {eq: "images/portraits/martina.jpg"}) {
