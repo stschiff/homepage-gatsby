@@ -103,15 +103,6 @@ const GroupPage = ({data}) => {
             <li>2005-2010: Excavations and PhD (University of Kiel, subject: Archaeology) on the subject of the site of Mont Lassois, Burgundy, France.</li>
       </Portrait>
       <Portrait
-        name="Luka Papac"
-        image={data.imgLuka.childImageSharp.gatsbyImageData}
-        link="http://www.shh.mpg.de/employees/50502/25522"
-        role="PhD Student">
-            <li>since 2016: PhD student at the MPI Jena, co-supervised by <a href="https://www.shh.mpg.de/person/42282/25500">Wolfgang Haak</a></li>
-            <li>2014-2016: M.Phil in ancient DNA, University of Melbourne</li>
-            <li>2009-2012: BSc(Hons) in Genetics, University of Melbourne</li>
-      </Portrait>
-      <Portrait
         name="Clemens Schmid"
         image={data.imgClemens.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/103205/25500"
@@ -166,6 +157,16 @@ const GroupPage = ({data}) => {
             <li>PhD student at Charles University, Prague, Czech Republic.</li>
       </Portrait>
       <Portrait
+        name="Luka Papac"
+        image={data.imgLuka.childImageSharp.gatsbyImageData}
+        link="http://www.shh.mpg.de/employees/50502/25522"
+        role="PhD Student">
+            <li>since 2021: Postdoc at the Institute of Archaeology of the Czech Academy of Sciences, Prague</li>
+            <li>2016-2020: PhD student at the MPI Jena, co-supervised by <a href="https://www.shh.mpg.de/person/42282/25500">Wolfgang Haak</a></li>
+            <li>2014-2016: M.Phil in ancient DNA, University of Melbourne</li>
+            <li>2009-2012: BSc(Hons) in Genetics, University of Melbourne</li>
+      </Portrait>
+      <Portrait
         name="Rita Radzeviciute"
         image={data.imgRita.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/59687"
@@ -174,6 +175,14 @@ const GroupPage = ({data}) => {
             <li>2020-2021: Technical Assistant for the ERC project MICROSCOPE</li>
             <li>2010-2012: MSc in Zoology, University of Vilnius, Lithuania.</li>
             <li>2006-2010: BSc in Biologie, University of Vilnius, Lithuania.</li>
+      </Portrait>
+      <Portrait
+        name="Tina Saupe"
+        role="Undergraduate student">
+          <li>since 2018: PhD student at the Estonian Biocentre, Institute of Genomics, University of Tartu, Estonia</li>
+          <li>2016-2018: MSc in Anthropoloy, Johannes Gutenberg University Mainz, Germany</li>
+          <li>2012-2016: BSc in Biotechnology/Bioinformatics; University of Applied Sciences, Mittweida, Germany. Bachelor's thesis supervised at MPI-SHH, Jena, Germany</li>
+          <li>2014-2015: BSc in Applied Bioscience with Forensic Investigation, University of the West of Scotland, Hamilton Campus, United Kingdom</li>
       </Portrait>
       <Portrait
         name="Margherita Vanni"
