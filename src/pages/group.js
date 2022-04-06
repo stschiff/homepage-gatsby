@@ -74,6 +74,14 @@ const GroupPage = ({data}) => {
                     University of Tübingen</li>
       </Portrait>
       <Portrait
+        name="Lei Huang"
+        image={data.imgLei.childImageSharp.gatsbyImageData}
+        role="PhD student">
+          <li>since 2022: PhD student at the MPI-EVA.</li>
+          <li>2019-2021: MSc in Bioinformatics, University of Copenhagen, Denmark.</li>
+          <li>2015-2019: BEng in Polymer Materials, Tsinghua University, China.</li>
+      </Portrait>
+      <Portrait
         name="Laura Lacher"
         image={data.imgLaura.childImageSharp.gatsbyImageData}
         link="https://www.shh.mpg.de/person/99004"
@@ -210,6 +218,9 @@ export const squareImage = graphql`
 export const query = graphql`
 query {
   imgDana: file(relativePath: {eq: "images/portraits/Dana_portrait.jpg"}) {
+    ...squareImage
+  }
+  imgLei: file(relativePath: {eq: "images/portraits/lei_huang.jpg"}) {
     ...squareImage
   }
   imgSophie: file(relativePath: {eq: "images/portraits/sophie-seng.jpg"}) {
