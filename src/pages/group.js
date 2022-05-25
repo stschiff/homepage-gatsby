@@ -48,18 +48,11 @@ const GroupPage = ({data}) => {
             </li>
       </Portrait>
       <Portrait
-        name="Dhananjaya Athanayaka"
+        name="Dhananjaya Aththanayaka"
         image={data.imgDana.childImageSharp.gatsbyImageData}
         role="Student assistant">
             <li>Since 2021: Student assistant working on data management.</li>
             <li>Since 2020: Student at Deggendorf Institute of Technology (Healt Informatics)</li>
-      </Portrait>
-      <Portrait
-        name="Suzanne Freilich"
-        image={data.imgSuzanne.childImageSharp.gatsbyImageData}
-        role="Visiting PhD student">
-            <li>Since 2019: Visiting student in our group.</li>
-            <li>PhD student at University of Vienna, Austria.</li>
       </Portrait>
       <Portrait
         name="Joscha Gretzinger"
@@ -148,6 +141,15 @@ const GroupPage = ({data}) => {
             <li>Since 2013: Postdoctoral researcher at the University of Helsinki</li>
             <li>2013: PhD at the University of Helsinki</li>
       </Portrait>
+      <Portrait
+        name="Suzanne Freilich"
+        image={data.imgSuzanne.childImageSharp.gatsbyImageData}
+        role="Affiliated Postdoc">
+            <li>Since 2022: Postdoc at MPI-EVA under supervision of Dr. Alissa Mittnik</li>
+            <li>2019-2022: Visiting PhD student in our group.</li>
+            <li>PhD student at University of Vienna, Austria.</li>
+      </Portrait>
+
 
       <h2>Alumni</h2>
       <Portrait

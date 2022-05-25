@@ -20,6 +20,10 @@ Turkey, recorded on December 12, 2018:
 ---
 ### All talks
 
+Joint virtual lecture "Die Prähistorie aus dem Blickwinkel der Gegenwart" with Dr. Alexander Herbig and Dr. Oliver Hochadel at the Master's course "Integrative Wissensperspektiven" at the University of Bielefeld, **January 10, 2022, Bielefeld, Germany**
+
+Virtual talk "Die Archäogenetik als neue Quelle zur Untersuchung menschlicher Mobilität am Beispiel der Populationsgeschichte Europas" within discussion section "Die Herausforderung der Genetic History" at the *Deutscher Historikertag*, **October 6, 2021, Munich, Germany**
+
 Participation in virtual Roundtable Discussion "Genetics, Genealogy, History" at the *University of Münster*, **March 21, 2021, Münster, Germany**
 
 Virtual Seminar "Die frühmittelalterliche Bevölkerungsgeschichte Europas aus Sicht der Paläogenetik." at *State Museum Hannover*, **February 11, 2021, Hannover, Germany**
