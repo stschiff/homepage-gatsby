@@ -1,21 +1,21 @@
-import {ResponsiveEmbed} from "react-bootstrap"
+import {Ratio} from "react-bootstrap"
 
 ### Videos
 
 Talk (in german) @TEDxTHBrandenburg, Germany recorded on December 6 2020:
 
-<ResponsiveEmbed aspectRatio="16by9">
+<Ratio aspectRatio="16x9">
   <iframe src="https://www.youtube.com/embed/lPTuXosgUik" allowfullscreen></iframe>
-</ResponsiveEmbed>
+</Ratio>
 
 ---
 
 Webinar for the International Society for Computational Biology, Regional Group in
 Turkey, recorded on December 12, 2018:
 
-<ResponsiveEmbed aspectRatio="16by9">
+<Ratio aspectRatio="16x9">
   <iframe src="https://www.youtube.com/embed/qGW67OAbXD4" allowfullscreen></iframe>
-</ResponsiveEmbed>
+</Ratio>
 
 ---
 ### All talks
