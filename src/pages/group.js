@@ -14,7 +14,7 @@ const Portrait = ({name, image, children, link, role}) => {
         <GatsbyImage image={image} alt={"Portrait of " + name} />
       </Col>
       <Col xs={8} className="pr-0">
-        <h4>{name} <small>{role}</small>  {link_elem}</h4>
+        <h4>{name} <small> - {role}</small>  {link_elem}</h4>
           <ul>
            {children}
           </ul>
