@@ -121,15 +121,6 @@ const GroupPage = ({data}) => {
             <li>2013-2015  Master Student in Biochemistry (FSU Jena)</li>
             <li>2010-2013  B.Sc.in Biology/Microbiology (FSU Jena)</li>
       </Portrait>
-      <Portrait
-        name="Ke Wang"
-        image={data.imgKe.childImageSharp.gatsbyImageData}
-        link="http://www.shh.mpg.de/employees/50975/25522"
-        role="Postdoc">
-          <li>since 2016: PhD student at the MPI Jena</li>
-          <li>2015-2016: MSc in Genetics, University College London, UK</li>
-          <li>2011-2015: BSc Biotechnology, Shandong University, China</li>
-      </Portrait>
 
       <h2>Affiliated researchers</h2>
       <Portrait
@@ -152,6 +143,17 @@ const GroupPage = ({data}) => {
 
 
       <h2>Alumni</h2>
+      <Portrait
+        name="Ke Wang"
+        image={data.imgKe.childImageSharp.gatsbyImageData}
+        link="http://www.shh.mpg.de/employees/50975/25522"
+        role="Postdoc">
+          <li>Since 2022: Faculty member at Fudan University, Shanghai</li>
+          <li>2020-2022: Postdoc at the MPI-EVA in Leipzig</li>
+          <li>2016-2020: PhD student at the MPI Jena</li>
+          <li>2015-2016: MSc in Genetics, University College London, UK</li>
+          <li>2011-2015: BSc Biotechnology, Shandong University, China</li>
+      </Portrait>
       <Portrait
         name="Ezgi Altınışık"
         image={data.imgEzgi.childImageSharp.gatsbyImageData}
