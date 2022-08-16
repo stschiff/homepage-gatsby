@@ -20,6 +20,10 @@ Turkey, recorded on December 12, 2018:
 ---
 ### All talks
 
+*Upcoming* Talk by Stephan Schiffels at the *Mitteldeutscher Archäologentag* at the State Museum for prehistory in Halle, Germany, **Oct 6-8, 2022**.
+
+*Upcoming* Talk by Postdoc Thiseas Lamnidis at the upcoming EMBO conference "Reconstructing the Human Past" in Heidelberg, Germany, **September 13-16, 2022**
+
 Joint virtual lecture "Die Prähistorie aus dem Blickwinkel der Gegenwart" with Dr. Alexander Herbig and Dr. Oliver Hochadel at the Master's course "Integrative Wissensperspektiven" at the University of Bielefeld, **January 10, 2022, Bielefeld, Germany**
 
 Virtual talk "Die Archäogenetik als neue Quelle zur Untersuchung menschlicher Mobilität am Beispiel der Populationsgeschichte Europas" within discussion section "Die Herausforderung der Genetic History" at the *Deutscher Historikertag*, **October 6, 2021, Munich, Germany**
