@@ -32,7 +32,7 @@ const Header = ({activeNav}) => (
           <Nav.Item><Nav.Link href="https://github.com/stschiff"><FaGithub /></Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="https://medium.com/stephan-schiffels"><FaMedium /></Nav.Link></Nav.Item>
           <Nav.Item><Nav.Link href="https://www.researchgate.net/profile/Stephan_Schiffels"><FaResearchgate /></Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link rel="me" href="https://mstdn.social/@stschiff">Mastodon</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link rel="me" href="https://mstdn.social/@stschiff"><FaMastododon /></Nav.Link></Nav.Item>
         </Nav>
         </Navbar>
       </h2>
