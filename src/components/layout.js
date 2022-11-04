@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 import {Nav, Navbar} from "react-bootstrap"
 
 import { Container, Row, Col } from "react-bootstrap"
-import { FaTwitter, FaGithub, FaMedium, FaResearchgate } from "react-icons/fa";
+import { FaTwitter, FaGithub, FaMedium, FaResearchgate, FaMastodon } from "react-icons/fa";
 
 const ListLink = props => {
   const cl = props.to === props.activeNav ? "nav-link active" : "nav-link";
@@ -28,10 +28,11 @@ const Header = ({activeNav}) => (
       <h2 className="mt-md-3 float-md-right">
         <Navbar>
         <Nav>
-        <Nav.Item><Nav.Link href="https://twitter.com/stschiff"><FaTwitter /></Nav.Link></Nav.Item>
-        <Nav.Item><Nav.Link href="https://github.com/stschiff"><FaGithub /></Nav.Link></Nav.Item>
-        <Nav.Item><Nav.Link href="https://medium.com/stephan-schiffels"><FaMedium /></Nav.Link></Nav.Item>
-        <Nav.Item><Nav.Link href="https://www.researchgate.net/profile/Stephan_Schiffels"><FaResearchgate /></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="https://twitter.com/stschiff"><FaTwitter /></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="https://github.com/stschiff"><FaGithub /></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="https://medium.com/stephan-schiffels"><FaMedium /></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="https://www.researchgate.net/profile/Stephan_Schiffels"><FaResearchgate /></Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link rel="me" href="https://mstdn.social/@stschiff">Mastodon</Nav.Link></Nav.Item>
         </Nav>
         </Navbar>
       </h2>
