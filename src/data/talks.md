@@ -20,6 +20,12 @@ Turkey, recorded on December 12, 2018:
 ---
 ### All talks
 
+Colloquium at *Humboldt University, Berlin* "Eine neue archäogenetische Studie zur angelsächsischen Migration im Frühmittelalter", **Jan 23, 2023**
+
+Zoom-Lecture at the *University of Jena* on "Human demographic history - From African origins to recent population structure", **Dec 8, 2022**
+
+Virtual seminar talk at the *Cologne Center for Genomics*, Cologne, Germany, **Nov 29, 2022**
+
 Talk by Stephan Schiffels at the *Mitteldeutscher Archäologentag* at the State Museum for prehistory in Halle, Germany, **Oct 6-8, 2022**.
 
 Talk by Postdoc Thiseas Lamnidis at the upcoming EMBO conference "Reconstructing the Human Past" in Heidelberg, Germany, **September 13-16, 2022**
