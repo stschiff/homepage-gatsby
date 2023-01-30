@@ -1,5 +1,20 @@
 [
     {
+        "journal": "Current Archaeology",
+        "authors": [
+            "Joscha Gretzinger",
+            "Stephan Schiffels"
+        ],
+        "date": "2022-11-05",
+        "title": "Transformations in early medieval England",
+        "url": "https://the-past.com/feature/transformations-in-early-medieval-england/",
+        "abstract": "Ancient human DNA is revolutionising our ability to detect human migration that occurred hundreds of years ago. Joscha Gretzinger and Stephan Schiffels explain how these advances have transformed our understanding of the past",
+        "image": "images/publications/Gretzinger2022-wf.jpg",
+        "citekey": "Gretzinger2022-wf",
+        "role": "lead",
+        "pdf": "pdfs/Gretzinger and Schiffels 2022 - Transformations in early medieval England.pdf"
+    },
+    {
         "journal": "Cell",
         "authors": [
             "Shamam Waldman",
