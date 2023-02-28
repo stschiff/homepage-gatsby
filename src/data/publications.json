@@ -1,5 +1,35 @@
 [
     {
+        "journal": "in New Narratives for the First Millennium {AD}? : Alte und neue\nPerspektiven der arch\u00e4ologischen Forschung zum 1. Jahrtausend n.\nChr., Braunschweigisches Landesmuseum",
+        "authors": [
+            "Joscha Gretzinger",
+            "Stephan Schiffels"
+        ],
+        "date": "2022-11-01",
+        "title": "A glimpse into darkness: Population genetics of the European middle ages",
+        "url": "https://leopard.tu-braunschweig.de/receive/dbbs_mods_00071944",
+        "abstract": null,
+        "image": "images/publications/Gretzinger2022-et.jpg",
+        "citekey": "Gretzinger2022-et",
+        "role": "minor",
+        "pdf": "pdfs/Gretzinger and Schiffels 2022 - A glimpse into darkness - Population genetics of the European middle ages.pdf"
+    },
+    {
+        "journal": "Proceedings of the National Academy of Sciences of the United\nStates of America",
+        "authors": [
+            "Clemens Schmid",
+            "Stephan Schiffels"
+        ],
+        "date": "2023-02-28",
+        "title": "Estimating human mobility in Holocene Western Eurasia with large-scale ancient genomic data",
+        "url": "http://dx.doi.org/10.1073/pnas.2218375120",
+        "abstract": "The recent increase in openly available ancient human DNA samples allows for large-scale meta-analysis applications. Trans-generational past human mobility is one of the key aspects that ancient genomics can contribute to since changes in genetic ancestry-unlike cultural changes seen in the archaeological record-necessarily reflect movements of people. Here, we present an algorithm for spatiotemporal mapping of genetic profiles, which allow for direct estimates of past human mobility from large ancient genomic datasets. The key idea of the method is to derive a spatial probability surface of genetic similarity for each individual in its respective past. This is achieved by first creating an interpolated ancestry field through space and time based on multivariate statistics and Gaussian process regression and then using this field to map the ancient individuals into space according to their genetic profile. We apply this algorithm to a dataset of 3138 aDNA samples with genome-wide data from Western Eurasia in the last 10,000 y. Finally, we condense this sample-wise record with a simple summary statistic into a diachronic measure of mobility for subregions in Western, Central, and Southern Europe. For regions and periods with sufficient data coverage, our similarity surfaces and mobility estimates show general concordance with previous results and provide a meta-perspective of genetic changes and human mobility.",
+        "image": "images/publications/Schmid2023-um.jpg",
+        "citekey": "Schmid2023-um",
+        "role": "minor",
+        "pdf": "pdfs/Schmid and Schiffels 2023 - Estimating human mobility in Holocene Western Eurasia with large-scale ancient genomic data.pdf"
+    },
+    {
         "journal": "Current Archaeology",
         "authors": [
             "Joscha Gretzinger",
