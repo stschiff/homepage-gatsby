@@ -16,7 +16,7 @@
         "abstract": "Petrous bones and teeth are the skeletal elements most often targeted by researchers for ancient DNA (aDNA) extraction, and the sources of the majority of previously published ancient African genomes. However, the high temperature environments that characterise much of Africa often lead to poor preservation of skeletal remains. Here, we successfully reconstruct and analyse genome-wide data from the naturally mummified hair of a 4000-year-old individual from Sudan in northeastern Africa, after failed attempts at DNA extraction from teeth, petrous, and cranium of this and other individuals from the Kadruka cemeteries. We find that hair DNA extracted with an established single-stranded library protocol is unusually enriched in ultra-short DNA molecules and exhibits substantial interior molecular damage. The aDNA was nonetheless amenable to genetic analyses, which revealed that the genome is genetically indistinguishable from that of early Neolithic eastern African pastoralists located 2500 kms away. Our findings are consistent with established models for the southward dispersal of Middle Nile Valley pastoral populations to the Rift Valley of eastern Africa, and provide a possible genetic source population for this dispersal. Our study highlights the value of mummified hair as an alternate source of aDNA from regions with poor bone preservation.",
         "image": "images/publications/Wang2022-cv.jpg",
         "citekey": "Wang2022-cv",
-        "role": "minor",
+        "role": "lead",
         "pdf": "pdfs/Wang et al. 2022 - 4000-year-old hair from the Middle Nile highlights unusual ancient DNA degradation pattern and a potential source of early eastern Africa pastoralists.pdf"
     },
     {
@@ -31,7 +31,7 @@
         "abstract": null,
         "image": "images/publications/Gretzinger2022-et.jpg",
         "citekey": "Gretzinger2022-et",
-        "role": "minor",
+        "role": "lead",
         "pdf": "pdfs/Gretzinger and Schiffels 2022 - A glimpse into darkness - Population genetics of the European middle ages.pdf"
     },
     {
@@ -46,7 +46,7 @@
         "abstract": "The recent increase in openly available ancient human DNA samples allows for large-scale meta-analysis applications. Trans-generational past human mobility is one of the key aspects that ancient genomics can contribute to since changes in genetic ancestry-unlike cultural changes seen in the archaeological record-necessarily reflect movements of people. Here, we present an algorithm for spatiotemporal mapping of genetic profiles, which allow for direct estimates of past human mobility from large ancient genomic datasets. The key idea of the method is to derive a spatial probability surface of genetic similarity for each individual in its respective past. This is achieved by first creating an interpolated ancestry field through space and time based on multivariate statistics and Gaussian process regression and then using this field to map the ancient individuals into space according to their genetic profile. We apply this algorithm to a dataset of 3138 aDNA samples with genome-wide data from Western Eurasia in the last 10,000 y. Finally, we condense this sample-wise record with a simple summary statistic into a diachronic measure of mobility for subregions in Western, Central, and Southern Europe. For regions and periods with sufficient data coverage, our similarity surfaces and mobility estimates show general concordance with previous results and provide a meta-perspective of genetic changes and human mobility.",
         "image": "images/publications/Schmid2023-um.jpg",
         "citekey": "Schmid2023-um",
-        "role": "minor",
+        "role": "lead",
         "pdf": "pdfs/Schmid and Schiffels 2023 - Estimating human mobility in Holocene Western Eurasia with large-scale ancient genomic data.pdf"
     },
     {
