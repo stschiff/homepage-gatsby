@@ -5,6 +5,13 @@ module.exports = {
     author: `Stephan Schiffels`,
   },
   plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pageData",
+        path: "./src/data/",
+      },
+    },
     "gatsby-transformer-json",
     "gatsby-transformer-sharp",
     "gatsby-plugin-image",
@@ -13,13 +20,6 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pageData",
-        path: "./src/data/",
       },
     },
     {
