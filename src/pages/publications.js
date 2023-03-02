@@ -58,14 +58,13 @@ const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey,
     authors_short = authors_annotated;
   }
   else {
-    // authors_short = [authors_annotated[0], <span>...<Button variant="secondary" size="sm" onClick={() => setAuthorsCollapse(false)}>Expand</Button>...</span>, authors_annotated[authors_annotated.length - 1]];
     authors_short = [authors_annotated[0], <span>...<Button className="mx-1 p-0" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(false)}>Expand</Button>...</span>, authors_annotated[authors_annotated.length - 1]];
   }
   if(authors.length > 6) {
     authors_annotated.push(<Button className="ml-1 p-0" variant="secondary" size="sm" onClick={() => setAuthorsCollapse(true)}>Collapse</Button>);
   }
 
-  const imgComp = image ? <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="An image from the publication"/> : <div></div>;
+  const imgComp = image ? <GatsbyImage image={image} alt="An image from the publication"/> : <div></div>;
 
   let badge = <Badge variant="secondary">minor</Badge>;
   if(role === "major") {
@@ -98,8 +97,28 @@ const PubEntry = ({url, date, authors, title, journal, abstract, image, citekey,
   )
 }
 
+function getImageFromCitekey(allImages, citekey) {
+  var ret = null;
+  allImages.nodes.forEach(node => {
+    if(node.relativePath === "images/publications/" + citekey + ".jpg")
+      ret = node.childImageSharp.gatsbyImageData;
+  });
+  return ret;
+}
+
+function getPDFLink(allPdfs, pdfFileName) {
+  var ret = null;
+  console.log(pdfFileName);
+  allPdfs.nodes.forEach(node => {
+    if(node.relativePath === "pdfs/" + pdfFileName)
+      ret = node.publicURL
+  })
+  return ret;
+}
+
 const PublicationsPage = ({data}) => {
   const [selection, setSelection] = useState(false);
+  console.log(data.allPdfs);
   return (
     <Layout pageTitle="Publications" activeNav="/publications">
       <Seo title="Stephan Schiffels - Publications" description="All peer-reviewed publications coauthored by Stephan Schiffels" />
@@ -111,7 +130,8 @@ const PublicationsPage = ({data}) => {
       </p>
       <Button variant="warning" className="mb-3" onClick={() => setSelection(!selection)}>{selection ? "Show all" : "Show lead contributions only"}</Button>
       {data.allPublicationsJson.nodes.filter(node => !selection || node.role === "lead").map(node => {
-        const l = node.pdf ? node.pdf.publicURL : null
+        const image = getImageFromCitekey(data.allImages, node.citekey);
+        const pdfLink = getPDFLink(data.allPdfs, node.pdfFileName);
         return (
           <PubEntry url={node.url}
                        journal={node.journal}
@@ -119,10 +139,10 @@ const PublicationsPage = ({data}) => {
                        title={node.title}
                        date={node.date}
                        abstract={node.abstract}
-                       image={node.image}
+                       image={image}
                        role={node.role}
                        citekey={node.citekey}
-                       pdfLink={l}/>
+                       pdfLink={pdfLink}/>
         );
       })}
     </Layout>
@@ -143,20 +163,21 @@ query {
       abstract
       citekey
       role
-      pdf {
-        publicURL
-      }
-      image {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0)
-        }
-      }
+      pdfFileName
     }
   }
-  pdfs: allFile(filter: {relativeDirectory: {eq: "pdfs"}}) {
+  allPdfs: allFile(filter: {relativeDirectory: {eq: "pdfs"}}) {
     nodes {
-      name
+      relativePath
       publicURL
+    }
+  }
+  allImages: allFile(filter: {relativeDirectory: {eq: "images/publications"}}) {
+    nodes {
+      relativePath
+      childImageSharp {
+        gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0)
+      }
     }
   }
 }`

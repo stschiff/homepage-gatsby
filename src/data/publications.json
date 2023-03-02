@@ -18,10 +18,9 @@
         "title": "Missing lactase persistence in Late Iron Age Central Europe",
         "url": "https://web.rgzm.de/publikationen/verlagsprogramm/zeitschriften/archaeologisches-korrespondenzblatt/pm/article/missing-lactase-persistence-in-late-iron-age-central-europe/",
         "abstract": "Being able to digest milk sugar beyond the age of weaning is a rather new trait in humans. The calculated age of the responsible mutations largely coincides with the introduction of dairy farming. Recent European populations exhibit a gradient of high levels of lactose tolerance in the north and lower numbers in the south. Lactase persistence is believed to have co-evolved with farming or livestock keeping as a selective advantage. Palaeogenetic data of prehistoric individuals, however, have so far not provided any clear evidence that the spread of the lactase persistence mutation predates the Roman period, while persistence increases throughout the Middle Ages. In contrast, evidence of dairy processing reaches back to the introduction of farming in the Neolithic. In this paper, we investigate lactase persistence in the La T\u00e8ne period of the European Iron Age. 39 individuals from Austria, France, Hungary and Switzerland have been successfully genotyped for the two single nucleotide polymorphisms (SNPs) 13910C/T and 22018G/A, which are associated with lactose tolerance. None of those individuals carries the homozygous variant of either of the two SNPs, while four individuals are heterozygous at 22018G/A. This implies that during the Iron Age processed dairy products like cheese and yoghurt still represented the common supply of milk-derived nutrients while fresh milk played only a minor role in the regions studied here. The population-wide spread of the lactose tolerance trait in Europe therefore clearly post-dates the Iron Age.",
-        "image": "images/publications/Warnberg2022-xr.jpg",
         "citekey": "Warnberg2022-xr",
         "role": "minor",
-        "pdf": "pdfs/Warnberg et al. 2022 - Missing lactase persistence in Late Iron Age Central Europe.pdf"
+        "pdfFileName": "Warnberg et al. 2022 - Missing lactase persistence in Late Iron Age Central Europe.pdf"
     },
     {
         "journal": "Scientific reports",
@@ -38,10 +37,9 @@
         "title": "4000-year-old hair from the Middle Nile highlights unusual ancient DNA degradation pattern and a potential source of early eastern Africa pastoralists",
         "url": "http://dx.doi.org/10.1038/s41598-022-25384-y",
         "abstract": "Petrous bones and teeth are the skeletal elements most often targeted by researchers for ancient DNA (aDNA) extraction, and the sources of the majority of previously published ancient African genomes. However, the high temperature environments that characterise much of Africa often lead to poor preservation of skeletal remains. Here, we successfully reconstruct and analyse genome-wide data from the naturally mummified hair of a 4000-year-old individual from Sudan in northeastern Africa, after failed attempts at DNA extraction from teeth, petrous, and cranium of this and other individuals from the Kadruka cemeteries. We find that hair DNA extracted with an established single-stranded library protocol is unusually enriched in ultra-short DNA molecules and exhibits substantial interior molecular damage. The aDNA was nonetheless amenable to genetic analyses, which revealed that the genome is genetically indistinguishable from that of early Neolithic eastern African pastoralists located 2500 kms away. Our findings are consistent with established models for the southward dispersal of Middle Nile Valley pastoral populations to the Rift Valley of eastern Africa, and provide a possible genetic source population for this dispersal. Our study highlights the value of mummified hair as an alternate source of aDNA from regions with poor bone preservation.",
-        "image": "images/publications/Wang2022-cv.jpg",
         "citekey": "Wang2022-cv",
         "role": "lead",
-        "pdf": "pdfs/Wang et al. 2022 - 4000-year-old hair from the Middle Nile highlights unusual ancient DNA degradation pattern and a potential source of early eastern Africa pastoralists.pdf"
+        "pdfFileName": "Wang et al. 2022 - 4000-year-old hair from the Middle Nile highlights unusual ancient DNA degradation pattern and a potential source of early eastern Africa pastoralists.pdf"
     },
     {
         "journal": "in New Narratives for the First Millennium {AD}? : Alte und neue\nPerspektiven der arch\u00e4ologischen Forschung zum 1. Jahrtausend n.\nChr., Braunschweigisches Landesmuseum",
@@ -53,10 +51,9 @@
         "title": "A glimpse into darkness: Population genetics of the European middle ages",
         "url": "https://leopard.tu-braunschweig.de/receive/dbbs_mods_00071944",
         "abstract": null,
-        "image": "images/publications/Gretzinger2022-et.jpg",
         "citekey": "Gretzinger2022-et",
         "role": "lead",
-        "pdf": "pdfs/Gretzinger and Schiffels 2022 - A glimpse into darkness - Population genetics of the European middle ages.pdf"
+        "pdfFileName": "Gretzinger and Schiffels 2022 - A glimpse into darkness - Population genetics of the European middle ages.pdf"
     },
     {
         "journal": "Proceedings of the National Academy of Sciences of the United\nStates of America",
@@ -68,10 +65,9 @@
         "title": "Estimating human mobility in Holocene Western Eurasia with large-scale ancient genomic data",
         "url": "http://dx.doi.org/10.1073/pnas.2218375120",
         "abstract": "The recent increase in openly available ancient human DNA samples allows for large-scale meta-analysis applications. Trans-generational past human mobility is one of the key aspects that ancient genomics can contribute to since changes in genetic ancestry-unlike cultural changes seen in the archaeological record-necessarily reflect movements of people. Here, we present an algorithm for spatiotemporal mapping of genetic profiles, which allow for direct estimates of past human mobility from large ancient genomic datasets. The key idea of the method is to derive a spatial probability surface of genetic similarity for each individual in its respective past. This is achieved by first creating an interpolated ancestry field through space and time based on multivariate statistics and Gaussian process regression and then using this field to map the ancient individuals into space according to their genetic profile. We apply this algorithm to a dataset of 3138 aDNA samples with genome-wide data from Western Eurasia in the last 10,000 y. Finally, we condense this sample-wise record with a simple summary statistic into a diachronic measure of mobility for subregions in Western, Central, and Southern Europe. For regions and periods with sufficient data coverage, our similarity surfaces and mobility estimates show general concordance with previous results and provide a meta-perspective of genetic changes and human mobility.",
-        "image": "images/publications/Schmid2023-um.jpg",
         "citekey": "Schmid2023-um",
         "role": "lead",
-        "pdf": "pdfs/Schmid and Schiffels 2023 - Estimating human mobility in Holocene Western Eurasia with large-scale ancient genomic data.pdf"
+        "pdfFileName": "Schmid and Schiffels 2023 - Estimating human mobility in Holocene Western Eurasia with large-scale ancient genomic data.pdf"
     },
     {
         "journal": "Current Archaeology",
@@ -83,10 +79,9 @@
         "title": "Transformations in early medieval England",
         "url": "https://the-past.com/feature/transformations-in-early-medieval-england/",
         "abstract": "Ancient human DNA is revolutionising our ability to detect human migration that occurred hundreds of years ago. Joscha Gretzinger and Stephan Schiffels explain how these advances have transformed our understanding of the past",
-        "image": "images/publications/Gretzinger2022-wf.jpg",
         "citekey": "Gretzinger2022-wf",
         "role": "lead",
-        "pdf": "pdfs/Gretzinger and Schiffels 2022 - Transformations in early medieval England.pdf"
+        "pdfFileName": "Gretzinger and Schiffels 2022 - Transformations in early medieval England.pdf"
     },
     {
         "journal": "Cell",
@@ -128,10 +123,9 @@
         "title": "Genome-wide data from medieval German Jews show that the Ashkenazi founder event pre-dated the 14th century",
         "url": "http://dx.doi.org/10.1016/j.cell.2022.11.002",
         "abstract": "We report genome-wide data from 33 Ashkenazi Jews (AJ), dated to the 14th century, obtained following a salvage excavation at the medieval Jewish cemetery of Erfurt, Germany. The Erfurt individuals are genetically similar to modern AJ, but they show more variability in Eastern European-related ancestry than modern AJ. A third of the Erfurt individuals carried a mitochondrial lineage common in modern AJ and eight carried pathogenic variants known to affect AJ today. These observations, together with high levels of runs of homozygosity, suggest that the Erfurt community had already experienced the major reduction in size that affected modern AJ. The Erfurt bottleneck was more severe, implying substructure in medieval AJ. Overall, our results suggest that the AJ founder event and the acquisition of the main sources of ancestry pre-dated the 14th century and highlight late medieval genetic heterogeneity no longer present in modern AJ.",
-        "image": "images/publications/Waldman2022-hw.jpg",
         "citekey": "Waldman2022-hw",
         "role": "minor",
-        "pdf": "pdfs/Waldman et al. 2022 - Genome-wide data from medieval German Jews show that the Ashkenazi founder event pre-dated the 14th century.pdf"
+        "pdfFileName": "Waldman et al. 2022 - Genome-wide data from medieval German Jews show that the Ashkenazi founder event pre-dated the 14th century.pdf"
     },
     {
         "journal": "Genetics",
@@ -151,10 +145,9 @@
         "title": "Demes: a standard format for demographic models",
         "url": "http://dx.doi.org/10.1093/genetics/iyac131",
         "abstract": "Understanding the demographic history of populations is a key goal in population genetics, and with improving methods and data, ever more complex models are being proposed and tested. Demographic models of current interest typically consist of a set of discrete populations, their sizes and growth rates, and continuous and pulse migrations between those populations over a number of epochs, which can require dozens of parameters to fully describe. There is currently no standard format to define such models, significantly hampering progress in the field. In particular, the important task of translating the model descriptions in published work into input suitable for population genetic simulators is labor intensive and error prone. We propose the Demes data model and file format, built on widely used technologies, to alleviate these issues. Demes provide a well-defined and unambiguous model of populations and their properties that is straightforward to implement in software, and a text file format that is designed for simplicity and clarity. We provide thoroughly tested implementations of Demes parsers in multiple languages including Python and C, and showcase initial support in several simulators and inference methods. An introduction to the file format and a detailed specification are available at https://popsim-consortium.github.io/demes-spec-docs/.",
-        "image": "images/publications/Gower2022-px.jpg",
         "citekey": "Gower2022-px",
         "role": "minor",
-        "pdf": "pdfs/Gower et al. 2022 - Demes - a standard format for demographic models.pdf"
+        "pdfFileName": "Gower et al. 2022 - Demes - a standard format for demographic models.pdf"
     },
     {
         "journal": "Nature",
@@ -244,10 +237,9 @@
         "title": "The Anglo-Saxon migration and the formation of the early English gene pool",
         "url": "https://www.nature.com/articles/s41586-022-05247-2",
         "abstract": "The history of the British Isles and Ireland is characterized by multiple periods of major cultural change, including the influential transformation after the end of Roman rule, which precipitated shifts in language, settlement patterns and material culture1. The extent to which migration from continental Europe mediated these transitions is a matter of long-standing debate2\u20134. Here we study genome-wide ancient DNA from 460 medieval northwestern Europeans\u2014including 278 individuals from England\u2014alongside archaeological data, to infer contemporary population dynamics. We identify a substantial increase of continental northern European ancestry in early medieval England, which is closely related to the early medieval and present-day inhabitants of Germany and Denmark, implying large-scale substantial migration across the North Sea into Britain during the Early Middle Ages. As a result, the individuals who we analysed from eastern England derived up to 76\\% of their ancestry from the continental North Sea zone, albeit with substantial regional variation and heterogeneity within sites. We show that women with immigrant ancestry were more often furnished with grave goods than women with local ancestry, whereas men with weapons were as likely not to be of immigrant ancestry. A comparison with present-day Britain indicates that subsequent demographic events reduced the fraction of continental northern European ancestry while introducing further ancestry components into the English gene pool, including substantial southwestern European ancestry most closely related to that seen in Iron Age France5,6. Archaeogenetic study of ancient DNA from medieval northwestern Europeans reveals substantial increase of continental northern European ancestry in Britain, suggesting mass migration across the North Sea during the Early Middle Ages.",
-        "image": "images/publications/Gretzinger2022-cg.jpg",
         "citekey": "Gretzinger2022-cg",
         "role": "lead",
-        "pdf": "pdfs/Gretzinger et al. 2022 - The Anglo-Saxon migration and the formation of the early English gene pool.pdf"
+        "pdfFileName": "Gretzinger et al. 2022 - The Anglo-Saxon migration and the formation of the early English gene pool.pdf"
     },
     {
         "journal": "Nature",
@@ -321,10 +313,9 @@
         "title": "Ethics of DNA research on human remains: five globally applicable guidelines",
         "url": "http://dx.doi.org/10.1038/s41586-021-04008-x",
         "abstract": "We are a group of archaeologists, anthropologists, curators and geneticists representing diverse global communities and 31 countries. All of us met in a virtual workshop dedicated to ethics in ancient DNA research held in November 2020. There was widespread agreement that globally applicable ethical guidelines are needed, but that recent recommendations grounded in discussion about research on human remains from North America are not always generalizable worldwide. Here we propose the following globally applicable guidelines, taking into consideration diverse contexts. These hold that: (1) researchers must ensure that all regulations were followed in the places where they work and from which the human remains derived; (2) researchers must prepare a detailed plan prior to beginning any study; (3) researchers must minimize damage to human remains; (4) researchers must ensure that data are made available following publication to allow critical re-examination of scientific findings; and (5) researchers must engage with other stakeholders from the beginning of a study and ensure respect and sensitivity to stakeholder perspectives. We commit to adhering to these guidelines and expect they will promote a high ethical standard in DNA research on human remains going forward.",
-        "image": "images/publications/Alpaslan-Roodenberg2021-rw.jpg",
         "citekey": "Alpaslan-Roodenberg2021-rw",
         "role": "minor",
-        "pdf": "pdfs/Alpaslan-Roodenberg et al. 2021 - Ethics of DNA research on human remains - five globally applicable guidelines.pdf"
+        "pdfFileName": "Alpaslan-Roodenberg et al. 2021 - Ethics of DNA research on human remains - five globally applicable guidelines.pdf"
     },
     {
         "journal": "Deutscher Museumsbund e.V.",
@@ -351,10 +342,9 @@
         "title": "Guidelines: Care of Human Remains in Museums and Collections",
         "url": "https://www.museumsbund.de/publikationen/care-of-human-remains-in-museums-and-collections/",
         "abstract": null,
-        "image": "images/publications/Ahrndt2021-bt.jpg",
         "citekey": "Ahrndt2021-bt",
         "role": "major",
-        "pdf": "pdfs/Ahrndt et al. 2021 - Guidelines - Care of Human Remains in Museums and Collections.pdf"
+        "pdfFileName": "Ahrndt et al. 2021 - Guidelines - Care of Human Remains in Museums and Collections.pdf"
     },
     {
         "journal": "Science",
@@ -534,10 +524,9 @@
         "title": "Ten millennia of hepatitis B virus evolution",
         "url": "https://www.science.org/doi/10.1126/science.abi5658",
         "abstract": "[Figure: see text].",
-        "image": "images/publications/Kocher2021-zq.jpg",
         "citekey": "Kocher2021-zq",
         "role": "minor",
-        "pdf": "pdfs/Kocher et al. 2021 - Ten millennia of hepatitis B virus evolution.pdf"
+        "pdfFileName": "Kocher et al. 2021 - Ten millennia of hepatitis B virus evolution.pdf"
     },
     {
         "journal": "Science advances",
@@ -590,10 +579,9 @@
         "title": "Dynamic changes in genomic and social structures in third millennium BCE central Europe",
         "url": "http://dx.doi.org/10.1126/sciadv.abi6941",
         "abstract": "Europe's prehistory oversaw dynamic and complex interactions of diverse societies, hitherto unexplored at detailed regional scales. Studying 271 human genomes dated ~4900 to 1600 BCE from the European heartland, Bohemia, we reveal unprecedented genetic changes and social processes. Major migrations preceded the arrival of ``steppe'' ancestry, and at ~2800 BCE, three genetically and culturally differentiated groups coexisted. Corded Ware appeared by 2900 BCE, were initially genetically diverse, did not derive all steppe ancestry from known Yamnaya, and assimilated females of diverse backgrounds. Both Corded Ware and Bell Beaker groups underwent dynamic changes, involving sharp reductions and complete replacements of Y-chromosomal diversity at ~2600 and ~2400 BCE, respectively, the latter accompanied by increased Neolithic-like ancestry. The Bronze Age saw new social organization emerge amid a \u226540\\% population turnover.",
-        "image": "images/publications/Papac2021-up.jpg",
         "citekey": "Papac2021-up",
         "role": "minor",
-        "pdf": "pdfs/Papac et al. 2021 - Dynamic changes in genomic and social structures in third millennium BCE central Europe.pdf"
+        "pdfFileName": "Papac et al. 2021 - Dynamic changes in genomic and social structures in third millennium BCE central Europe.pdf"
     },
     {
         "journal": "Scientific reports",
@@ -610,10 +598,9 @@
         "title": "Reconstructing genetic histories and social organisation in Neolithic and Bronze Age Croatia",
         "url": "https://www.nature.com/articles/s41598-021-94932-9",
         "abstract": "Ancient DNA studies have revealed how human migrations from the Neolithic to the Bronze Age transformed the social and genetic structure of European societies. Present-day Croatia lies at the heart of ancient migration routes through Europe, yet our knowledge about social and genetic processes here remains sparse. To shed light on these questions, we report new whole-genome data for 28 individuals dated to between ~ 4700 BCE\u2013400 CE from two sites in present-day eastern Croatia. In the Middle Neolithic we evidence first cousin mating practices and strong genetic continuity from the Early Neolithic. In the Middle Bronze Age community that we studied, we find multiple closely related males suggesting a patrilocal social organisation. We also find in that community an unexpected genetic ancestry profile distinct from individuals found at contemporaneous sites in the region, due to the addition of hunter-gatherer-related ancestry. These findings support archaeological evidence for contacts with communities further north in the Carpathian Basin. Finally, an individual dated to Roman times exhibits an ancestry profile that is broadly present in the region today, adding an important data point to the substantial shift in ancestry that occurred in the region between the Bronze Age and today.",
-        "image": "images/publications/Freilich2021-wm.jpg",
         "citekey": "Freilich2021-wm",
         "role": "lead",
-        "pdf": "pdfs/Freilich et al. 2021 - Reconstructing genetic histories and social organisation in Neolithic and Bronze Age Croatia.pdf"
+        "pdfFileName": "Freilich et al. 2021 - Reconstructing genetic histories and social organisation in Neolithic and Bronze Age Croatia.pdf"
     },
     {
         "journal": "The Journal of Open Source Software",
@@ -625,10 +612,9 @@
         "title": "bleiglas: An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation",
         "url": "https://pure.mpg.de/rest/items/item_3315442/component/file_3315443/content",
         "abstract": null,
-        "image": "images/publications/Schmid2021-ov.jpg",
         "citekey": "Schmid2021-ov",
         "role": "major",
-        "pdf": "pdfs/Schmid and Schiffels 2021 - bleiglas - An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation.pdf"
+        "pdfFileName": "Schmid and Schiffels 2021 - bleiglas - An R package for interpolation and visualisation of spatiotemporal data with 3D tessellation.pdf"
     },
     {
         "journal": "Nature",
@@ -723,10 +709,9 @@
         "title": "Genomic insights into the formation of human populations in East Asia",
         "url": "http://dx.doi.org/10.1038/s41586-021-03336-2",
         "abstract": "The deep population history of East Asia remains poorly understood owing to a lack of ancient DNA data and sparse sampling of present-day people1,2. Here we report genome-wide data from 166 East Asian individuals dating to between 6000 BC and AD 1000 and 46 present-day groups. Hunter-gatherers from Japan, the Amur River Basin, and people of Neolithic and Iron Age Taiwan and the Tibetan Plateau are linked by a deeply splitting lineage that probably reflects a coastal migration during the Late Pleistocene epoch. We also follow expansions during the subsequent Holocene epoch from four regions. First, hunter-gatherers from Mongolia and the Amur River Basin have ancestry shared by individuals who speak Mongolic and Tungusic languages, but do not carry ancestry characteristic of farmers from the West Liao River region (around 3000 BC), which contradicts theories that the expansion of these farmers spread the Mongolic and Tungusic proto-languages. Second, farmers from the Yellow River Basin (around 3000 BC) probably spread Sino-Tibetan languages, as their ancestry dispersed both to Tibet-where it forms approximately 84\\% of the gene pool in some groups-and to the Central Plain, where it has contributed around 59-84\\% to modern Han Chinese groups. Third, people from Taiwan from around 1300 BC to AD 800 derived approximately 75\\% of their ancestry from a lineage that is widespread in modern individuals who speak Austronesian, Tai-Kadai and Austroasiatic languages, and that we hypothesize derives from farmers of the Yangtze River Valley. Ancient people from Taiwan also derived about 25\\% of their ancestry from a northern lineage that is related to, but different from, farmers of the Yellow River Basin, which suggests an additional north-to-south expansion. Fourth, ancestry from Yamnaya Steppe pastoralists arrived in western Mongolia after around 3000 BC but was displaced by previously established lineages even while it persisted in western China, as would be expected if this ancestry was associated with the spread of proto-Tocharian Indo-European languages. Two later gene flows affected western Mongolia: migrants after around 2000 BC with Yamnaya and European farmer ancestry, and episodic influences of later groups with ancestry from Turan.",
-        "image": "images/publications/Wang2021-ko.jpg",
         "citekey": "Wang2021-ko",
         "role": "minor",
-        "pdf": "pdfs/Wang et al. 2021 - Genomic insights into the formation of human populations in East Asia.pdf"
+        "pdfFileName": "Wang et al. 2021 - Genomic insights into the formation of human populations in East Asia.pdf"
     },
     {
         "journal": "Nature communications",
@@ -764,10 +749,9 @@
         "title": "Ancient proteins provide evidence of dairy consumption in eastern Africa",
         "url": "http://dx.doi.org/10.1038/s41467-020-20682-3",
         "abstract": "Consuming the milk of other species is a unique adaptation of Homo sapiens, with implications for health, birth spacing and evolution. Key questions nonetheless remain regarding the origins of dairying and its relationship to the genetically-determined ability to drink milk into adulthood through lactase persistence (LP). As a major centre of LP diversity, Africa is of significant interest to the evolution of dairying. Here we report proteomic evidence for milk consumption in ancient Africa. Using liquid chromatography tandem mass spectrometry (LC-MS/MS) we identify dairy proteins in human dental calculus from northeastern Africa, directly demonstrating milk consumption at least six millennia ago. Our findings indicate that pastoralist groups were drinking milk as soon as herding spread into eastern Africa, at a time when the genetic adaptation for milk digestion was absent or rare. Our study links LP status in specific ancient individuals with direct evidence for their consumption of dairy products.",
-        "image": "images/publications/Bleasdale2021-qh.jpg",
         "citekey": "Bleasdale2021-qh",
         "role": "minor",
-        "pdf": "pdfs/Bleasdale et al. 2021 - Ancient proteins provide evidence of dairy consumption in eastern Africa.pdf"
+        "pdfFileName": "Bleasdale et al. 2021 - Ancient proteins provide evidence of dairy consumption in eastern Africa.pdf"
     },
     {
         "journal": "Science Advances",
@@ -800,10 +784,9 @@
         "title": "Ancient genomes reveal complex patterns of population movement, interaction, and replacement in sub-Saharan Africa",
         "url": "https://advances.sciencemag.org/content/6/24/eaaz0183",
         "abstract": "Africa hosts the greatest human genetic diversity globally, but legacies of ancient population interactions and dispersals across the continent remain understudied. Here, we report genome-wide data from 20 ancient sub-Saharan African individuals, including the first reported ancient DNA from the DRC, Uganda, and Botswana. These data demonstrate the contraction of diverse, once contiguous hunter-gatherer populations, and suggest the resistance to interaction with incoming pastoralists of delayed-return foragers in aquatic environments. We refine models for the spread of food producers into eastern and southern Africa, demonstrating more complex trajectories of admixture than previously suggested. In Botswana, we show that Bantu ancestry post-dates admixture between pastoralists and foragers, suggesting an earlier spread of pastoralism than farming to southern Africa. Our findings demonstrate how processes of migration and admixture have markedly reshaped the genetic map of sub-Saharan Africa in the past few millennia and highlight the utility of combined archaeological and archaeogenetic approaches.",
-        "image": "images/publications/Wang2020-ju.jpg",
         "citekey": "Wang2020-ju",
         "role": "lead",
-        "pdf": "pdfs/Wang et al. 2020 - Ancient genomes reveal complex patterns of population movement, interaction, and replacement in sub-Saharan Africa.pdf"
+        "pdfFileName": "Wang et al. 2020 - Ancient genomes reveal complex patterns of population movement, interaction, and replacement in sub-Saharan Africa.pdf"
     },
     {
         "journal": "in Diversity of Male Identities in early and Middle La T\u00e8ne Period\nCemeteries in Central Europe, Archeologick\u00fd \u00fastav SAv",
@@ -815,10 +798,9 @@
         "title": "Report on Genetic Analyses of Iron Age Samples from Slovakia",
         "url": "http://archeol.sav.sk/index.php/sk/publikacie-2020/",
         "abstract": null,
-        "image": "images/publications/Gretzinger2020-wq.jpg",
         "citekey": "Gretzinger2020-wq",
         "role": "lead",
-        "pdf": "pdfs/Gretzinger and Schiffels 2020 - Report on Genetic Analyses of Iron Age Samples from Slovakia.pdf"
+        "pdfFileName": "Gretzinger and Schiffels 2020 - Report on Genetic Analyses of Iron Age Samples from Slovakia.pdf"
     },
     {
         "journal": "Peer Community in Evolutionary Biology",
@@ -829,10 +811,9 @@
         "title": "Review and Assessment of Performance of Genomic Inference Methods based on the Sequentially Markovian Coalescent",
         "url": "https://evolbiol.peercommunityin.org/public/rec?articleId=251&comments=False&printable=True&reviews=False",
         "abstract": null,
-        "image": "images/publications/Schiffels2020-ng.jpg",
         "citekey": "Schiffels2020-ng",
         "role": "lead",
-        "pdf": "pdfs/Schiffels 2020 - Review and Assessment of Performance of Genomic Inference Methods based on the Sequentially Markovian Coalescent.pdf"
+        "pdfFileName": "Schiffels 2020 - Review and Assessment of Performance of Genomic Inference Methods based on the Sequentially Markovian Coalescent.pdf"
     },
     {
         "journal": "Cell",
@@ -875,10 +856,9 @@
         "title": "A Dynamic 6,000-Year Genetic History of Eurasia's Eastern Steppe",
         "url": "http://www.cell.com/article/S0092867420313210/abstract",
         "abstract": null,
-        "image": "images/publications/Jeong2020-ic.jpg",
         "citekey": "Jeong2020-ic",
         "role": "minor",
-        "pdf": "pdfs/Jeong et al. 2020 - A Dynamic 6,000-Year Genetic History of Eurasia's Eastern Steppe.pdf"
+        "pdfFileName": "Jeong et al. 2020 - A Dynamic 6,000-Year Genetic History of Eurasia's Eastern Steppe.pdf"
     },
     {
         "journal": "bioRxiv",
@@ -915,10 +895,9 @@
         "title": "Genomic and dietary transitions during the Mesolithic and Early Neolithic in Sicily",
         "url": "https://www.biorxiv.org/content/10.1101/2020.03.11.986158v1",
         "abstract": "Abstract Southern Italy is a key region for understanding the agricultural transition in the Mediterranean due to its central position. We present a genomic transect for 19 prehistoric Sicilians that covers the Early Mesolithic to Early Neolithic period. We find that the Early Mesolithic hunter-gatherers (HGs) are a highly drifted sister lineage to Early Holocene western European HGs, whereas a quarter of the Late Mesolithic HGs ancestry is related to HGs from eastern Europe and the Near East. This indicates substantial gene flow from (south-)eastern Europe between the Early and Late Mesolithic. The Early Neolithic farmers are genetically most similar to those from the Balkan and Greece, and carry only a maximum of \u223c7\\% ancestry from Sicilian Mesolithic HGs. Ancestry changes match changes in dietary profile and material culture, except for two individuals who may provide tentative initial evidence that HGs adopted elements of farming in Sicily.One-sentence summary Genome-wide and isotopic data from prehistoric Sicilians reveal a pre-farming connection to (south-) eastern Europe, and tentative initial evidence that hunter-gatherers adopted some Neolithic aspects prior to near-total replacement by early farmers.",
-        "image": "images/publications/Van_de_Loosdrecht2020-sn.jpg",
         "citekey": "Van_de_Loosdrecht2020-sn",
         "role": "minor",
-        "pdf": "pdfs/van de Loosdrecht et al. 2020 - Genomic and dietary transitions during the Mesolithic and Early Neolithic in Sicily.pdf"
+        "pdfFileName": "van de Loosdrecht et al. 2020 - Genomic and dietary transitions during the Mesolithic and Early Neolithic in Sicily.pdf"
     },
     {
         "journal": "in Statistical Population Genomics, Springer US",
@@ -930,10 +909,9 @@
         "title": "MSMC and MSMC2: The Multiple Sequentially Markovian Coalescent",
         "url": "http://link.springer.com/10.1007/978-1-0716-0199-0_7",
         "abstract": "The Multiple Sequentially Markovian Coalescent (MSMC) is a population genetic method and software for inferring demographic history and population structure through time from genome sequences. Here we describe the main program MSMC and its successor MSMC2. We go through all the necessary steps of processing genomic data from BAM files all the way to generating plots of inferred population size and separation histories. Some background on the methodology itself is provided, as well as bash scripts and python source code to run the necessary programs. The reader is also referred to community resources such as a mailing list and github repositories for further advice.",
-        "image": "images/publications/Schiffels2020-bv.jpg",
         "citekey": "Schiffels2020-bv",
         "role": "lead",
-        "pdf": "pdfs/Schiffels and Wang 2020 - MSMC and MSMC2 - The Multiple Sequentially Markovian Coalescent.pdf"
+        "pdfFileName": "Schiffels and Wang 2020 - MSMC and MSMC2 - The Multiple Sequentially Markovian Coalescent.pdf"
     },
     {
         "journal": "Science Advances",
@@ -966,10 +944,9 @@
         "title": "Ancient genome-wide DNA from France highlights the complexity of interactions between Mesolithic hunter-gatherers and Neolithic farmers",
         "url": "https://advances.sciencemag.org/content/6/22/eaaz5344",
         "abstract": "Starting from 12,000 years ago in the Middle East, the Neolithic lifestyle spread across Europe via separate continental and Mediterranean routes. Genomes from early European farmers have shown a clear Near Eastern/Anatolian genetic affinity with limited contribution from hunter-gatherers. However, no genomic data are available from modern-day France, where both routes converged, as evidenced by a mosaic cultural pattern. Here, we present genome-wide data from 101 individuals from 12 sites covering today's France and Germany from the Mesolithic (N = 3) to the Neolithic (N = 98) (7000\u20133000 BCE). Using the genetic substructure observed in European hunter-gatherers, we characterize diverse patterns of admixture in different regions, consistent with both routes of expansion. Early western European farmers show a higher proportion of distinctly western hunter-gatherer ancestry compared to central/southeastern farmers. Our data highlight the complexity of the biological interactions during the Neolithic expansion by revealing major regional variations.",
-        "image": "images/publications/Rivollat2020-jl.jpg",
         "citekey": "Rivollat2020-jl",
         "role": "minor",
-        "pdf": "pdfs/Rivollat et al. 2020 - Ancient genome-wide DNA from France highlights the complexity of interactions between Mesolithic hunter-gatherers and Neolithic farmers.pdf"
+        "pdfFileName": "Rivollat et al. 2020 - Ancient genome-wide DNA from France highlights the complexity of interactions between Mesolithic hunter-gatherers and Neolithic farmers.pdf"
     },
     {
         "journal": "Nature Communications",
@@ -999,10 +976,9 @@
         "title": "Ancient genomes reveal social and genetic structure of Late Neolithic Switzerland",
         "url": "https://www.nature.com/articles/s41467-020-15560-x",
         "abstract": "Genetic studies of Neolithic and Bronze Age skeletons from Europe have provided evidence for strong population genetic changes at the beginning and the end of the Neolithic period. To further understand the implications of these in Southern Central Europe, we analyze 96 ancient genomes from Switzerland, Southern Germany, and the Alsace region in France, covering the Middle/Late Neolithic to Early Bronze Age. Similar to previously described genetic changes in other parts of Europe from the early 3rd millennium BCE, we detect an arrival of ancestry related to Late Neolithic pastoralists from the Pontic-Caspian steppe in Switzerland as early as 2860\u20132460 calBCE. Our analyses suggest that this genetic turnover was a complex process lasting almost 1000 years and involved highly genetically structured populations in this region. European populations underwent strong genetic changes during the Neolithic. Here, Furtw\u00e4ngler et al. provide ancient nuclear and mitochondrial genomic data from the region of Switzerland during the end of the Neolithic and the Early Bronze Age that reveal a complex genetic turnover during the arrival of steppe ancestry.",
-        "image": "images/publications/Furtwangler2020-we.jpg",
         "citekey": "Furtwangler2020-we",
         "role": "minor",
-        "pdf": "pdfs/Furtw\u00e4ngler et al. 2020 - Ancient genomes reveal social and genetic structure of Late Neolithic Switzerland.pdf"
+        "pdfFileName": "Furtw\u00e4ngler et al. 2020 - Ancient genomes reveal social and genetic structure of Late Neolithic Switzerland.pdf"
     },
     {
         "journal": "PLoS genetics",
@@ -1016,10 +992,9 @@
         "title": "Tracking human population structure through time from whole genome sequences",
         "url": "http://dx.doi.org/10.1371/journal.pgen.1008552",
         "abstract": "The genetic diversity of humans, like many species, has been shaped by a complex pattern of population separations followed by isolation and subsequent admixture. This pattern, reaching at least as far back as the appearance of our species in the paleontological record, has left its traces in our genomes. Reconstructing a population's history from these traces is a challenging problem. Here we present a novel approach based on the Multiple Sequentially Markovian Coalescent (MSMC) to analyze the separation history between populations. Our approach, called MSMC-IM, uses an improved implementation of the MSMC (MSMC2) to estimate coalescence rates within and across pairs of populations, and then fits a continuous Isolation-Migration model to these rates to obtain a time-dependent estimate of gene flow. We show, using simulations, that our method can identify complex demographic scenarios involving post-split admixture or archaic introgression. We apply MSMC-IM to whole genome sequences from 15 worldwide populations, tracking the process of human genetic diversification. We detect traces of extremely deep ancestry between some African populations, with around 1\\% of ancestry dating to divergences older than a million years ago.",
-        "image": "images/publications/Wang2020-zc.jpg",
         "citekey": "Wang2020-zc",
         "role": "lead",
-        "pdf": "pdfs/Wang et al. 2020 - Tracking human population structure through time from whole genome sequences.pdf"
+        "pdfFileName": "Wang et al. 2020 - Tracking human population structure through time from whole genome sequences.pdf"
     },
     {
         "journal": "Cell",
@@ -1086,10 +1061,9 @@
         "title": "Uganda Genome Resource Enables Insights into Population History and Genomic Discovery in Africa",
         "url": "http://dx.doi.org/10.1016/j.cell.2019.10.004",
         "abstract": "Genomic studies in African populations provide unique opportunities to understand disease etiology, human diversity, and population history. In the largest study of its kind, comprising genome-wide data from 6,400 individuals and whole-genome sequences from 1,978 individuals from rural Uganda, we find evidence of geographically correlated fine-scale population substructure. Historically, the ancestry of modern Ugandans was best represented by a mixture of ancient East African pastoralists. We demonstrate the value of the largest sequence panel from Africa to date as an imputation resource. Examining 34 cardiometabolic traits, we show systematic differences in trait heritability between European and African populations, probably reflecting the differential impact of genes and environment. In a multi-trait pan-African GWAS of up to 14,126 individuals, we identify novel loci associated with anthropometric, hematological, lipid, and glycemic traits. We find that several functionally important signals are driven by Africa-specific variants, highlighting the value of studying diverse populations across the region.",
-        "image": "images/publications/Gurdasani2019-fv.jpg",
         "citekey": "Gurdasani2019-fv",
         "role": "minor",
-        "pdf": "pdfs/Gurdasani et al. 2019 - Uganda Genome Resource Enables Insights into Population History and Genomic Discovery in Africa.pdf"
+        "pdfFileName": "Gurdasani et al. 2019 - Uganda Genome Resource Enables Insights into Population History and Genomic Discovery in Africa.pdf"
     },
     {
         "journal": "Science",
@@ -1123,10 +1097,9 @@
         "title": "Kinship-based social inequality in Bronze Age Europe",
         "url": "http://dx.doi.org/10.1126/science.aax6219",
         "abstract": "Revealing and understanding the mechanisms behind social inequality in prehistoric societies is a major challenge. By combining genome-wide data, isotopic evidence, and anthropological and archaeological data, we have gone beyond the dominating supraregional approaches in archaeogenetics to shed light on the complexity of social status, inheritance rules, and mobility during the Bronze Age. We applied a deep microregional approach and analyzed genome-wide data of 104 human individuals deriving from farmstead-related cemeteries from the Late Neolithic to the Middle Bronze Age in southern Germany. Our results reveal individual households, lasting several generations, that consisted of a high-status core family and unrelated low-status individuals; a social organization accompanied by patrilocality and female exogamy; and the stability of this system over 700 years.",
-        "image": "images/publications/Mittnik2019-jw.jpg",
         "citekey": "Mittnik2019-jw",
         "role": "major",
-        "pdf": "pdfs/Mittnik et al. 2019 - Kinship-based social inequality in Bronze Age Europe.pdf"
+        "pdfFileName": "Mittnik et al. 2019 - Kinship-based social inequality in Bronze Age Europe.pdf"
     },
     {
         "journal": "Current Biology",
@@ -1157,10 +1130,9 @@
         "title": "Survival of Late Pleistocene Hunter-Gatherer Ancestry in the Iberian Peninsula",
         "url": "http://dx.doi.org/10.1016/j.cub.2019.02.006",
         "abstract": "The Iberian Peninsula in southwestern Europe represents an important test case for the study of human population movements during prehistoric periods. During the Last Glacial Maximum (LGM), the peninsula formed a periglacial refugium [1] for hunter-gatherers (HGs) and thus served as a potential source for the re-peopling of northern latitudes [2]. The post-LGM genetic signature was previously described as a cline from Western HG (WHG) to Eastern HG (EHG), further shaped by later Holocene expansions from the Near East and the North Pontic steppes [3-9]. Western and central Europe were dominated by ancestry associated with the \u223c14,000-year-old individual from Villabruna, Italy, which had largely replaced earlier genetic ancestry, represented by 19,000-15,000-year-old individuals associated with the Magdalenian culture [2]. However, little is known about the genetic diversity in southern European refugia, the presence of distinct genetic clusters, and correspondence with geography. Here, we report new genome-wide data from 11 HGs and Neolithic individuals that highlight the late survival of Paleolithic ancestry in Iberia, reported previously in Magdalenian-associated individuals. We show that all Iberian HGs, including the oldest, a \u223c19,000-year-old individual from El Mir\u00f3n in Spain, carry dual ancestry from both Villabruna and the Magdalenian-related individuals. Thus, our results suggest an early connection between two potential refugia, resulting in a genetic ancestry that survived in later Iberian HGs. Our new genomic data from Iberian Early and Middle Neolithic individuals show that the dual Iberian HG genomic legacy pertains in the peninsula, suggesting that expanding farmers mixed with local HGs. VIDEO ABSTRACT.",
-        "image": "images/publications/Villalba-Mouco2019-sn.jpg",
         "citekey": "Villalba-Mouco2019-sn",
         "role": "minor",
-        "pdf": "pdfs/Villalba-Mouco et al. 2019 - Survival of Late Pleistocene Hunter-Gatherer Ancestry in the Iberian Peninsula.pdf"
+        "pdfFileName": "Villalba-Mouco et al. 2019 - Survival of Late Pleistocene Hunter-Gatherer Ancestry in the Iberian Peninsula.pdf"
     },
     {
         "journal": "Science Advances",
@@ -1186,10 +1158,9 @@
         "title": "Current evidence allows multiple models for the peopling of the Americas",
         "url": "http://dx.doi.org/10.1126/sciadv.aat5473",
         "abstract": null,
-        "image": "images/publications/Potter2018-et.jpg",
         "citekey": "Potter2018-et",
         "role": "minor",
-        "pdf": "pdfs/Potter et al. 2018 - Current evidence allows multiple models for the peopling of the Americas.pdf"
+        "pdfFileName": "Potter et al. 2018 - Current evidence allows multiple models for the peopling of the Americas.pdf"
     },
     {
         "journal": "Science",
@@ -1213,10 +1184,9 @@
         "title": "Arrival routes of first Americans uncertain",
         "url": "http://dx.doi.org/10.1126/science.aar8233",
         "abstract": null,
-        "image": "images/publications/Potter2018-sf.jpg",
         "citekey": "Potter2018-sf",
         "role": "minor",
-        "pdf": "pdfs/Potter et al. 2018 - Arrival routes of first Americans uncertain.pdf"
+        "pdfFileName": "Potter et al. 2018 - Arrival routes of first Americans uncertain.pdf"
     },
     {
         "journal": "Nature",
@@ -1261,10 +1231,9 @@
         "title": "Palaeo-Eskimo genetic ancestry and the peopling of Chukotka and North America",
         "url": "http://dx.doi.org/10.1038/s41586-019-1251-y",
         "abstract": "Much of the American Arctic was first settled 5,000 years ago, by groups of people known as Palaeo-Eskimos. They were subsequently joined and largely displaced around 1,000 years ago by ancestors of the present-day Inuit and Yup'ik1-3. The genetic relationship between Palaeo-Eskimos and Native American, Inuit, Yup'ik and Aleut populations remains uncertain4-6. Here we present genomic data for 48 ancient individuals from Chukotka, East Siberia, the Aleutian Islands, Alaska, and the Canadian Arctic. We co-analyse these data with data from present-day Alaskan I\u00f1upiat and West Siberian populations and published genomes. Using methods based on rare-allele and haplotype sharing, as well as established techniques4,7-9, we show that Palaeo-Eskimo-related ancestry is ubiquitous among people who speak Na-Dene and Eskimo-Aleut languages. We develop a comprehensive model for the Holocene peopling events of Chukotka and North America, and show that Na-Dene-speaking peoples, people of the Aleutian Islands, and Yup'ik and Inuit across the Arctic region all share ancestry from a single Palaeo-Eskimo-related Siberian source.",
-        "image": "images/publications/Flegontov2019-uq.jpg",
         "citekey": "Flegontov2019-uq",
         "role": "lead",
-        "pdf": "pdfs/Flegontov et al. 2019 - Palaeo-Eskimo genetic ancestry and the peopling of Chukotka and North America.pdf"
+        "pdfFileName": "Flegontov et al. 2019 - Palaeo-Eskimo genetic ancestry and the peopling of Chukotka and North America.pdf"
     },
     {
         "journal": "Nature Ecology and Evolution",
@@ -1323,10 +1292,9 @@
         "title": "The genetic history of admixture across inner Eurasia",
         "url": "http://dx.doi.org/10.1038/s41559-019-0878-2",
         "abstract": "The indigenous populations of inner Eurasia-a huge geographic region covering the central Eurasian steppe and the northern Eurasian taiga and tundra-harbour tremendous diversity in their genes, cultures and languages. In this study, we report novel genome-wide data for 763 individuals from Armenia, Georgia, Kazakhstan, Moldova, Mongolia, Russia, Tajikistan, Ukraine and Uzbekistan. We furthermore report additional damage-reduced genome-wide data of two previously published individuals from the Eneolithic Botai culture in Kazakhstan (~5,400 BP). We find that present-day inner Eurasian populations are structured into three distinct admixture clines stretching between various western and eastern Eurasian ancestries, mirroring geography. The Botai and more recent ancient genomes from Siberia show a decrease in contributions from so-called 'ancient North Eurasian' ancestry over time, which is detectable only in the northern-most 'forest-tundra' cline. The intermediate 'steppe-forest' cline descends from the Late Bronze Age steppe ancestries, while the 'southern steppe' cline further to the south shows a strong West/South Asian influence. Ancient genomes suggest a northward spread of the southern steppe cline in Central Asia during the first millennium BC. Finally, the genetic structure of Caucasus populations highlights a role of the Caucasus Mountains as a barrier to gene flow and suggests a post-Neolithic gene flow into North Caucasus populations from the steppe.",
-        "image": "images/publications/Jeong2019-oe.jpg",
         "citekey": "Jeong2019-oe",
         "role": "minor",
-        "pdf": "pdfs/Jeong et al. 2019 - The genetic history of admixture across inner Eurasia.pdf"
+        "pdfFileName": "Jeong et al. 2019 - The genetic history of admixture across inner Eurasia.pdf"
     },
     {
         "journal": "Nature Communications",
@@ -1382,10 +1350,9 @@
         "title": "Ancient human genome-wide data from a 3000-year interval in the Caucasus corresponds with eco-geographic regions",
         "url": "http://dx.doi.org/10.1038/s41467-018-08220-8",
         "abstract": "Archaeogenetic studies have described the formation of Eurasian 'steppe ancestry' as a mixture of Eastern and Caucasus hunter-gatherers. However, it remains unclear when and where this ancestry arose and whether it was related to a horizon of cultural innovations in the 4th millennium BCE that subsequently facilitated the advance of pastoral societies in Eurasia. Here we generated genome-wide SNP data from 45 prehistoric individuals along a 3000-year temporal transect in the North Caucasus. We observe a genetic separation between the groups of the Caucasus and those of the adjacent steppe. The northern Caucasus groups are genetically similar to contemporaneous populations south of it, suggesting human movement across the mountain range during the Bronze Age. The steppe groups from Yamnaya and subsequent pastoralist cultures show evidence for previously undetected farmer-related ancestry from different contact zones, while Steppe Maykop individuals harbour additional Upper Palaeolithic Siberian and Native American related ancestry.",
-        "image": "images/publications/Wang2019-uc.jpg",
         "citekey": "Wang2019-uc",
         "role": "minor",
-        "pdf": "pdfs/Wang et al. 2019 - Ancient human genome-wide data from a 3000-year interval in the Caucasus corresponds with eco-geographic regions.pdf"
+        "pdfFileName": "Wang et al. 2019 - Ancient human genome-wide data from a 3000-year interval in the Caucasus corresponds with eco-geographic regions.pdf"
     },
     {
         "journal": "Nature Communications",
@@ -1412,10 +1379,9 @@
         "title": "Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe",
         "url": "https://doi.org/10.1038/s41467-018-07483-5",
         "abstract": "European population history has been shaped by migrations of people, and their subsequent admixture. Recently, ancient DNA has brought new insights into European migration events linked to the advent of agriculture, and possibly to the spread of Indo-European languages. However, little is known about the ancient population history of north-eastern Europe, in particular about populations speaking Uralic languages, such as Finns and Saami. Here we analyse ancient genomic data from 11 individuals from Finland and north-western Russia. We show that the genetic makeup of northern Europe was shaped by migrations from Siberia that began at least 3500 years ago. This Siberian ancestry was subsequently admixed into many modern populations in the region, particularly into populations speaking Uralic languages today. Additionally, we show that ancestors of modern Saami inhabited a larger territory during the Iron Age, which adds to the historical and linguistic information about the population history of Finland.",
-        "image": "images/publications/Lamnidis2018-xa.jpg",
         "citekey": "Lamnidis2018-xa",
         "role": "lead",
-        "pdf": "pdfs/Lamnidis et al. 2018 - Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe.pdf"
+        "pdfFileName": "Lamnidis et al. 2018 - Ancient Fennoscandian genomes reveal origin and spread of Siberian ancestry in Europe.pdf"
     },
     {
         "journal": "Cell",
@@ -1497,10 +1463,9 @@
         "title": "Reconstructing the Deep Population History of Central and South America",
         "url": "http://dx.doi.org/10.1016/j.cell.2018.10.027",
         "abstract": "We report genome-wide ancient DNA from 49 individuals forming four parallel time transects in Belize, Brazil, the Central Andes, and the Southern Cone, each dating to at least \u223c9,000 years ago. The common ancestral population radiated rapidly from just one of the two early branches that contributed to Native Americans today. We document two previously unappreciated streams of gene flow between North and South America. One affected the Central Andes by \u223c4,200 years ago, while the other explains an affinity between the oldest North American genome associated with the Clovis culture and the oldest Central and South Americans from Chile, Brazil, and Belize. However, this was not the primary source for later South Americans, as the other ancient individuals derive from lineages without specific affinity to the Clovis-associated genome, suggesting a population replacement that began at least 9,000 years ago and was followed by substantial population continuity in multiple regions.",
-        "image": "images/publications/Posth2018-qd.jpg",
         "citekey": "Posth2018-qd",
         "role": "minor",
-        "pdf": "pdfs/Posth et al. 2018 - Reconstructing the Deep Population History of Central and South America.pdf"
+        "pdfFileName": "Posth et al. 2018 - Reconstructing the Deep Population History of Central and South America.pdf"
     },
     {
         "journal": "NTM Zeitschrift f\u00fcr Geschichte der Wissenschaften, Technik und\nMedizin",
@@ -1512,10 +1477,9 @@
         "title": "M\u00f6glichkeiten und Grenzen molekulargenetischer Untersuchungen in den Geschichtswissenschaften",
         "url": "http://dx.doi.org/10.1007/s00048-018-0196-9",
         "abstract": null,
-        "image": "images/publications/Haak2018-sk.jpg",
         "citekey": "Haak2018-sk",
         "role": "major",
-        "pdf": "pdfs/Haak and Schiffels 2018 - M\u00f6glichkeiten und Grenzen molekulargenetischer Untersuchungen in den Geschichtswissenschaften.pdf"
+        "pdfFileName": "Haak and Schiffels 2018 - M\u00f6glichkeiten und Grenzen molekulargenetischer Untersuchungen in den Geschichtswissenschaften.pdf"
     },
     {
         "journal": "in Migration and Integration from Prehistory to the Middle Ages, Tagungen Des Landesmuseums F\u00fcr Vorgeschichte Halle",
@@ -1527,10 +1491,9 @@
         "title": "Investigating Anglo-Saxon migration history with ancient and modern DNA",
         "url": "http://clok.uclan.ac.uk/20799/",
         "abstract": "British population history has been shaped by a series of immigration periods, including the Roman occupation from AD 43 and Early Anglo-Saxon migrations after AD 410. Until recently, it was an open question to whatthe extent to which these events changed the genetic population structure in Britain was an open question. Two recent genetic studies have provided new insights into this question, by analysing the genome sequences from 19 ancient British samples in total, dating from between the 1st century BC until and the 8th century AD . Here we will review these two recent studies, present a joint analysis of all 19 available samples, and will put the results into a wider archaeological context. Key results reviewed here include: 1 High high levels of genetic continuity between the late Late Iron Age and the Romano-British period; 2 a clear increase in ancestry related to the modern Dutch population during the Anglo-Saxon period, suggesting a substantial arrival of new people during this time; 3 an estimated 38 \\% average of the proportion of Anglo-Saxon ancestry in the modern English population at 38\\% on average; 4 evidence from an Early Anglo-Saxon cemetery near Cambridge for of early admixture between of Anglo-Saxon immigrants and indigenous British inhabitants from an early Anglo-Saxon cemetery near Cambridge.",
-        "image": "images/publications/Schiffels2017-oo.jpg",
         "citekey": "Schiffels2017-oo",
         "role": "lead",
-        "pdf": "pdfs/Schiffels and Sayer 2017 - Investigating Anglo-Saxon migration history with ancient and modern DNA.pdf"
+        "pdfFileName": "Schiffels and Sayer 2017 - Investigating Anglo-Saxon migration history with ancient and modern DNA.pdf"
     },
     {
         "journal": "Science",
@@ -1558,10 +1521,9 @@
         "title": "Pleistocene North African genomes link Near Eastern and sub-Saharan African human populations",
         "url": "http://science.sciencemag.org/content/early/2018/03/14/science.aar8380",
         "abstract": "North Africa is a key region for understanding human history, but the genetic history of its people is largely unknown. We present genomic data from seven 15,000-year-old modern humans from Morocco, attributed to the Iberomaurusian culture. We find a genetic affinity with early Holocene Near Easterners, best represented by Levantine Natufians, suggesting a pre-agricultural connection between Africa and the Near East. We do not find evidence for gene flow from Paleolithic Europeans into Late Pleistocene North Africans. The Taforalt individuals derive one third of their ancestry from sub-Saharan Africans, best approximated by a mixture of genetic components preserved in present-day West and East Africans. Thus, we provide direct evidence for genetic interactions between modern humans across Africa and Eurasia in the Pleistocene.",
-        "image": "images/publications/Van_de_Loosdrecht2018-ny.jpg",
         "citekey": "Van_de_Loosdrecht2018-ny",
         "role": "minor",
-        "pdf": "pdfs/van de Loosdrecht et al. 2018 - Pleistocene North African genomes link Near Eastern and sub-Saharan African human populations.pdf"
+        "pdfFileName": "van de Loosdrecht et al. 2018 - Pleistocene North African genomes link Near Eastern and sub-Saharan African human populations.pdf"
     },
     {
         "journal": "Nature Communications",
@@ -1593,10 +1555,9 @@
         "title": "The genetic prehistory of the Baltic Sea region",
         "url": "http://dx.doi.org/10.1038/s41467-018-02825-9",
         "abstract": "While the series of events that shaped the transition between foraging societies and food producers are well described for Central and Southern Europe, genetic evidence from Northern Europe surrounding the Baltic Sea is still sparse. Here, we report genome-wide DNA data from 38 ancient North Europeans ranging from ~9500 to 2200 years before present. Our analysis provides genetic evidence that hunter-gatherers settled Scandinavia via two routes. We reveal that the first Scandinavian farmers derive their ancestry from Anatolia 1000 years earlier than previously demonstrated. The range of Mesolithic Western hunter-gatherers extended to the east of the Baltic Sea, where these populations persisted without gene-flow from Central European farmers during the Early and Middle Neolithic. The arrival of steppe pastoralists in the Late Neolithic introduced a major shift in economy and mediated the spread of a new ancestry associated with the Corded Ware Complex in Northern Europe.",
-        "image": "images/publications/Mittnik2018-jc.jpg",
         "citekey": "Mittnik2018-jc",
         "role": "minor",
-        "pdf": "pdfs/Mittnik et al. 2018 - The genetic prehistory of the Baltic Sea region.pdf"
+        "pdfFileName": "Mittnik et al. 2018 - The genetic prehistory of the Baltic Sea region.pdf"
     },
     {
         "journal": "Nature",
@@ -1635,10 +1596,9 @@
         "title": "The UK10K project identifies rare variants in health and disease",
         "url": "http://dx.doi.org/10.1038/nature14962",
         "abstract": "The contribution of rare and low-frequency variants to human traits is largely unexplored. Here we describe insights from sequencing whole genomes (low read depth, 7\u00d7) or exomes (high read depth, 80\u00d7) of nearly 10,000 individuals from population-based and disease collections. In extensively phenotyped cohorts we characterize over 24 million novel sequence variants, generate a highly accurate imputation reference panel and identify novel alleles associated with levels of triglycerides (APOB), adiponectin (ADIPOQ) and low-density lipoprotein cholesterol (LDLR and RGAG1) from single-marker and rare variant aggregation tests. We describe population structure and functional annotation of rare and low-frequency variants, use the data to estimate the benefits of sequencing for association studies, and summarize lessons from disease-specific collections. Finally, we make available an extensive resource, including individual-level genetic and phenotypic data and web-based tools to facilitate the exploration of association results.",
-        "image": "images/publications/UK10K_Consortium2015-wu.jpg",
         "citekey": "UK10K_Consortium2015-wu",
         "role": "minor",
-        "pdf": "pdfs/UK10K Consortium et al. 2015 - The UK10K project identifies rare variants in health and disease.pdf"
+        "pdfFileName": "UK10K Consortium et al. 2015 - The UK10K project identifies rare variants in health and disease.pdf"
     },
     {
         "journal": "Nature Communications",
@@ -1664,10 +1624,9 @@
         "title": "Ancient Egyptian mummy genomes suggest an increase of Sub-Saharan African ancestry in post-Roman periods",
         "url": "http://dx.doi.org/10.1038/ncomms15694",
         "abstract": "Egypt, located on the isthmus of Africa, is an ideal region to study historical population dynamics due to its geographic location and documented interactions with ancient civilizations in Africa, Asia and Europe. Particularly, in the first millennium BCE Egypt endured foreign domination leading to growing numbers of foreigners living within its borders possibly contributing genetically to the local population. Here we present 90 mitochondrial genomes as well as genome-wide data sets from three individuals obtained from Egyptian mummies. The samples recovered from Middle Egypt span around 1,300 years of ancient Egyptian history from the New Kingdom to the Roman Period. Our analyses reveal that ancient Egyptians shared more ancestry with Near Easterners than present-day Egyptians, who received additional sub-Saharan admixture in more recent times. This analysis establishes ancient Egyptian mummies as a genetic source to study ancient human history and offers the perspective of deciphering Egypt's past at a genome-wide level.",
-        "image": "images/publications/Schuenemann2017-yu.jpg",
         "citekey": "Schuenemann2017-yu",
         "role": "major",
-        "pdf": "pdfs/Schuenemann et al. 2017 - Ancient Egyptian mummy genomes suggest an increase of Sub-Saharan African ancestry in post-Roman periods.pdf"
+        "pdfFileName": "Schuenemann et al. 2017 - Ancient Egyptian mummy genomes suggest an increase of Sub-Saharan African ancestry in post-Roman periods.pdf"
     },
     {
         "journal": "Nature Genetics",
@@ -1679,10 +1638,9 @@
         "title": "Inferring human population size and separation history from multiple genome sequences",
         "url": "http://www.nature.com/doifinder/10.1038/ng.3015",
         "abstract": "The availability of complete human genome sequences from populations across the world has given rise to new population genetic inference methods that explicitly model ancestral relationships under recombination and mutation. So far, application of these methods to evolutionary history more recent than 20,000-30,000 years ago and to population separations has been limited. Here we present a new method that overcomes these shortcomings. The multiple sequentially Markovian coalescent (MSMC) analyzes the observed pattern of mutations in multiple individuals, focusing on the first coalescence between any two individuals. Results from applying MSMC to genome sequences from nine populations across the world suggest that the genetic separation of non-African ancestors from African Yoruban ancestors started long before 50,000 years ago and give information about human population history as recent as 2,000 years ago, including the bottleneck in the peopling of the Americas and separations within Africa, East Asia and Europe.",
-        "image": "images/publications/Schiffels2014-xn.jpg",
         "citekey": "Schiffels2014-xn",
         "role": "lead",
-        "pdf": "pdfs/Schiffels and Durbin 2014 - Inferring human population size and separation history from multiple genome sequences.pdf"
+        "pdfFileName": "Schiffels and Durbin 2014 - Inferring human population size and separation history from multiple genome sequences.pdf"
     },
     {
         "journal": "Journal of Statistical Mechanics",
@@ -1695,10 +1653,9 @@
         "title": "Evolution of molecular phenotypes under stabilizing selection",
         "url": "http://iopscience.iop.org/article/10.1088/1742-5468/2013/01/P01012/meta",
         "abstract": "Molecular phenotypes are important links between genomic information and organismic functions, fitness, and evolution. Complex phenotypes, which are also called quantitative traits, often depend on multiple genomic loci. Their evolution builds on genome evolution in a complicated way, which involves selection, genetic drift, mutations and recombination. Here we develop a coarse-grained evolutionary statistics for phenotypes, which decouples from details of the underlying genotypes. We derive approximate evolution equations for the distribution of phenotype values within and across populations. This dynamics covers evolutionary processes at high and low recombination rates, that is, it applies to sexual and asexual populations. In a fitness landscape with a single optimal phenotype value, the phenotypic diversity within populations and the divergence between populations reach evolutionary equilibria, which describe stabilizing selection. We compute the equilibrium distributions of both quantities analytically and we show that the ratio of mean divergence and diversity depends on the strength of selection in a universal way: it is largely independent of the phenotype's genomic encoding and of the recombination rate. This establishes a new method for the inference of selection on molecular phenotypes beyond the genome level. We discuss the implications of our findings for the predictability of evolutionary processes.",
-        "image": "images/publications/Nourmohammad2013-tr.jpg",
         "citekey": "Nourmohammad2013-tr",
         "role": "major",
-        "pdf": "pdfs/Nourmohammad et al. 2013 - Evolution of molecular phenotypes under stabilizing selection.pdf"
+        "pdfFileName": "Nourmohammad et al. 2013 - Evolution of molecular phenotypes under stabilizing selection.pdf"
     },
     {
         "journal": "Science",
@@ -1809,10 +1766,9 @@
         "title": "Genomic evidence for the Pleistocene and recent population history of Native Americans",
         "url": "http://www.sciencemag.org/cgi/doi/10.1126/science.aab3884",
         "abstract": "How and when the Americas were populated remains contentious. Using ancient and modern genome-wide data, we found that the ancestors of all present-day Native Americans, including Athabascans and Amerindians, entered the Americas as a single migration wave from Siberia no earlier than 23 thousand years ago (ka) and after no more than an 8000-year isolation period in Beringia. After their arrival to the Americas, ancestral Native Americans diversified into two basal genetic branches around 13 ka, one that is now dispersed across North and South America and the other restricted to North America. Subsequent gene flow resulted in some Native Americans sharing ancestry with present-day East Asians (including Siberians) and, more distantly, Australo-Melanesians. Putative ``Paleoamerican'' relict populations, including the historical Mexican Peric\u00faes and South American Fuego-Patagonians, are not directly related to modern Australo-Melanesians as suggested by the Paleoamerican Model.",
-        "image": "images/publications/Raghavan2015-zw.jpg",
         "citekey": "Raghavan2015-zw",
         "role": "major",
-        "pdf": "pdfs/Raghavan et al. 2015 - Genomic evidence for the Pleistocene and recent population history of Native Americans.pdf"
+        "pdfFileName": "Raghavan et al. 2015 - Genomic evidence for the Pleistocene and recent population history of Native Americans.pdf"
     },
     {
         "journal": "Nature",
@@ -1897,10 +1853,9 @@
         "title": "A genomic history of Aboriginal Australia",
         "url": "http://www.nature.com/doifinder/10.1038/nature18299",
         "abstract": "The population history of Aboriginal Australians remains largely uncharacterized. Here we generate high-coverage genomes for 83 Aboriginal Australians (speakers of Pama-Nyungan languages) and 25 Papuans from the New Guinea Highlands. We find that Papuan and Aboriginal Australian ancestors diversified 25-40 thousand years ago (kya), suggesting pre-Holocene population structure in the ancient continent of Sahul (Australia, New Guinea and Tasmania). However, all of the studied Aboriginal Australians descend from a single founding population that differentiated ~10-32 kya. We infer a population expansion in northeast Australia during the Holocene epoch (past 10,000 years) associated with limited gene flow from this region to the rest of Australia, consistent with the spread of the Pama-Nyungan languages. We estimate that Aboriginal Australians and Papuans diverged from Eurasians 51-72 kya, following a single out-of-Africa dispersal, and subsequently admixed with archaic populations. Finally, we report evidence of selection in Aboriginal Australians potentially associated with living in the desert.",
-        "image": "images/publications/Malaspinas2016-hv.jpg",
         "citekey": "Malaspinas2016-hv",
         "role": "major",
-        "pdf": "pdfs/Malaspinas et al. 2016 - A genomic history of Aboriginal Australia.pdf"
+        "pdfFileName": "Malaspinas et al. 2016 - A genomic history of Aboriginal Australia.pdf"
     },
     {
         "journal": "Science",
@@ -1920,10 +1875,9 @@
         "title": "Genomic islands of speciation separate cichlid ecomorphs in an East African crater lake",
         "url": "http://www.sciencemag.org/cgi/doi/10.1126/science.aac9927",
         "abstract": "The genomic causes and effects of divergent ecological selection during speciation are still poorly understood. Here we report the discovery and detailed characterization of early-stage adaptive divergence of two cichlid fish ecomorphs in a small (700 meters in diameter) isolated crater lake in Tanzania. The ecomorphs differ in depth preference, male breeding color, body shape, diet, and trophic morphology. With whole-genome sequences of 146 fish, we identified 98 clearly demarcated genomic ``islands'' of high differentiation and demonstrated the association of genotypes across these islands with divergent mate preferences. The islands contain candidate adaptive genes enriched for functions in sensory perception (including rhodopsin and other twilight-vision-associated genes), hormone signaling, and morphogenesis. Our study suggests mechanisms and genomic regions that may play a role in the closely related mega-radiation of Lake Malawi.",
-        "image": "images/publications/Malinsky2015-dn.jpg",
         "citekey": "Malinsky2015-dn",
         "role": "minor",
-        "pdf": "pdfs/Malinsky et al. 2015 - Genomic islands of speciation separate cichlid ecomorphs in an East African crater lake.pdf"
+        "pdfFileName": "Malinsky et al. 2015 - Genomic islands of speciation separate cichlid ecomorphs in an East African crater lake.pdf"
     },
     {
         "journal": "American Journal of Human Genetics",
@@ -1951,10 +1905,9 @@
         "title": "Tracing the route of modern humans out of Africa by using 225 human genome sequences from Ethiopians and Egyptians",
         "url": "http://linkinghub.elsevier.com/retrieve/pii/S0002929715001561",
         "abstract": "The predominantly African origin of all modern human populations is well established, but the route taken out of Africa is still unclear. Two alternative routes, via Egypt and Sinai or across the Bab el Mandeb strait into Arabia, have traditionally been proposed as feasible gateways in light of geographic, paleoclimatic, archaeological, and genetic evidence. Distinguishing among these alternatives has been difficult. We generated 225 whole-genome sequences (225 at 8\u00d7 depth, of which 8 were increased to 30\u00d7; Illumina HiSeq 2000) from six modern Northeast African populations (100 Egyptians and five Ethiopian populations each represented by 25 individuals). West Eurasian components were masked out, and the remaining African haplotypes were compared with a panel of sub-Saharan African and non-African genomes. We showed that masked Northeast African haplotypes overall were more similar to non-African haplotypes and more frequently present outside Africa than were any sets of haplotypes derived from a West African population. Furthermore, the masked Egyptian haplotypes showed these properties more markedly than the masked Ethiopian haplotypes, pointing to Egypt as the more likely gateway in the exodus to the rest of the world. Using five Ethiopian and three Egyptian high-coverage masked genomes and the multiple sequentially Markovian coalescent (MSMC) approach, we estimated the genetic split times of Egyptians and Ethiopians from non-African populations at 55,000 and 65,000 years ago, respectively, whereas that of West Africans was estimated to be 75,000 years ago. Both the haplotype and MSMC analyses thus suggest a predominant northern route out of Africa via Egypt.",
-        "image": "images/publications/Pagani2015-ww.jpg",
         "citekey": "Pagani2015-ww",
         "role": "minor",
-        "pdf": "pdfs/Pagani et al. 2015 - Tracing the route of modern humans out of Africa by using 225 human genome sequences from Ethiopians and Egyptians.pdf"
+        "pdfFileName": "Pagani et al. 2015 - Tracing the route of modern humans out of Africa by using 225 human genome sequences from Ethiopians and Egyptians.pdf"
     },
     {
         "journal": "Nature",
@@ -2028,10 +1981,9 @@
         "title": "The genetic history of Ice Age Europe",
         "url": "http://www.nature.com/doifinder/10.1038/nature17993",
         "abstract": "Modern humans arrived in Europe ~45,000 years ago, but little is known about their genetic composition before the start of farming ~8,500 years ago. Here we analyse genome-wide data from 51 Eurasians from ~45,000-7,000 years ago. Over this time, the proportion of Neanderthal DNA decreased from 3-6\\% to around 2\\%, consistent with natural selection against Neanderthal variants in modern humans. Whereas there is no evidence of the earliest modern humans in Europe contributing to the genetic composition of present-day Europeans, all individuals between ~37,000 and ~14,000 years ago descended from a single founder population which forms part of the ancestry of present-day Europeans. An ~35,000-year-old individual from northwest Europe represents an early branch of this founder population which was then displaced across a broad region, before reappearing in southwest Europe at the height of the last Ice Age ~19,000 years ago. During the major warming period after ~14,000 years ago, a genetic component related to present-day Near Easterners became widespread in Europe. These results document how population turnover and migration have been recurring themes of European prehistory.",
-        "image": "images/publications/Fu2016-wp.jpg",
         "citekey": "Fu2016-wp",
         "role": "minor",
-        "pdf": "pdfs/Fu et al. 2016 - The genetic history of Ice Age Europe.pdf"
+        "pdfFileName": "Fu et al. 2016 - The genetic history of Ice Age Europe.pdf"
     },
     {
         "journal": "Nature Communications",
@@ -2054,10 +2006,9 @@
         "title": "Iron Age and Anglo-Saxon genomes from East England reveal British migration history",
         "url": "http://www.nature.com/doifinder/10.1038/ncomms10408",
         "abstract": "British population history has been shaped by a series of immigrations, including the early Anglo-Saxon migrations after 400 CE. It remains an open question how these events affected the genetic composition of the current British population. Here, we present whole-genome sequences from 10 individuals excavated close to Cambridge in the East of England, ranging from the late Iron Age to the middle Anglo-Saxon period. By analysing shared rare variants with hundreds of modern samples from Britain and Europe, we estimate that on average the contemporary East English population derives 38\\% of its ancestry from Anglo-Saxon migrations. We gain further insight with a new method, rarecoal, which infers population history and identifies fine-scale genetic ancestry from rare variants. Using rarecoal we find that the Anglo-Saxon samples are closely related to modern Dutch and Danish populations, while the Iron Age samples share ancestors with multiple Northern European populations including Britain.",
-        "image": "images/publications/Schiffels2016-in.jpg",
         "citekey": "Schiffels2016-in",
         "role": "lead",
-        "pdf": "pdfs/Schiffels et al. 2016 - Iron Age and Anglo-Saxon genomes from East England reveal British migration history.pdf"
+        "pdfFileName": "Schiffels et al. 2016 - Iron Age and Anglo-Saxon genomes from East England reveal British migration history.pdf"
     },
     {
         "journal": "Molecular Biology and Evolution",
@@ -2072,10 +2023,9 @@
         "title": "Quantifying selection acting on a complex trait using allele frequency time-series data",
         "url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=22114362&retmode=ref&cmd=prlinks",
         "abstract": "When selection is acting on a large, genetically diverse population, beneficial alleles increase in frequency. This fact can be used to map quantitative trait loci by sequencing the pooled DNA from the population at consecutive time points, and observing allele frequency changes. Here we present a population genetic method to analyse time-series data of allele frequencies from such an experiment. Beginning with a range of proposed evolutionary scenarios, the method measures the consistency of each with the observed frequency changes. Evolutionary theory is utilized to formulate equations of motion for the allele frequencies, following which likelihoods for having observed the sequencing data under each scenario are derived. Comparison of these likelihoods gives an insight into the prevailing dynamics of the system under study. We illustrate the method by quantifying selective effects from an experiment in which two phenotypically different yeast strains were first crossed and then propagated under heat stress (Parts et al., Genome Res. 2011). From these data we discover that about 6\\% of polymorphic sites evolve non-neutrally under heat stress condition, either because of their linkage to beneficial (driver) alleles or because they are drivers themselves. We further identify 44 genomic regions containing one or more candidate driver alleles, quantify their apparent selective advantage, obtain estimates of recombination rates within the regions, and show that the dynamics of the drivers display a strong signature of selection going beyond additive models. Our approach is applicable to study adaptation in a range of systems under different evolutionary pressures.",
-        "image": "images/publications/Illingworth2011-ac.jpg",
         "citekey": "Illingworth2011-ac",
         "role": "minor",
-        "pdf": "pdfs/Illingworth et al. 2011 - Quantifying selection acting on a complex trait using allele frequency time-series data.pdf"
+        "pdfFileName": "Illingworth et al. 2011 - Quantifying selection acting on a complex trait using allele frequency time-series data.pdf"
     },
     {
         "journal": "Genetics",
@@ -2089,9 +2039,8 @@
         "title": "Emergent Neutrality in Adaptive Asexual Evolution",
         "url": "http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=21926305&retmode=ref&cmd=prlinks",
         "abstract": "In non-recombining genomes, genetic linkage can be an important evolutionary force. Linkage generates interference interactions, by which simultaneously occurring mutations affect each other's chance of fixation. Here, we develop a comprehensive model of adaptive evolution in linked genomes, which integrates interference interactions between multiple beneficial and deleterious mutations into a unified framework. By an approximate analytical solution, we predict the fixation rates of these mutations, as well as the probabilities of beneficial and deleterious alleles at fixed genomic sites. We find that interference interactions generate a regime of emergent neutrality: all genomic sites with selection coefficients smaller in magnitude than a characteristic threshold have nearly random fixed alleles, and both beneficial and deleterious mutations at these sites have nearly neutral fixation rates. We show that this dynamics limits not only the speed of adaptation, but also a population's degree of adaptation in its current environment. We apply the model to different scenarios: stationary adaptation in a time-dependent environment, and approach to equilibrium in a fixed environment. In both cases, the analytical predictions are in good agreement with numerical simulations. Our results suggest that interference can severely compromise biological functions in an adapting population, which sets viability limits on adaptive evolution under linkage.",
-        "image": "images/publications/Schiffels2011-wn.jpg",
         "citekey": "Schiffels2011-wn",
         "role": "lead",
-        "pdf": "pdfs/Schiffels et al. 2011 - Emergent Neutrality in Adaptive Asexual Evolution.pdf"
+        "pdfFileName": "Schiffels et al. 2011 - Emergent Neutrality in Adaptive Asexual Evolution.pdf"
     }
 ]
