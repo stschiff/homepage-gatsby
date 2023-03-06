@@ -55,16 +55,13 @@ const GroupPage = ({data}) => {
             <li>Since 2020: Student at Deggendorf Institute of Technology (Healt Informatics)</li>
       </Portrait>
       <Portrait
-        name="Joscha Gretzinger"
-        image={data.imgJoscha.childImageSharp.gatsbyImageData}
-        link="http://www.shh.mpg.de/person/91521/25500"
-        role="PhD student">
-            <li>Since 2018: PhD student at the MPI Jena.</li>
-            <li>2016-2018: Master Student in <i>Naturwissenschaftlicher Archaeologie</i>
-                    , University of Tübingen, co-supervised by
-                    <a href="http://www.iem.uzh.ch/en/people/abg/VerenaSchuenemann-.html">Verena Schünemann</a></li>
-            <li>2013-2016 B.A. in Prehistory and Archaeology of the Middle Ages,
-                    University of Tübingen</li>
+        name="Selina Carlhoff"
+        role="Postdoc">
+            <li>Since 2023: Postdoc (ERC MICROSCOPE)</li>
+            <li>2018 - 2023: PhD Student at the MPI Jena/Leipzig under supervision of Prof. Dr. Johannes Krause, Jun.-Prof. Dr. Cosimo Posth, and Dr. Kathrin Nägele
+"Human Archaeogenomics of Southeast Asia"</li>
+            <li>2014 - 2018	M.Sci. Marine Biology, University of Southampton, UK
+"A phylogenetic study of traits and character evolution in periwinkles (Gastropoda: Littorininae)"</li>
       </Portrait>
       <Portrait
         name="Lei Huang"
@@ -77,7 +74,6 @@ const GroupPage = ({data}) => {
       <Portrait
         name="Laura Lacher"
         image={data.imgLaura.childImageSharp.gatsbyImageData}
-        link="https://www.shh.mpg.de/person/99004"
         role="PhD student">
             <li>since 2020: PhD student at the MPI Jena</li>
             <li>2018: Master of Science in <i>Naturwissenschaftliche Archäologie</i>, Eberhardt-Karls University, Tuebingen. Supervised by <a href="https://www.shh.mpg.de/3006/johanneskrause">Johannes Krause</a>, <a href="http://www.iem.uzh.ch/en/people/abg/VerenaSchuenemann-.html">Verena Schünemann</a> and <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/geowissenschaften/arbeitsgruppen/urgeschichte-naturwissenschaftliche-archaeologie/forschungsbereich/palaeoanthropologie/mitarbeiter/wahl-joachim/">Joachim Wahl</a></li>
@@ -86,9 +82,9 @@ const GroupPage = ({data}) => {
       <Portrait
         name="Thiseas Lamnidis"
         image={data.imgThiseas.childImageSharp.gatsbyImageData}
-        link="http://www.shh.mpg.de/person/45025/25522"
+        link="https://www.eva.mpg.de/archaeogenetics/staff/thiseas-christos-lamnidis/"
         role="Postdoc">
-            <li>since 2020: Staff Scientist at the MPI Jena</li>
+            <li>since 2020: Postdoc at the MPI Leipzig</li>
             <li>since 2015: PhD student at the MPI Jena.</li>
             <li>2013-2014: MSc in Evolutionary Anthropology, University of Durham, UK.</li>
             <li>2010-2013: BSc in Genetics, University of York, UK.</li>
@@ -96,12 +92,21 @@ const GroupPage = ({data}) => {
       <Portrait
         name="Angela Mötsch"
         image={data.imgAngela.childImageSharp.gatsbyImageData}
-        link="https://www.shh.mpg.de/person/60441/2375"
+        link="https://www.eva.mpg.de/archaeogenetics/staff/angela-moetsch/"
         role="Postdoc">
             <li>Since 2020: Postdoc (50%) ERC project MICROSCOPE</li>
             <li>Since 2018: Sample management and project organization at the Max Planck – Harvard Research Center for the Archaeoscience of the Ancient Mediterranean (MHAAM)</li>
             <li>2015-2018: Postdoc in the BMBF-funded project “Meanings and Functions of Mediterranean Imports in Early Iron Age Central Europe“, Cultural Heritage Department of Baden-Württemberg (2015-2018)</li>
             <li>2005-2010: Excavations and PhD (University of Kiel, subject: Archaeology) on the subject of the site of Mont Lassois, Burgundy, France.</li>
+      </Portrait>
+      <Portrait
+        name="Luka Papac"
+        role="Postdoc">
+            <li>Since 2023: Postdoc at the MPI Leipzig</li>
+            <li>2021-2022: Postdoc at the Institute of Archaeology of the Czech Academy of Sciences, Prague</li>
+            <li>2016-2020: PhD student at the MPI Jena, co-supervised by <a href="https://www.shh.mpg.de/person/42282/25500">Wolfgang Haak</a></li>
+            <li>2014-2016: M.Phil in ancient DNA, University of Melbourne</li>
+            <li>2009-2012: BSc(Hons) in Genetics, University of Melbourne</li>
       </Portrait>
       <Portrait
         name="Clemens Schmid"
@@ -113,13 +118,9 @@ const GroupPage = ({data}) => {
             <li>2011-2014 B.A. in Prehistory and Medieval Archaeology, University of Tübingen</li>
       </Portrait>
       <Portrait
-        name="Sophie Seng"
-        image={data.imgSophie.childImageSharp.gatsbyImageData}
-        role="Technical assistant">
-            <li>Since 2019 technical Assistant at the MPI for the Science of Human History , since 2021 for the ERC project MICROSCOPE</li>
-            <li>2015-2017  Master Student in chemical Biology (FSU Jena)</li>
-            <li>2013-2015  Master Student in Biochemistry (FSU Jena)</li>
-            <li>2010-2013  B.Sc.in Biology/Microbiology (FSU Jena)</li>
+        name="Tanja Schmidt"
+        role="Technical Assistant">
+          <li>Since 2022: Laboratory Assistant (50% ERC MICROSCOPE)</li>
       </Portrait>
 
       <h2>Affiliated researchers</h2>
@@ -144,6 +145,18 @@ const GroupPage = ({data}) => {
 
       <h2>Alumni</h2>
       <Portrait
+        name="Joscha Gretzinger"
+        image={data.imgJoscha.childImageSharp.gatsbyImageData}
+        role="PhD student">
+            <li>Since 2023: Postdoc at the MPI Leipzig</li>
+            <li>2018-2023: PhD student at the MPI Jena and Leipzig.</li>
+            <li>2016-2018: Master Student in <i>Naturwissenschaftlicher Archaeologie</i>
+                    , University of Tübingen, co-supervised by
+                    <a href="http://www.iem.uzh.ch/en/people/abg/VerenaSchuenemann-.html">Verena Schünemann</a></li>
+            <li>2013-2016 B.A. in Prehistory and Archaeology of the Middle Ages,
+                    University of Tübingen</li>
+      </Portrait>
+      <Portrait
         name="Ke Wang"
         image={data.imgKe.childImageSharp.gatsbyImageData}
         link="http://www.shh.mpg.de/employees/50975/25522"
@@ -167,16 +180,6 @@ const GroupPage = ({data}) => {
         role="Erasmus student">
             <li>January-June 2019: Visiting Erasmus student.</li>
             <li>PhD student at Charles University, Prague, Czech Republic.</li>
-      </Portrait>
-      <Portrait
-        name="Luka Papac"
-        image={data.imgLuka.childImageSharp.gatsbyImageData}
-        link="http://www.shh.mpg.de/employees/50502/25522"
-        role="PhD Student">
-            <li>since 2021: Postdoc at the Institute of Archaeology of the Czech Academy of Sciences, Prague</li>
-            <li>2016-2020: PhD student at the MPI Jena, co-supervised by <a href="https://www.shh.mpg.de/person/42282/25500">Wolfgang Haak</a></li>
-            <li>2014-2016: M.Phil in ancient DNA, University of Melbourne</li>
-            <li>2009-2012: BSc(Hons) in Genetics, University of Melbourne</li>
       </Portrait>
       <Portrait
         name="Rita Radzeviciute"
