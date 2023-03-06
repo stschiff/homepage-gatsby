@@ -83,6 +83,16 @@ const mergeSidebarObjects = (post_nodes, pub_nodes) => {
   return post_objects.concat(pub_objects);
 }
 
+function getImageFromCitekey(allImages, citekey) {
+  var ret = null;
+  allImages.nodes.forEach(node => {
+    if(node.relativePath === "images/publications/" + citekey + ".jpg")
+      ret = node.childImageSharp.gatsbyImageData;
+  });
+  return ret;
+}
+
+
 const Sidebar = () => {
   const data = useStaticQuery(
     graphql`
@@ -115,13 +125,16 @@ const Sidebar = () => {
           authors
           citekey
           role
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0)
-            }
-          }
         }
       }
+      allPubImages: allFile(filter: {relativeDirectory: {eq: "images/publications"}}) {
+        nodes {
+          relativePath
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 1.0)
+          }
+        }
+      }    
     }`
   );
   const allSidebarObjects = mergeSidebarObjects(
@@ -141,7 +154,7 @@ const Sidebar = () => {
                        date={obj.date}/>
           );
         } else if(obj.type === "Publication") {
-          const img = obj.node.image ? obj.node.image.childImageSharp.gatsbyImageData : null;
+          const img = getImageFromCitekey(data.allPubImages, obj.node.citekey);
           return (
             <PubChunk image_fluid={img}
                       title={obj.node.title}

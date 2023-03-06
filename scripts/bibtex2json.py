@@ -2,6 +2,7 @@
 import bibtexparser
 import sys
 import json
+import os.path
 
 month_names = "jan feb mar apr may jun jul aug sep oct nov dec".split()
 
@@ -52,10 +53,9 @@ def curate_entry(entry):
         'title' : title,
         'url' : entry['url'],
         'abstract' : entry['abstract'].replace('{','').replace('}','').replace('\n', ' ') if 'abstract' in entry else None,
-        'image' : f"images/publications/{entry['ID']}.jpg",
         'citekey' : entry['ID'],
         'role' : role,
-        'pdf' : f"pdfs/{author_abbrv} {entry['year']} - {title.replace(':', ' -')}.pdf"
+        'pdfFileName' : f"{author_abbrv} {entry['year']} - {title.replace(':', ' -')}.pdf"
     }
     return ret
 
