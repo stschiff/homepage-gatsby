@@ -101,6 +101,7 @@ const GroupPage = ({data}) => {
       </Portrait>
       <Portrait
         name="Luka Papac"
+        image={data.imgLuka.childImageSharp.gatsbyImageData}
         role="Postdoc">
             <li>Since 2023: Postdoc at the MPI Leipzig</li>
             <li>2021-2022: Postdoc at the Institute of Archaeology of the Czech Academy of Sciences, Prague</li>
@@ -121,6 +122,8 @@ const GroupPage = ({data}) => {
         name="Tanja Schmidt"
         role="Technical Assistant">
           <li>Since 2022: Laboratory Assistant (50% ERC MICROSCOPE)</li>
+          <li>2017-2022 PhD student at the ZMBP, Eberhardt-Karls University Tuebingen, Plant Molecular Biology</li>
+          <li>2013-2015 M.Sc. Biology at TU Dresden</li>
       </Portrait>
 
       <h2>Affiliated researchers</h2>
@@ -245,7 +248,7 @@ query {
   imgMarg: file(relativePath: {eq: "images/portraits/margherita-portrait.jpg"}) {
     ...squareImage
   }
-  imgLuka: file(relativePath: {eq: "images/portraits/luka-portrait.jpg"}) {
+  imgLuka: file(relativePath: {eq: "images/portraits/Luka_portrait_small.jpg"}) {
     ...squareImage
   }
   imgJoscha: file(relativePath: {eq: "images/portraits/joscha-portrait.jpg"}) {
