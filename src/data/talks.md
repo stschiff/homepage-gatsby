@@ -20,6 +20,8 @@ Turkey, recorded on December 12, 2018:
 ---
 ### All talks
 
+Participation in panel discussion and evening on "What is saxonian?" at the *Deutsches Hygiene-Museum Dresden*, **March 16, 2023**
+
 Colloquium at *Humboldt University, Berlin* "Eine neue archäogenetische Studie zur angelsächsischen Migration im Frühmittelalter", **Jan 23, 2023**
 
 Zoom-Lecture at the *University of Jena* on "Human demographic history - From African origins to recent population structure", **Dec 8, 2022**
