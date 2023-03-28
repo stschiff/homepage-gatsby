@@ -56,6 +56,7 @@ const GroupPage = ({data}) => {
       </Portrait>
       <Portrait
         name="Selina Carlhoff"
+        image={data.imgSelina.childImageSharp.gatsbyImageData}
         role="Postdoc">
             <li>Since 2023: Postdoc (ERC MICROSCOPE)</li>
             <li>2018 - 2023: PhD Student at the MPI Jena/Leipzig under supervision of Prof. Dr. Johannes Krause, Jun.-Prof. Dr. Cosimo Posth, and Dr. Kathrin Nägele
@@ -272,6 +273,9 @@ query {
     ...squareImage
   }
   imgSuzanne: file(relativePath: {eq: "images/portraits/suzanne.jpg"}) {
+    ...squareImage
+  }
+  imgSelina: file(relativePath: {eq: "images/portraits/Selina_Carlhoff_Portrait.jpg"}) {
     ...squareImage
   }
   imgEzgi: file(relativePath: {eq: "images/portraits/ezgi-portrait.jpg"}) {
