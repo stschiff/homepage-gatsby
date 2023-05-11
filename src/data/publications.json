@@ -1,5 +1,19 @@
 [
     {
+        "journal": "Berichte aus dem Landesmuseum Natur und Mensch",
+        "authors": [
+            "Joscha Gretzinger",
+            "Stephan Schiffels"
+        ],
+        "date": "2022-12-31",
+        "title": "Erkenntnisse zur fr\u00fchmittelalterlichen Migrationsgeschichte Nordwesteuropas aus genetischen Analysen",
+        "url": "https://www.naturundmensch.de/",
+        "abstract": null,
+        "citekey": "Gretzinger2022-op",
+        "role": "lead",
+        "pdfFileName": "Gretzinger and Schiffels 2022 - Erkenntnisse zur fr\u00fchmittelalterlichen Migrationsgeschichte Nordwesteuropas aus genetischen Analysen.pdf"
+    },
+    {
         "journal": "in Das Leben des BODI, LVR-LandesMuseum Bonn und wbg (Wissenschaftliche Buchgesellschaft)",
         "authors": [
             "Laura Lacher",
@@ -12,7 +26,7 @@
         "abstract": "Im sp\u00e4tantiken Heer dienten Soldaten ganz unterschiedlicher Herkunft, manchmal in Gruppen und unter eigenen Befehlshabern, und machten Karriere bis in hohe Befehlsebenen (vgl. Beitrag Nieveler/Schmauder, Kriegereliten). Mit der Aufl\u00f6sung der r\u00f6mischen Verwaltungen und Strukturen \u00fcbernahm dieses Heer in den Provinzen bereits zahlreiche administrative und wirtschaftliche Aufgaben. Au\u00dferdem rekrutierten sich aus diesen Heeresteilen die Gefolgschaftsherren, die die Grundlage f\u00fcr das Fr\u00e4nkische Reich legten. Arch\u00e4ologisch l\u00e4sst sich auch anhand der Grabfunde in gut aufgearbeiteten Regionen wie dem Rheinland erkennen, dass sich die politischen Umw\u00e4lzungen, regional und lokal, durchaus in unterschiedlichen zeitlichen und sozialen Ph\u00e4nomenen im Grabbrauch fassen lassen. In der Diskussion steht dabei seit Jahrzehnten die Frage, ob und wenn ja in welchem Umfang hinter den kulturellen Erscheinungen ein Bev\u00f6lkerungswechsel stand. Genau diese Frage r\u00fcckt auch in den Fokus populationsgenetischer Untersuchungen.",
         "citekey": "Lacher2023-xj",
         "role": "lead",
-        "pdfFileName": "Lacher et al. 2023 - Spätantike und frühes Mittelalter - Erste Ergebnisse populationsgenetischer Untersuchungen im Rheinland.pdf"
+        "pdfFileName": "Lacher et al. 2023 - Sp\u00e4tantike und fr\u00fches Mittelalter - Erste Ergebnisse populationsgenetischer Untersuchungen im Rheinland.pdf"
     },
     {
         "journal": "Arch\u00e4ologisches Korrespondenzblatt",
