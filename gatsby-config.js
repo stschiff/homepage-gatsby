@@ -12,6 +12,7 @@ module.exports = {
         path: "./src/data/",
       },
     },
+    "gatsby-plugin-sass",
     "gatsby-transformer-json",
     "gatsby-transformer-sharp",
     "gatsby-plugin-image",

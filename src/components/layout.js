@@ -1,13 +1,13 @@
 import React from "react"
 import Sidebar from "./sidebar"
 import {Link} from "gatsby"
-import {Nav, Navbar} from "react-bootstrap"
 
-import { Container, Row, Col } from "react-bootstrap"
 import { FaTwitter, FaGithub, FaMedium, FaResearchgate, FaMastodon } from "react-icons/fa";
 
+import "~bulma/bulma.sass";
+
 const ListLink = props => {
-  const cl = props.to === props.activeNav ? "nav-link active" : "nav-link";
+  const cl = props.to === props.activeNav ? "navbar-item is-active" : "navbar-item";
   return (
     <Nav.Item>
       <Link to={props.to} className={cl}>
@@ -18,71 +18,64 @@ const ListLink = props => {
 }
 
 const Header = ({activeNav}) => (
-<header>
-  <Row>
-    <Col md={9}>
-      <h1 className="display-4 mt-3">Stephan Schiffels</h1>
-      <p className="font-weight-light">Population Genetics – Computational Methods - Human History</p>
-    </Col>
-    <Col md={3}>
-      <h2 className="mt-md-3 float-md-right">
-        <Navbar>
-        <Nav>
-          <Nav.Item><Nav.Link href="https://twitter.com/stschiff"><FaTwitter /></Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="https://github.com/stschiff"><FaGithub /></Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="https://medium.com/stephan-schiffels"><FaMedium /></Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="https://www.researchgate.net/profile/Stephan_Schiffels"><FaResearchgate /></Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link rel="me" href="https://ecoevo.social/@stschiff"><FaMastodon /></Nav.Link></Nav.Item>
-        </Nav>
-        </Navbar>
-      </h2>
-    </Col>
-  </Row>
-  <Navbar expand="md" className="mb-5 border-top border-bottom">
-    <Navbar.Toggle />
-    <Navbar.Collapse>
-      <Nav>
-        <ListLink to="/" activeNav={activeNav}>Home</ListLink>
-        <ListLink to="/research" activeNav={activeNav}>Research</ListLink>
-        <ListLink to="/group" activeNav={activeNav}>Group</ListLink>
-        <ListLink to="/publications" activeNav={activeNav}>Publications</ListLink>
-        <ListLink to="/talks" activeNav={activeNav}>Talks</ListLink>
-        <ListLink to="/resources" activeNav={activeNav}>Resources</ListLink>
-        <ListLink to="/contact" activeNav={activeNav}>Contact</ListLink>
-        <ListLink to="/blog" activeNav={activeNav}>Blog</ListLink>
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+<header className="section">
+  <h1 className="title is-1"><Link to="/">Stephan Schiffels</Link></h1>
+  <h2 className="subtitle">Population Genetics – Computational Methods - Human History</h2>
+  <nav className="navbar">
+    <div class="navbar-brand">
+      <a className="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-start">
+          <ListLink to="/" activeNav={activeNav}>Home</ListLink>
+          <ListLink to="/research" activeNav={activeNav}>Research</ListLink>
+          <ListLink to="/publications" activeNav={activeNav}>Publications</ListLink>
+          <ListLink to="/talks" activeNav={activeNav}>Talks</ListLink>
+          <ListLink to="/videos" activeNav={activeNav}>Talks</ListLink>
+          <ListLink to="/resources" activeNav={activeNav}>Resources</ListLink>
+          <ListLink to="/blog" activeNav={activeNav}>Blog</ListLink>
+        </div>
+        <div class="navbar end">
+          <Link className="navbar-item" to="https://www.eva.mpg.de/archaeogenetics/staff/stephan-schiffels/"><img src="/images/mpi_logo.jpg" /></Link>
+          <Link className="navbar-item" to="https://twitter.com/stschiff"><FaTwitter /></Link>
+          <Link className="navbar-item" to="https://github.com/stschiff"><FaGithub /></Link>
+          <Link className="navbar-item" to="https://medium.com/stephan-schiffels"><FaMedium /></Link>
+          <Link className="navbar-item" to="https://www.researchgate.net/profile/Stephan_Schiffels"><FaResearchgate /></Link>
+          <Link className="navbar-item" rel="me" to="https://ecoevo.social/@stschiff"><FaMastodon /></Link>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
 )
 
 const Footer = () => (
-  <footer className="border-top mt-4">
-    <Row>
-      <Col className="text-right">
-        Powered by <a href="https://www.gatsbyjs.org">Gatsby</a> and <a href="https://getbootstrap.com">bootstrap</a>.
-        Sourcecode available on <a href="https://github.com/stschiff/homepage-gatsby">github</a>.
-      </Col>
-    </Row>
+  <footer class="footer has-text-centered">
+    Powered by <Link to="https://www.gatsbyjs.org">Gatsby</Link> and <Link to="https://bulma.ui">bulma</Link>.
+    Sourcecode available on <Link to="https://github.com/stschiff/homepage-gatsby">github</Link>.
   </footer>
 )
 
 const LayoutComponent = ({ activeNav, children, pageTitle }) => (
-  <Container>
+  <div class="container">
     <Header activeNav={activeNav}/>
-    <Row className="justify-content-between">
-      <Col lg={7}>
-        <main>
-        <h2>{pageTitle}</h2>
-        {children}
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <main class="section">
+          <h2>{pageTitle}</h2>
+          <div class="content">{children}</div>
         </main>
-      </Col>
-      <Col lg={4}>
+      </div>
+      <div class="column">
         <Sidebar />
-      </Col>
-    </Row>
+      </div>
+    </div>
     <Footer />
-  </Container>
+  </div>
 )
 
 export default LayoutComponent;

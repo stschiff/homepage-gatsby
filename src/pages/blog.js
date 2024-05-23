@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { GatsbyImage } from "gatsby-plugin-image"
-import {Row, Col} from "react-bootstrap"
 import { graphql, Link } from 'gatsby'
 import dateFormat from "dateformat"
 import Seo from "../components/seo"
@@ -9,16 +8,16 @@ import Seo from "../components/seo"
 const BlogEntry = ({frontmatter, excerpt, date, link}) => {
   const imgComp = frontmatter.image ? <GatsbyImage image={frontmatter.image.childImageSharp.gatsbyImageData} alt="Highlighted image from the blog post"/> : <div></div>;
   return (
-    <Row className="border-top py-3 mx-0">
-      <Col xs={3} className="pl-0">
+    <li className="columns">
+      <div className="column is-one-quarter">
         <Link to={link}>{imgComp}</Link>
-      </Col>
-      <Col xs={9} className="pr-0">
+      </div>
+      <div className="column">
         <Link to={link}><h4>{frontmatter.title}</h4></Link>
         <p>{excerpt} <Link to={link}><i>Read more</i></Link></p>
         <i>Published {dateFormat(date, "mmmm dS, yyyy")}</i>
-      </Col>
-    </Row>
+      </div>
+    </div>
   );
 }
 
@@ -31,12 +30,14 @@ const BlogPage = ({data}) => {
     <Layout pageTitle="Blog" activeNav="/blog">
       <Seo title="Stephan Schiffels - Blog Posts" description="All Blog Posts listed chronologically" />
       <p>Note: Many of my blog posts also appear on <a href="https://medium.com/stephan-schiffels">Medium</a></p>
+      <ul>
       {all_posts.map(node => {
         return (<BlogEntry link={node.childMdx.fields.slug}
                            frontmatter={node.childMdx.frontmatter}
                            excerpt={node.childMdx.excerpt}
                            date={extract_date(node.name)}/>);
       })}
+      </ul>
     </Layout>
   );
 }

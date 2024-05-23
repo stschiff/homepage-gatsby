@@ -1,9 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import {GatsbyImage} from "gatsby-plugin-image"
-import { Carousel, Row, Col } from "react-bootstrap"
 import { graphql, Link} from 'gatsby'
-import "./index.css"
 import Seo from "../components/seo"
 
 const IndexPage = ({data}) => {

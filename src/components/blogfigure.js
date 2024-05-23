@@ -1,5 +1,4 @@
 import { useStaticQuery, graphql } from "gatsby"
-import {Figure, Row} from "react-bootstrap"
 import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 
@@ -18,13 +17,12 @@ const Blogfigure = ({relPath, width=12, children, altText=""}) => {
     }`
   );
   let ret = <i>Image Not Found (path={relPath})</i>;
-  const cl = `col-md-${width}`;
   data.allFile.nodes.forEach(node => {
     if(node.relativePath === relPath)
-      ret = <Row className="justify-content-md-center"><Figure className={cl}>
+      ret = <figure>
         <GatsbyImage image={node.childImageSharp.gatsbyImageData} alt={altText}/>
         <Figure.Caption>{children}</Figure.Caption>
-      </Figure></Row>
+      </figure>
   });
   return ret;
 }
