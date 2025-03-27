@@ -55,9 +55,7 @@ they are in space *versus* time is a direct estimator for human mobility.
 Loog and colleagues used this basic idea to develop a statistical method that
 tracks human mobility *through time*. Here is their main figure:
 
-<Blogfigure relPath="images/blog/loog_et_al.jpg" width={9} altText="Main figure with mobility estimates from Loog et al.">
-  from Loog et al. “Estimating mobility using sparse data: Application to human
-genetic variation”, *PNAS*, 2017 (CC BY-NC-ND)</Blogfigure>
+<Blogfigure relPath="images/blog/loog_et_al.jpg" width={9} altText="Main figure with mobility estimates from Loog et al."> from Loog et al. “Estimating mobility using sparse data: Application to human genetic variation”, *PNAS*, 2017 (CC BY-NC-ND)</Blogfigure>
 
 This analysis covers West Eurasia, and it shows an estimate of human mobility
 from 14,000 years ago until 2,000 years ago. The yellow band in panel A
