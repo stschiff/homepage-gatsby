@@ -42,9 +42,6 @@ const Header = ({activeNav}) => (
     <Navbar.Toggle />
     <Navbar.Collapse>
       <Nav>
-        <ListLink to="/" activeNav={activeNav}>Home</ListLink>
-        <ListLink to="/research" activeNav={activeNav}>Research</ListLink>
-        <ListLink to="/group" activeNav={activeNav}>Group</ListLink>
         <ListLink to="/publications" activeNav={activeNav}>Publications</ListLink>
         <ListLink to="/talks" activeNav={activeNav}>Talks</ListLink>
         <ListLink to="/resources" activeNav={activeNav}>Resources</ListLink>
